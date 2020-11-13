@@ -135,11 +135,26 @@ namespace Acorisoft.Panels
             get => (string)GetValue(SubtitleStringFormatProperty);
             set => SetValue(SubtitleStringFormatProperty, value);
         }
+
         public CornerRadius CornerRadius
         {
             get => (CornerRadius)GetValue(CornerRadiusProperty);
             set => SetValue(CornerRadiusProperty, value);
         }
+
+
+        public bool EnableToolbarAutoHidden
+        {
+            get => (bool)GetValue(EnableToolbarAutoHiddenProperty);
+            set => SetValue(EnableToolbarAutoHiddenProperty , value);
+        }
+
+        public static readonly DependencyProperty EnableToolbarAutoHiddenProperty = DependencyProperty.Register(
+            "EnableToolbarAutoHidden",
+            typeof(bool),
+            typeof(ToolbarPanel), 
+            new PropertyMetadata(null));
+
 
         public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register(
             "CornerRadius",

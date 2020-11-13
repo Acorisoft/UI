@@ -62,7 +62,8 @@
                                               VerticalAlignment="Center"
                                               Margin="2"/>
 
-                            <ContentControl Grid.Row="0"
+                            <ContentControl x:Name="PART_Toolbar"
+                                            Grid.Row="0"
                                             Grid.Column="1"
                                             IsTabStop="False"
                                             Content="{TemplateBinding Toolbar}"
@@ -85,6 +86,22 @@
                                               Margin="0 16 0 0"/>
                         </Grid>
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="EnableToolbarAutoHidden" Value="True"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Visibility" Value="Visible" TargetName="PART_Toolbar"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="EnableToolbarAutoHidden" Value="True"/>
+                                <Condition Property="IsMouseOver" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Visibility" Value="Collapsed" TargetName="PART_Toolbar"/>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
