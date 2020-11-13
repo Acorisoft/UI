@@ -1,0 +1,15 @@
+<Project>
+	<PropertyGroup>
+		<Authors>Acoris;</Authors>
+		<Company>Acorisoft</Company>
+		<Copyright>all right reserved by acoris</Copyright>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<OutDir>$(MSBuildThisFileDirectory)\Bin</OutDir>
+		<IncludeDebugSymbolsProjectOutputGroup>True</IncludeDebugSymbolsProjectOutputGroup>
+		<RootNamespace>Acorisoft</RootNamespace>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="icon_64x64.png" Pack="true" Visible="false" />
+	</ItemGroup>
+</Project>

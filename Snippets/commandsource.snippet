@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>commandsource</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>commandsource</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>name</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>type</ToolTip>
+          <Default>type</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[        public ICommand $name$Command
+        {
+            get => (ICommand)GetValue($name$CommandProperty);
+            set => SetValue($name$CommandProperty, value);
+        }
+
+        public object $name$CommandParameter
+        {
+            get => (object)GetValue($name$CommandParameterProperty);
+            set => SetValue($name$CommandParameterProperty, value);
+        }
+        public IInputElement $name$CommandTarget
+        {
+            get => (IInputElement)GetValue($name$CommandTargetProperty);
+            set => SetValue($name$CommandTargetProperty, value);
+        }
+
+        public static readonly DependencyProperty $name$CommandTargetProperty = DependencyProperty.Register(
+            "$name$CommandTarget",
+            typeof(IInputElement),
+            typeof($type$), 
+            new PropertyMetadata(null));
+
+
+        public static readonly DependencyProperty $name$CommandParameterProperty = DependencyProperty.Register(
+            "$name$CommandParameter",
+            typeof(object),
+            typeof($type$), 
+            new PropertyMetadata(null));
+
+        public static readonly DependencyProperty $name$CommandProperty = DependencyProperty.Register(
+            "$name$Command",
+            typeof(ICommand),
+            typeof($type$), 
+            new PropertyMetadata(null));]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

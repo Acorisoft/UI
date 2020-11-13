@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<PackageIcon>icon_64x64.png</PackageIcon>
+		<PackageId>Acorisoft.UI</PackageId>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageVersion>1.0.14</PackageVersion>
+		<Description>An custom ui library for acorisoft</Description>
+		<PackageProjectUrl>https://github.com/Acorisoft/UI</PackageProjectUrl>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="icon_64x64.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+</Project>

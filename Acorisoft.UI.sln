@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30516.212
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acorisoft.UI", "src\Acorisoft.UI\Acorisoft.UI.csproj", "{0DB8C6E5-BF69-4CF7-B84A-D5E602D7C5A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acorisoft.UI.Host", "src\Acorisoft.UI.Host\Acorisoft.UI.Host.csproj", "{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DB8C6E5-BF69-4CF7-B84A-D5E602D7C5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB8C6E5-BF69-4CF7-B84A-D5E602D7C5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB8C6E5-BF69-4CF7-B84A-D5E602D7C5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB8C6E5-BF69-4CF7-B84A-D5E602D7C5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E2EC54F-56EF-4E54-837B-9FC853092C7C}
+	EndGlobalSection
+EndGlobal

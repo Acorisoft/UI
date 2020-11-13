@@ -1,0 +1,161 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:c="clr-namespace:Acorisoft.Converters"
+                    xmlns:p="clr-namespace:Acorisoft.Panels">
+    
+    <Style x:Key="AnchorPanelButton" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Width" Value="32" />
+        <Setter Property="Height" Value="32" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="PART_Border" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="PART_Content"
+                                          Content="{TemplateBinding Content}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                          ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
+                                          ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          Margin="{TemplateBinding Padding}"/>
+                        <Border x:Name="PART_Mask" Background="White" Opacity="0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value=".3" TargetName="PART_Mask"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="{x:Type p:AnchorPanel}">
+        <Setter Property="Background" Value="#6e00ff" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Padding" Value="24" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Stretch" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type p:AnchorPanel}">
+                    <Border x:Name="PART_BD" 
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="{TemplateBinding CornerRadius}"
+                            Padding="{TemplateBinding Padding}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="auto" MinWidth="64"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <ContentPresenter x:Name="PART_Title"
+                                                      TextElement.FontWeight="Bold"
+                                                      TextElement.FontSize="24"
+                                                      TextElement.Foreground="{TemplateBinding Foreground}"
+                                                      Content="{TemplateBinding Title}"
+                                                      ContentTemplate="{TemplateBinding TitleTemplate}"
+                                                      ContentTemplateSelector="{TemplateBinding TitleTemplateSelector}"
+                                                      ContentStringFormat="{TemplateBinding TitleStringFormat}"
+                                                      HorizontalAlignment="Left"
+                                                      VerticalAlignment="Center"/>
+                                    <ContentPresenter x:Name="PART_Subtitle"                                                  
+                                                      TextElement.FontWeight="Light"
+                                                      TextElement.FontSize="15"
+                                                      TextElement.Foreground="{TemplateBinding Foreground}"
+                                                      Content="{TemplateBinding Subtitle}"
+                                                      ContentTemplate="{TemplateBinding SubtitleTemplate}"
+                                                      ContentTemplateSelector="{TemplateBinding SubtitleTemplateSelector}"
+                                                      ContentStringFormat="{TemplateBinding SubtitleStringFormat}"
+                                                      HorizontalAlignment="Left"
+                                                      VerticalAlignment="Center"
+                                                      Margin="2"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1"
+                                            HorizontalAlignment="Right"
+                                            VerticalAlignment="Center"
+                                            Orientation="Horizontal">
+
+                                    <Button Command="{TemplateBinding AddButtonCommand}"
+                                            CommandParameter="{TemplateBinding AddButtonCommandParameter}"
+                                            CommandTarget="{TemplateBinding AddButtonCommandTarget}"
+                                            Style="{StaticResource AnchorPanelButton}"
+                                            Visibility="{TemplateBinding ShowAddButton,Converter={x:Static c:Converter.Bool2Visibile}}">
+                                        <Path Fill="{TemplateBinding Foreground}"
+                                              Stretch="Uniform"
+                                              Width="16"
+                                              Height="16"
+                                              RenderOptions.EdgeMode="Aliased"
+                                              Data="M853.333333 480H544V170.666667c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v309.333333H170.666667c-17.066667 0-32 14.933333-32 32s14.933333 32 32 32h309.333333V853.333333c0 17.066667 14.933333 32 32 32s32-14.933333 32-32V544H853.333333c17.066667 0 32-14.933333 32-32s-14.933333-32-32-32z"/>
+                                    </Button>
+
+                                    <Button Command="{TemplateBinding EditButtonCommand}"
+                                            CommandParameter="{TemplateBinding EditButtonCommandParameter}"
+                                            CommandTarget="{TemplateBinding EditButtonCommandTarget}"
+                                            Style="{StaticResource AnchorPanelButton}"
+                                            Visibility="{TemplateBinding ShowEditButton,Converter={x:Static c:Converter.Bool2Visibile}}">
+                                        <Path Fill="{TemplateBinding Foreground}"
+                                              Stretch="Uniform"
+                                              Width="20"
+                                              Height="16"
+                                              RenderOptions.EdgeMode="Aliased"
+                                              Data="M842.70592 387.6352h44.6464v414.26944c0 25.9072-10.22464 50.10944-28.70784 68.352-18.36544 18.00192-42.5728 27.97568-68.352 27.97568H233.70752c-25.78944 0-50.11456-9.97376-68.35712-27.97568-18.4832-18.24256-28.70784-42.4448-28.70784-68.352V223.7952c0-25.78432 10.21952-50.10944 28.70784-68.352 18.36544-18.00192 42.56768-27.97568 68.352-27.97568h406.36416v44.63616H233.71264c-28.94848 0-52.42368 23.11168-52.42368 51.57376v578.0992c0 28.4672 23.4752 51.57376 52.42368 51.57376h556.57472c28.94848 0 52.41856-23.10656 52.41856-51.57376V387.6352z m-507.43296 341.29408L880.41472 163.34848l-35.2768-35.15392L300.00128 693.77536l35.27168 35.15392z"/>
+                                    </Button>
+
+                                    <Button Command="{TemplateBinding ClearButtonCommand}"
+                                            CommandParameter="{TemplateBinding ClearButtonCommandParameter}"
+                                            CommandTarget="{TemplateBinding ClearButtonCommandTarget}"
+                                            Style="{StaticResource AnchorPanelButton}"
+                                            Visibility="{TemplateBinding ShowClearButton,Converter={x:Static c:Converter.Bool2Visibile}}">
+                                        <Path Fill="{TemplateBinding Foreground}"
+                                              Stretch="Uniform"
+                                              Width="16"
+                                              Height="16"
+                                              RenderOptions.EdgeMode="Aliased"
+                                              Data="M987.428571 268.190476h-950.857142a36.571429 36.571429 0 0 1 0-73.142857H243.809524V73.142857a73.142857 73.142857 0 0 1 73.142857-73.142857h390.095238a73.142857 73.142857 0 0 1 73.142857 73.142857v121.904762h207.238095a36.571429 36.571429 0 0 1 0 73.142857zM707.047619 121.904762a48.761905 48.761905 0 0 0-48.761905-48.761905H365.714286a48.761905 48.761905 0 0 0-48.761905 48.761905v73.142857h390.095238V121.904762zM341.333333 816.761905v-390.095238a36.571429 36.571429 0 0 1 73.142857 0v390.095238a36.571429 36.571429 0 0 1-73.142857 0z m268.190477 0v-390.095238a36.571429 36.571429 0 0 1 73.142857 0v390.095238a36.571429 36.571429 0 0 1-73.142857 0zM158.47619 316.952381a36.254476 36.254476 0 0 1 34.133334 24.380952H195.047619v560.761905a48.761905 48.761905 0 0 0 48.761905 48.761905h536.380952a48.761905 48.761905 0 0 0 48.761905-48.761905V341.333333h2.438095a36.059429 36.059429 0 0 1 68.266667 0h2.438095v609.52381a73.142857 73.142857 0 0 1-73.142857 73.142857H195.047619a73.142857 73.142857 0 0 1-73.142857-73.142857V341.333333h2.438095a36.254476 36.254476 0 0 1 34.133333-24.380952z"/>
+                                    </Button>
+
+                                    <Button Command="{TemplateBinding MoreButtonCommand}"
+                                            CommandParameter="{TemplateBinding MoreButtonCommandParameter}"
+                                            CommandTarget="{TemplateBinding MoreButtonCommandTarget}"
+                                            Style="{StaticResource AnchorPanelButton}"
+                                            Visibility="{TemplateBinding ShowMoreButton,Converter={x:Static c:Converter.Bool2Visibile}}">
+                                        <Path Fill="{TemplateBinding Foreground}"
+                                              Stretch="Uniform"
+                                              Width="20"
+                                              Height="20"
+                                              RenderOptions.EdgeMode="Aliased"
+                                              Data="F1 M1024,1024z M0,0z M863.5,416.1C810.6,416.1 767.7,459 767.7,511.9 767.7,564.8 810.6,607.7 863.5,607.7 916.4,607.7 959.3,564.8 959.3,511.9 959.3,459 916.4,416.1 863.5,416.1z M511.3,416.1C458.4,416.1 415.5,459 415.5,511.9 415.5,564.8 458.4,607.7 511.3,607.7 564.2,607.7 607.1,564.8 607.1,511.9 607.2,459 564.3,416.1 511.3,416.1z M159.8,416.1C106.9,416.1 64,459 64,511.9 64,564.8 106.9,607.7 159.8,607.7 212.7,607.7 255.6,564.8 255.6,511.9 255.6,459 212.7,416.1 159.8,416.1z"/>
+                                    </Button>
+                                </StackPanel>
+                            </Grid>
+
+                            <ContentPresenter x:Name="PART_Content"
+                                              Grid.Row="1"
+                                              Content="{TemplateBinding Content}"
+                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
+                                              ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              Margin="0 16 0 0"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

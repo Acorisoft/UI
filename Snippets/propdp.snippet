@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>propdp</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propdp</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>依赖项属性类型</ToolTip>
+          <Default>type</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>property</ID>
+          <ToolTip>依赖项属性名</ToolTip>
+          <Default>property</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>class</ID>
+          <ToolTip>依赖项属性的所有者</ToolTip>
+          <Default>class</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    public $type$ $property$
+        {
+            get => ($type$)GetValue($property$Property); 
+            set => SetValue($property$Property, value);
+        }
+
+        public static readonly DependencyProperty $property$Property = DependencyProperty.Register(
+            "$property$",
+            typeof($type$), 
+            typeof($class$), 
+            new PropertyMetadata(null));
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
