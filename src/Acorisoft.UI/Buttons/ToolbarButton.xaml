@@ -30,22 +30,15 @@
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}"
                                     SnapsToDevicePixels="True">
-                                <ContentPresenter x:Name="PART_Content"
-                                                  Content="{TemplateBinding Content}"
-                                                  ContentTemplate="{TemplateBinding ContentTemplate}"
-                                                  ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
-                                                  ContentStringFormat="{TemplateBinding ContentStringFormat}"
-                                                  TextElement.Foreground="{TemplateBinding Foreground}"
-                                                  TextElement.FontSize="{TemplateBinding FontSize}"
-                                                  TextElement.FontFamily="{TemplateBinding FontFamily}"
-                                                  TextElement.FontStretch="{TemplateBinding FontStretch}"
-                                                  TextElement.FontStyle="{TemplateBinding FontStyle}"
-                                                  TextElement.FontWeight="{TemplateBinding FontWeight}"
-                                                  KeyboardNavigation.IsTabStop="False"
-                                                  KeyboardNavigation.TabNavigation="Cycle"
-                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                                  SnapsToDevicePixels="True"/>
+                                <Path x:Name="PART_Icon"
+                                      Data="{TemplateBinding Icon}"
+                                      Margin="{TemplateBinding Padding}"
+                                      Fill="{TemplateBinding Foreground}"
+                                      Stretch="Uniform"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      Width="{TemplateBinding IconWidth}"
+                                      Height="{TemplateBinding IconHeight}"/>
                             </Border>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
