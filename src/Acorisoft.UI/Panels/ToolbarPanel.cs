@@ -6,7 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Markup;
 
-namespace Acorisoft.Panels
+namespace Acorisoft.UI.Panels
 {
     /// <summary>
     /// <see cref="ToolbarPanel"/> 工具面板。
@@ -19,7 +19,7 @@ namespace Acorisoft.Panels
 
         static ToolbarPanel()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ToolbarPanel), new FrameworkPropertyMetadata(typeof(ToolbarPanel)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ToolbarPanel) , new FrameworkPropertyMetadata(typeof(ToolbarPanel)));
         }
 
         public void AddChild(object value)
@@ -32,7 +32,7 @@ namespace Acorisoft.Panels
                 }
                 else
                 {
-                    SetValue(ContentProperty, value);
+                    SetValue(ContentProperty , value);
                 }
             }
         }
@@ -46,100 +46,100 @@ namespace Acorisoft.Panels
         public object Toolbar
         {
             get => (object)GetValue(ToolbarProperty);
-            set => SetValue(ToolbarProperty, value);
+            set => SetValue(ToolbarProperty , value);
         }
 
         public DataTemplate ToolbarTemplate
         {
             get => (DataTemplate)GetValue(ToolbarTemplateProperty);
-            set => SetValue(ToolbarTemplateProperty, value);
+            set => SetValue(ToolbarTemplateProperty , value);
         }
 
         public DataTemplateSelector ToolbarTemplateSelector
         {
             get => (DataTemplateSelector)GetValue(ToolbarTemplateSelectorProperty);
-            set => SetValue(ToolbarTemplateSelectorProperty, value);
+            set => SetValue(ToolbarTemplateSelectorProperty , value);
         }
 
         public object Title
         {
             get => (object)GetValue(TitleProperty);
-            set => SetValue(TitleProperty, value);
+            set => SetValue(TitleProperty , value);
         }
 
         public DataTemplate TitleTemplate
         {
             get => (DataTemplate)GetValue(TitleTemplateProperty);
-            set => SetValue(TitleTemplateProperty, value);
+            set => SetValue(TitleTemplateProperty , value);
         }
 
         public DataTemplateSelector TitleTemplateSelector
         {
             get => (DataTemplateSelector)GetValue(TitleTemplateSelectorProperty);
-            set => SetValue(TitleTemplateSelectorProperty, value);
+            set => SetValue(TitleTemplateSelectorProperty , value);
         }
 
 
         public string TitleStringFormat
         {
             get => (string)GetValue(TitleStringFormatProperty);
-            set => SetValue(TitleStringFormatProperty, value);
+            set => SetValue(TitleStringFormatProperty , value);
         }
 
         public object Content
         {
             get => (object)GetValue(ContentProperty);
-            set => SetValue(ContentProperty, value);
+            set => SetValue(ContentProperty , value);
         }
 
         public DataTemplate ContentTemplate
         {
             get => (DataTemplate)GetValue(ContentTemplateProperty);
-            set => SetValue(ContentTemplateProperty, value);
+            set => SetValue(ContentTemplateProperty , value);
         }
 
         public DataTemplateSelector ContentTemplateSelector
         {
             get => (DataTemplateSelector)GetValue(ContentTemplateSelectorProperty);
-            set => SetValue(ContentTemplateSelectorProperty, value);
+            set => SetValue(ContentTemplateSelectorProperty , value);
         }
 
 
         public string ContentStringFormat
         {
             get => (string)GetValue(ContentStringFormatProperty);
-            set => SetValue(ContentStringFormatProperty, value);
+            set => SetValue(ContentStringFormatProperty , value);
         }
 
         public object Subtitle
         {
             get => (object)GetValue(SubtitleProperty);
-            set => SetValue(SubtitleProperty, value);
+            set => SetValue(SubtitleProperty , value);
         }
 
         public DataTemplate SubtitleTemplate
         {
             get => (DataTemplate)GetValue(SubtitleTemplateProperty);
-            set => SetValue(SubtitleTemplateProperty, value);
+            set => SetValue(SubtitleTemplateProperty , value);
         }
 
         public DataTemplateSelector SubtitleTemplateSelector
         {
             get => (DataTemplateSelector)GetValue(SubtitleTemplateSelectorProperty);
-            set => SetValue(SubtitleTemplateSelectorProperty, value);
+            set => SetValue(SubtitleTemplateSelectorProperty , value);
         }
 
 
         public string SubtitleStringFormat
         {
             get => (string)GetValue(SubtitleStringFormatProperty);
-            set => SetValue(SubtitleStringFormatProperty, value);
+            set => SetValue(SubtitleStringFormatProperty , value);
         }
 
         public CornerRadius CornerRadius
         {
             get => (CornerRadius)GetValue(CornerRadiusProperty);
-            set => SetValue(CornerRadiusProperty, value);
+            set => SetValue(CornerRadiusProperty , value);
         }
 
 
@@ -152,14 +152,14 @@ namespace Acorisoft.Panels
         public static readonly DependencyProperty EnableToolbarAutoHiddenProperty = DependencyProperty.Register(
             "EnableToolbarAutoHidden",
             typeof(bool),
-            typeof(ToolbarPanel), 
+            typeof(ToolbarPanel),
             new PropertyMetadata(null));
 
 
         public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register(
             "CornerRadius",
             typeof(CornerRadius),
-            typeof(ToolbarPanel), 
+            typeof(ToolbarPanel),
             new PropertyMetadata(DefaultCornerRadiusValue));
 
 
@@ -238,7 +238,7 @@ namespace Acorisoft.Panels
         public string ToolbarStringFormat
         {
             get => (string)GetValue(ToolbarStringFormatProperty);
-            set => SetValue(ToolbarStringFormatProperty, value);
+            set => SetValue(ToolbarStringFormatProperty , value);
         }
 
         public static readonly DependencyProperty ToolbarStringFormatProperty = DependencyProperty.Register(

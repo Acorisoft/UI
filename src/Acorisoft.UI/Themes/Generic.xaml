@@ -1,10 +1,20 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:w="clr-namespace:Acorisoft.UI.Windows">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Button.xaml"/>
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Panels/Panel.xaml"/>
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Banners.xaml"/>
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors.xaml"/>
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Icon.xaml"/>
+
+        <!-- 按钮 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/Button.xaml"/>
+
+        <!-- 面板 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Panels/Styles/Panel.xaml"/>
+        <!-- 窗体 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Windows/ClientWindow.xaml"/>
+
+        <!-- 颜色 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Colors/CustomColors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Colors/BootstrapColors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Colors/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Colors/MaterialDesignColors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
