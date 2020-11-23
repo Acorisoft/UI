@@ -11,16 +11,10 @@
 
 ## 控件库
 
-### 锚点面板
-
-锚点面板在一定程度上用于替换 `HeaderedContentControl` 控件，它比`HeaderedContentControl` 控件更能表现功能层次的划分
-
-![锚点面板](Documentations/锚点面板.png)
 
 ### 工具面板（ToolbarPanel）
 
-### 工具按钮（ToolbarButton）
+![工具面板（ToolbarPanel）](Documentations/ToolbarPanel.png)
+### 场景面板（ContextualPanel）
 
-工具按钮提供的是将按钮放置在工具栏区域的透明按钮控件。
-
-### CTA 按钮（CTAButton）
+![ContextualPanel](Documentations/ContextualPanel.png)
