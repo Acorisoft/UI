@@ -9,6 +9,8 @@
 		<PackageVersion>1.1.1</PackageVersion>
 		<Description>An custom ui library for acorisoft</Description>
 		<PackageProjectUrl>https://github.com/Acorisoft/UI</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Acorisoft/UI</RepositoryUrl>
+		<RepositoryType>GITHUB</RepositoryType>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 	</PropertyGroup>
 	<ItemGroup>
