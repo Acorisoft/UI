@@ -84,6 +84,8 @@
                                       Width="{TemplateBinding IconWidth}"
                                       Height="{TemplateBinding IconHeight}"
                                       Margin="{TemplateBinding IconPadding}"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Center"
                                       Stretch="Uniform"
                                       Opacity=".7"
                                       SnapsToDevicePixels="True"/>

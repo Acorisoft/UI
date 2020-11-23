@@ -4,5 +4,6 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/WindowsButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/MoriButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/PathButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/ToggleStateIconButton.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
