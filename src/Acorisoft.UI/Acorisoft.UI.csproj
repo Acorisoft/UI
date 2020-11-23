@@ -6,7 +6,7 @@
 		<PackageIcon>icon_64x64.png</PackageIcon>
 		<PackageId>Acorisoft.UI</PackageId>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageVersion>1.1.0</PackageVersion>
+		<PackageVersion>1.1.1</PackageVersion>
 		<Description>An custom ui library for acorisoft</Description>
 		<PackageProjectUrl>https://github.com/Acorisoft/UI</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>

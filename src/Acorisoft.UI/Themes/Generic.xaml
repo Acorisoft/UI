@@ -6,10 +6,17 @@
         <!-- 按钮 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/Button.xaml"/>
 
-        <!-- 面板 -->
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Panels/Styles/Panel.xaml"/>
+        <!-- 菜单 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Menus/Menu.xaml"/>
+        
         <!-- 窗体 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Windows/ClientWindow.xaml"/>
+
+        <!-- 面板 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Panels/Styles/Panel.xaml"/>
+        
+        <!-- 视图 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Views/ContentHost.xaml"/>
 
         <!-- 颜色 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Colors/CustomColors.xaml"/>

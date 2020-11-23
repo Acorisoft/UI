@@ -6,3 +6,4 @@ using System.Windows.Markup;
 [assembly: XmlnsDefinition("https://github.com/acorisoft/ui" , "Acorisoft.UI.Buttons")]
 [assembly: XmlnsDefinition("https://github.com/acorisoft/ui" , "Acorisoft.UI.Windows")]
 [assembly: XmlnsDefinition("https://github.com/acorisoft/ui" , "Acorisoft.UI.Panels")]
+[assembly: XmlnsDefinition("https://github.com/acorisoft/ui" , "Acorisoft.UI.Views")]

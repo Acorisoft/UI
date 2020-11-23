@@ -7,9 +7,9 @@
 		<OutDir>$(MSBuildThisFileDirectory)\Bin</OutDir>
 		<IncludeDebugSymbolsProjectOutputGroup>True</IncludeDebugSymbolsProjectOutputGroup>
 		<RootNamespace>Acorisoft</RootNamespace>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<TargetFramework>net5.0-Windows</TargetFramework>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Include="icon_64x64.png" Pack="true" Visible="false" />
+		<None Include="icon_64x64.png" Visible="false" />
 	</ItemGroup>
 </Project>
