@@ -1,9 +1,10 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/WindowsButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/DropDownIconButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/MoriButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/PathButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/ToggleStateIconButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Buttons/Styles/WindowsButton.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

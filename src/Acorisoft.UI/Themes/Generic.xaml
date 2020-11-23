@@ -23,5 +23,8 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Colors/BootstrapColors.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Colors/Colors.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Colors/MaterialDesignColors.xaml"/>
+        
+        <!-- 图标 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Icon.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

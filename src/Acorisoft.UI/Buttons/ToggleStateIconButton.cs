@@ -19,8 +19,7 @@ namespace Acorisoft.UI.Buttons
     {
         static ToggleStateIconButton()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ToggleStateIconButton) , new FrameworkPropertyMetadata(typeof(ToggleStateIconButton)));
-            
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ToggleStateIconButton) , new FrameworkPropertyMetadata(typeof(ToggleStateIconButton)));            
         }
 
 
