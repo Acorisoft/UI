@@ -17,5 +17,22 @@ just copy it to `App.xaml`
 </ResourceDictionary>
 ```
 
+## How to contribute
+
+if you findsome templates or widget which you want it,you can push the widget image to `Documentations` folder
+
+
 ## Notice
-this library work for `.NET 5`,and we decide not support `.net framework`.
+this library work for `.NET 5`,and we not decide to support `.net framework`.
+
+## ControlGallery
+
+### PathButton
+
+
+### ToolbarPanel
+
+![工具面板（ToolbarPanel）](Documentations/ToolbarPanel.png)
+### ContextualPanel
+
+![ContextualPanel](Documentations/ContextualPanel.png)
