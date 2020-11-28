@@ -32,11 +32,26 @@
                     <u:ToolbarPanel Background="{StaticResource UI.Brushes.Accent}"
                                     Foreground="{StaticResource UI.Brushes.White}"
                                     Title="ToolBarPanel"
-                                    Subtitle="Transparent Background ToolbarPanel">
+                                    Subtitle="Accent Background ToolbarPanel">
                         <u:ToolbarPanel.Toolbar>
                             <StackPanel Orientation="Horizontal">
-                                <u:PathButton Icon="{StaticResource Insert}" Mode="Link"/>
-                                <u:PathButton Icon="{StaticResource Edit}" Mode="Link"/>
+                                <u:PathButton Icon="{StaticResource Insert}" Mode="Link" Foreground="{StaticResource UI.Brushes.White}"/>
+                                <u:PathButton Icon="{StaticResource Edit}" Mode="Link" Foreground="{StaticResource UI.Brushes.White}"/>
+                            </StackPanel>
+                        </u:ToolbarPanel.Toolbar>
+                        <StackPanel Orientation="Horizontal">
+                            <u:PathButton Icon="{StaticResource Insert}" Mode="Transparent" Foreground="{StaticResource UI.Brushes.White}"/>
+                            <u:PathButton Icon="{StaticResource Edit}" Mode="Transparent" Foreground="{StaticResource UI.Brushes.White}"/>
+                        </StackPanel>
+                    </u:ToolbarPanel>
+                    <u:ToolbarPanel Background="{StaticResource UI.Brushes.MaterialDesign.Amber}"
+                                    Foreground="{StaticResource UI.Brushes.White}"
+                                    Title="ToolBarPanel"
+                                    Subtitle="Amber Background ToolbarPanel">
+                        <u:ToolbarPanel.Toolbar>
+                            <StackPanel Orientation="Horizontal">
+                                <u:PathButton Icon="{StaticResource Insert}" Mode="Link" Foreground="{StaticResource UI.Brushes.White}"/>
+                                <u:PathButton Icon="{StaticResource Edit}" Mode="Link" Foreground="{StaticResource UI.Brushes.White}"/>
                             </StackPanel>
                         </u:ToolbarPanel.Toolbar>
                         <StackPanel Orientation="Horizontal">
