@@ -851,7 +851,8 @@
                             <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
-                                    Padding="{TemplateBinding Padding}">
+                                    Padding="{TemplateBinding Padding}"
+                                    Opacity=".5">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"/>
@@ -956,7 +957,8 @@
                             <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
-                                    Padding="{TemplateBinding Padding}">
+                                    Padding="{TemplateBinding Padding}"
+                                    Opacity=".5">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto"/>
@@ -1061,7 +1063,8 @@
                             <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
-                                    Padding="{TemplateBinding Padding}">
+                                    Padding="{TemplateBinding Padding}"
+                                    Opacity=".5">
                                 <Grid>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
@@ -1166,7 +1169,8 @@
                             <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
-                                    Padding="{TemplateBinding Padding}">
+                                    Padding="{TemplateBinding Padding}"
+                                    Opacity=".5">
                                 <Grid>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
@@ -1690,10 +1694,10 @@
                     <Condition Property="Dock" Value="Left"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -1705,7 +1709,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
+                                    Background="{StaticResource UI.Brushes.Transparent}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1783,10 +1787,10 @@
                     <Condition Property="Dock" Value="Right"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -1798,7 +1802,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
+                                    Background="{StaticResource UI.Brushes.Transparent}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1877,10 +1881,10 @@
                     <Condition Property="Dock" Value="Top"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -1892,7 +1896,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
+                                    Background="{StaticResource UI.Brushes.Transparent}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1971,10 +1975,10 @@
                     <Condition Property="Dock" Value="Bottom"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -1986,7 +1990,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
+                                    Background="{StaticResource UI.Brushes.Transparent}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>

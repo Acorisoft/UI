@@ -110,7 +110,8 @@
                             <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
-                                    Padding="{TemplateBinding Padding}">
+                                    Padding="{TemplateBinding Padding}"
+                                    Opacity=".5">
                                 <Path x:Name="PART_Icon"
                                       Data="{TemplateBinding Icon}"
                                       Stretch="Uniform"
