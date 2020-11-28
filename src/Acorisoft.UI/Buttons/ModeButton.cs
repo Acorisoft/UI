@@ -1,11 +1,35 @@
-﻿using System.Windows;
-using System.Windows.Controls.Primitives;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace Acorisoft.UI.Buttons
 {
-    public abstract class MoriButtonBase : ButtonBase
+    public class ModeButton : Button
     {
+        private static readonly object DefualtCornerRadius = new CornerRadius(8);
+
+        static ModeButton()
+        {
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ModeButton) , new FrameworkPropertyMetadata(typeof(ModeButton)));
+        }
+
+
+        public CornerRadius CornerRadius
+        {
+            get => (CornerRadius)GetValue(CornerRadiusProperty);
+            set => SetValue(CornerRadiusProperty , value);
+        }
 
         public Brush HoverBackgroundBrush
         {
@@ -31,29 +55,47 @@ namespace Acorisoft.UI.Buttons
             set => SetValue(PressForegroundBrushProperty , value);
         }
 
+        public ButtonMode Mode
+        {
+            get => (ButtonMode)GetValue(ModeProperty);
+            set => SetValue(ModeProperty , value);
+        }
+
+        public static readonly DependencyProperty ModeProperty = DependencyProperty.Register(
+            "Mode",
+            typeof(ButtonMode),
+            typeof(ModeButton), 
+            new PropertyMetadata(null));
+
+
         public static readonly DependencyProperty PressForegroundBrushProperty = DependencyProperty.Register(
             "PressForegroundBrush",
             typeof(Brush),
-            typeof(MoriButtonBase), 
+            typeof(ModeButton),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty PressBackgroundBrushProperty = DependencyProperty.Register(
             "PressBackgroundBrush",
             typeof(Brush),
-            typeof(MoriButtonBase), 
+            typeof(ModeButton),
             new PropertyMetadata(null));
+
+        public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register(
+            "CornerRadius",
+            typeof(CornerRadius),
+            typeof(ModeButton),
+            new PropertyMetadata(DefualtCornerRadius));
 
         public static readonly DependencyProperty HoverForegroundBrushProperty = DependencyProperty.Register(
             "HoverForegroundBrush",
             typeof(Brush),
-            typeof(MoriButtonBase), 
+            typeof(ModeButton), 
             new PropertyMetadata(null));
-
 
         public static readonly DependencyProperty HoverBackgroundBrushProperty = DependencyProperty.Register(
             "HoverBackgroundBrush",
             typeof(Brush),
-            typeof(MoriButtonBase), 
+            typeof(ModeButton), 
             new PropertyMetadata(null));
 
     }

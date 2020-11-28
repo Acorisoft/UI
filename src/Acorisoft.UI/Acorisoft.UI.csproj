@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net5.0-Windows</TargetFramework>
@@ -12,8 +12,12 @@
 		<RepositoryUrl>https://github.com/Acorisoft/UI</RepositoryUrl>
 		<RepositoryType>GITHUB</RepositoryType>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<RootNamespace>Acorisoft.UI</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="icon_64x64.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Panels\" />
 	</ItemGroup>
 </Project>

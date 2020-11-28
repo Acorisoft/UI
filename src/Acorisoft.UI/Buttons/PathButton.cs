@@ -16,12 +16,74 @@ using System.Windows.Shapes;
 namespace Acorisoft.UI.Buttons
 {
 
-    public class PathButton : MoriButtonBase
+    public class PathButton : ModeButton
     {
         static PathButton()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(PathButton) ,
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(PathButton) , 
                 new FrameworkPropertyMetadata(typeof(PathButton)));
         }
+
+
+        public Geometry Icon
+        {
+            get => (Geometry)GetValue(IconProperty);
+            set => SetValue(IconProperty , value);
+        }
+
+        public double IconWidth
+        {
+            get => (double)GetValue(IconWidthProperty);
+            set => SetValue(IconWidthProperty , value);
+        }
+
+        public double IconHeight
+        {
+            get => (double)GetValue(IconHeightProperty);
+            set => SetValue(IconHeightProperty , value);
+        }
+
+        public Thickness IconPadding
+        {
+            get => (Thickness)GetValue(IconPaddingProperty);
+            set => SetValue(IconPaddingProperty , value);
+        }
+
+        public double IconThickness
+        {
+            get => (double)GetValue(IconThicknessProperty);
+            set => SetValue(IconThicknessProperty , value);
+        }
+
+        public static readonly DependencyProperty IconThicknessProperty = DependencyProperty.Register(
+            "IconThickness",
+            typeof(double),
+            typeof(PathButton), 
+            new PropertyMetadata(1d));
+
+        public static readonly DependencyProperty IconPaddingProperty = DependencyProperty.Register(
+            "IconPadding",
+            typeof(Thickness),
+            typeof(PathButton), 
+            new PropertyMetadata(null));
+
+        public static readonly DependencyProperty IconHeightProperty = DependencyProperty.Register(
+            "IconHeight",
+            typeof(double),
+            typeof(PathButton), 
+            new PropertyMetadata(null));
+
+        public static readonly DependencyProperty IconWidthProperty = DependencyProperty.Register(
+            "IconWidth",
+            typeof(double),
+            typeof(PathButton), 
+            new PropertyMetadata(null));
+
+        public static readonly DependencyProperty IconProperty = DependencyProperty.Register(
+            "Icon",
+            typeof(Geometry),
+            typeof(PathButton), 
+            new PropertyMetadata(null));
+
     }
 }
