@@ -5,17 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Acorisoft.UI.Host"
         xmlns:ui="https://github.com/acorisoft/ui"
+        xmlns:v="clr-namespace:Acorisoft.UI.Host.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Acorisoft UI Demo"
+        MinWidth="1366"
+        MinHeight="768">
+    <Window.Resources>
+        <Style TargetType="{x:Type HeaderedContentControl}">
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock FontSize="24">
+                            <TextBlock.Text>
+                                <Binding Path="Header">
+                                    <Binding.RelativeSource>
+                                        <RelativeSource Mode="FindAncestor"
+                                                        AncestorType="{x:Type HeaderedContentControl}"/>
+                                    </Binding.RelativeSource>
+                                </Binding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="{StaticResource UI.Brushes.White}" />
+            <Setter Property="Margin" Value="16" />
+        </Style>
+    </Window.Resources>
     <Grid>
-        <ui:ToolbarPanel Title="这是标题" Subtitle="这是副标题"
-                         Background="Transparent"
-                         Foreground="{StaticResource UI.Brushes.Black}">
-            <ui:ToolbarPanel.Toolbar>
-                <StackPanel Orientation="Horizontal">
-                    <ui:MoriButton Icon="{StaticResource Edit}"/>
-                </StackPanel>
-            </ui:ToolbarPanel.Toolbar>
-        </ui:ToolbarPanel>
+        <v:ButtonDemoCtl/>
     </Grid>
 </Window>
