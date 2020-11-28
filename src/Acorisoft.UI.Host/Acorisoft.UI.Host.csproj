@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-Windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Acorisoft Team.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
