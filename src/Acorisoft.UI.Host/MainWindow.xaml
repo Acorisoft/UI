@@ -32,8 +32,34 @@
             <Setter Property="Background" Value="{StaticResource UI.Brushes.White}" />
             <Setter Property="Margin" Value="16" />
         </Style>
+        <Style TargetType="{x:Type ListBoxItem}">
+            <Setter Property="FontSize" Value="16" />
+        </Style>
     </Window.Resources>
     <Grid>
-        <v:ButtonDemoCtl/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="256"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox x:Name="DemoList"
+                 Margin="16"
+                 SelectedIndex="0"
+                 BorderThickness="0">
+            <ListBoxItem Content="Button Demo">
+                <ListBoxItem.Tag>
+                    <v:ButtonDemoCtl/>
+                </ListBoxItem.Tag>
+            </ListBoxItem>
+            <ListBoxItem Content="Panel Demo">
+                <ListBoxItem.Tag>
+                    <v:PanelDemoCtl/>
+                </ListBoxItem.Tag>
+            </ListBoxItem>
+        </ListBox>
+
+        <ContentControl Grid.Column="1" 
+                        DataContext="{Binding ElementName=DemoList,Path=SelectedItem,Mode=OneWay}"
+                        Content="{Binding Tag,Mode=OneWay}"/>
     </Grid>
 </Window>
