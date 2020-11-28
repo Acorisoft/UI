@@ -29,6 +29,8 @@
         <Setter Property="IconWidth" Value="24" />
         <Setter Property="IconHeight" Value="24" />
         <Setter Property="IconThickness" Value="2" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Margin" Value="4" />
         <Style.Triggers>
             <!-- Solid -->
@@ -71,8 +73,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
                                     
                                     <ContentPresenter x:Name="PART_Content"
@@ -165,8 +165,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -259,8 +257,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -353,8 +349,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -453,8 +447,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -557,8 +549,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -661,8 +651,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -765,8 +753,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -868,8 +854,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -961,8 +945,8 @@
                                     Opacity=".5">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto"/>
-                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="auto" />
                                     </Grid.ColumnDefinitions>
 
                                     <Path x:Name="PART_Icon"
@@ -974,8 +958,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1080,8 +1062,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1186,8 +1166,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1293,8 +1271,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1388,8 +1364,8 @@
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto"/>
-                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="auto" />
                                     </Grid.ColumnDefinitions>
 
                                     <Path x:Name="PART_Icon"
@@ -1401,8 +1377,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1509,8 +1483,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1617,8 +1589,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1727,8 +1697,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1807,8 +1775,8 @@
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto"/>
-                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="auto" />
                                     </Grid.ColumnDefinitions>
 
                                     <Path x:Name="PART_Icon"
@@ -1820,8 +1788,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1914,8 +1880,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -1930,7 +1894,6 @@
                                                       ContentTemplate="{TemplateBinding ContentTemplate}"
                                                       ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
                                                       ContentStringFormat="{TemplateBinding ContentStringFormat}"
-                                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                                       SnapsToDevicePixels="True"/>
                                 </Grid>
@@ -2008,8 +1971,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -2070,23 +2031,22 @@
                     <Condition Property="Mode" Value="Link"/>
                     <Condition Property="Dock" Value="Left"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
-                <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
-                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+                <Setter Property="Background" Value="{x:Null}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="HoverBackgroundBrush" Value="{x:Null}" />
+                <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.MaterialDesign.Amber}" />
+                <Setter Property="PressBackgroundBrush" Value="{x:Null}" />
+                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
+                                    Background="{StaticResource UI.Brushes.Transparent}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2104,8 +2064,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -2128,20 +2086,14 @@
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Cursor" Value="Hand" />
-                                    <Setter Property="Background" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" 
-                                            TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                     <Setter Property="TextElement.Foreground" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
                                             TargetName="PART_Content"/>
+                                    <Setter Property="Fill" 
+                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
+                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Background" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" 
-                                            TargetName="PART_Bd"/>
                                     <Setter Property="TextElement.Foreground" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
                                             TargetName="PART_Content"/>
@@ -2164,29 +2116,28 @@
                     <Condition Property="Mode" Value="Link"/>
                     <Condition Property="Dock" Value="Right"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
-                <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
-                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+                <Setter Property="Background" Value="{x:Null}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="HoverBackgroundBrush" Value="{x:Null}" />
+                <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.MaterialDesign.Amber}" />
+                <Setter Property="PressBackgroundBrush" Value="{x:Null}" />
+                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
+                                    Background="{StaticResource UI.Brushes.Transparent}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto"/>
-                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="auto" />
                                     </Grid.ColumnDefinitions>
 
                                     <Path x:Name="PART_Icon"
@@ -2198,8 +2149,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -2222,26 +2171,20 @@
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Cursor" Value="Hand" />
-                                    <Setter Property="Background" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" 
-                                            TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                     <Setter Property="TextElement.Foreground" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
                                             TargetName="PART_Content"/>
+                                    <Setter Property="Fill" 
+                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
+                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Background" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" 
-                                            TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                     <Setter Property="TextElement.Foreground" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
                                             TargetName="PART_Content"/>
+                                    <Setter Property="Fill" 
+                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
+                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsEnabled" Value="False">
                                     <Setter Property="Opacity" 
@@ -2258,23 +2201,22 @@
                     <Condition Property="Mode" Value="Link"/>
                     <Condition Property="Dock" Value="Top"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
-                <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
-                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+                <Setter Property="Background" Value="{x:Null}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="HoverBackgroundBrush" Value="{x:Null}" />
+                <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.MaterialDesign.Amber}" />
+                <Setter Property="PressBackgroundBrush" Value="{x:Null}" />
+                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
+                                    Background="{StaticResource UI.Brushes.Transparent}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2292,8 +2234,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -2316,20 +2256,14 @@
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Cursor" Value="Hand" />
-                                    <Setter Property="Background" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" 
-                                            TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                     <Setter Property="TextElement.Foreground" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
                                             TargetName="PART_Content"/>
+                                    <Setter Property="Fill" 
+                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
+                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Background" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" 
-                                            TargetName="PART_Bd"/>
                                     <Setter Property="TextElement.Foreground" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
                                             TargetName="PART_Content"/>
@@ -2352,23 +2286,22 @@
                     <Condition Property="Mode" Value="Link"/>
                     <Condition Property="Dock" Value="Bottom"/>
                 </MultiTrigger.Conditions>
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
-                <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
-                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+                <Setter Property="Background" Value="{x:Null}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="HoverBackgroundBrush" Value="{x:Null}" />
+                <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.MaterialDesign.Amber}" />
+                <Setter Property="PressBackgroundBrush" Value="{x:Null}" />
+                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
+                                    Background="{StaticResource UI.Brushes.Transparent}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2386,8 +2319,6 @@
                                           Width="{TemplateBinding IconWidth}"
                                           Height="{TemplateBinding IconHeight}"
                                           Margin="{TemplateBinding IconPadding}"
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                           SnapsToDevicePixels="True"/>
 
                                     <ContentPresenter x:Name="PART_Content"
@@ -2410,9 +2341,6 @@
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Cursor" Value="Hand" />
-                                    <Setter Property="Background" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" 
-                                            TargetName="PART_Bd"/>
                                     <Setter Property="TextElement.Foreground" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
                                             TargetName="PART_Content"/>
@@ -2421,9 +2349,6 @@
                                             TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Background" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" 
-                                            TargetName="PART_Bd"/>
                                     <Setter Property="TextElement.Foreground" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
                                             TargetName="PART_Content"/>
