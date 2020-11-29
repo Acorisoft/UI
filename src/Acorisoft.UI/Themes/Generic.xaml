@@ -8,9 +8,10 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/IconButton.xaml"/>
 
         <!-- 面板 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/AlertPanel.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/ToolbarPanel.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/CalloutPanel.xaml"/>
-        
+
         <!-- 颜色 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/CustomColors.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/BootstrapColors.xaml"/>
@@ -20,5 +21,4 @@
         <!-- 图标 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Icon.xaml"/>
     </ResourceDictionary.MergedDictionaries>
-
 </ResourceDictionary>

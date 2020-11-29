@@ -40,9 +40,18 @@
 * <del>IconButton</del> 用于提供文本图标按钮样式支持
 * FloatingButton 用于提供圆形浮空按钮样式支持
 
+#### 为什么要加入按钮
+
+因为我们不希望用户困扰，在许多时候混用不同风格的按钮会产生冲突，或者在使用第三方控件的时候发现给定的按钮样式还不能满足您的需求，因此我们抽象了三组按钮每个按钮都提供了六种相同的模式供您选择以备不同场景的使用。这三组按钮不会变更。
+
 ### 工具面板（ToolbarPanel）
 
 ![工具面板（ToolbarPanel）](Documentations/ToolbarPanel.png)
-### 场景面板（ContextualPanel）
 
-![ContextualPanel](Documentations/ContextualPanel.png)
+### 呼吁面板(CalloutPanel)
+
+![呼吁面板](Documentations/CalloutPanel.png)
+
+### 警告面板(AlertPanel)
+
+![警告面板](Documentations/AlertPanel.png)

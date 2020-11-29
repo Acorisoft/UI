@@ -76,6 +76,17 @@
                                     Content="This content is set in CalloutPanel.Content property"/>
                 </StackPanel>
             </HeaderedContentControl>
+            
+            <!-- 警告面板 -->
+            <HeaderedContentControl Header="AlertPanel"
+                                    Width="400">
+                <StackPanel Margin="0 16">
+                    <u:AlertPanel Content="Warning content alert Panel" Alert="Warning"/>
+                    <u:AlertPanel Content="Danger content alert Panel" Alert="Danger"/>
+                    <u:AlertPanel Content="Success content alert Panel" Alert="Success"/>
+                    <u:AlertPanel Content="Info content alert Panel" Alert="Info"/>
+                </StackPanel>
+            </HeaderedContentControl>
         </StackPanel>
     </ScrollViewer>
 </UserControl>
