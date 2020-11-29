@@ -4,9 +4,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/MaterialDesignColors.xaml"/>
-
-        <!-- 图标 -->
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Icon.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="Style.FocusVisual.PathButton">
