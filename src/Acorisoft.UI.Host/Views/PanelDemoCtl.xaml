@@ -61,6 +61,21 @@
                     </u:ToolbarPanel>
                 </StackPanel>
             </HeaderedContentControl>
+            
+            <!-- 呼吁面板 -->
+            <HeaderedContentControl Header="CalloutPanel"
+                                    Width="400">
+                <StackPanel Margin="0 16">
+                    <u:CalloutPanel Callout="Callout Content"
+                                    Content="This content is set in CalloutPanel.Content property"/>
+                    <u:CalloutPanel Callout="Callout Content"
+                                    CalloutColor="{StaticResource UI.Brushes.Callout.Color2}"
+                                    Content="This content is set in CalloutPanel.Content property"/>
+                    <u:CalloutPanel Callout="Callout Content"
+                                    CalloutColor="{StaticResource UI.Brushes.Callout.Color3}"
+                                    Content="This content is set in CalloutPanel.Content property"/>
+                </StackPanel>
+            </HeaderedContentControl>
         </StackPanel>
     </ScrollViewer>
 </UserControl>
