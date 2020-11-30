@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net5.0-Windows</TargetFramework>
+		<TargetFrameworks>net5.0-Windows;netcoreapp3.1</TargetFrameworks>
 		<UseWPF>true</UseWPF>
 		<PackageIcon>icon_64x64.png</PackageIcon>
 		<PackageId>Acorisoft.UI</PackageId>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageVersion>1.1.4</PackageVersion>
+		<PackageVersion>1.1.5</PackageVersion>
 		<Description>An custom ui library for acorisoft</Description>
 		<PackageProjectUrl>https://github.com/Acorisoft/UI</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Acorisoft/UI</RepositoryUrl>
@@ -14,6 +14,7 @@
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 		<RootNamespace>Acorisoft.UI</RootNamespace>
 	</PropertyGroup>
+
 	<ItemGroup>
 		<None Include="icon_64x64.png" Pack="true" PackagePath="" />
 	</ItemGroup>

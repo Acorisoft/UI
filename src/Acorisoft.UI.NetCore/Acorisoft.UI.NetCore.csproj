@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net45</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Acorisoft.UI</AssemblyName>
+    <RootNamespace>Acorisoft.UI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\Acorisoft.UI.Share\Themes\Panels\EmptyStatePanel.txt">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EmptyStatePanel.xaml</DependentUpon>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <Import Project="..\Acorisoft.UI.Share\Acorisoft.UI.Share.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <None Update="C:\Users\zhongxin004\Documents\UI\src\Acorisoft.UI.Share\Themes\Panels\EmptyStatePanel.tt">
+      <LastGenOutput>EmptyStatePanel.txt</LastGenOutput>
+    </None>
+    <None Update="C:\Users\zhongxin004\Documents\UI\src\Acorisoft.UI.Share\Themes\Panels\EmptyStatePanel.xaml">
+      <LastGenOutput>EmptyStatePanel.txt</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

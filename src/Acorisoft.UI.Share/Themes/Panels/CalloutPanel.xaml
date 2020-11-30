@@ -1,0 +1,88 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:p="clr-namespace:Acorisoft.UI.Panels">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/CustomColors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Typography.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <Style TargetType="{x:Type p:CalloutPanel}">
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="BorderBrush" Value="#eeeeee" />
+        <Setter Property="CalloutColor" Value="{StaticResource UI.Brushes.Callout.Color1}" />
+        <Setter Property="Margin" Value="4" />
+        <Setter Property="ContentTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Mode=OneWay}"
+                               TextWrapping="Wrap"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Left"/>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type p:CalloutPanel}">
+                    <Border BorderThickness="0 1 1 1"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Background="{TemplateBinding Background}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="6"/>
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="1*" />
+                            </Grid.RowDefinitions>
+
+                            <Rectangle RadiusX="2"
+                                       RadiusY="2"
+                                       Grid.Column="0"
+                                       Grid.Row="0"
+                                       Grid.RowSpan="2"
+                                       Fill="{TemplateBinding CalloutColor}"/>
+
+                            <ContentPresenter Grid.Column="1"
+                                              Grid.Row="0"
+                                              TextElement.Foreground="{TemplateBinding CalloutColor}"
+                                              TextElement.FontSize="{StaticResource UI.Typography.FontSize.Headline4}"
+                                              TextElement.FontFamily="{TemplateBinding FontFamily}"
+                                              TextElement.FontStretch="{TemplateBinding FontStretch}"
+                                              TextElement.FontStyle="{TemplateBinding FontStyle}"
+                                              TextElement.FontWeight="{TemplateBinding FontWeight}"
+                                              Content="{TemplateBinding Callout}"
+                                              ContentTemplate="{TemplateBinding CalloutTemplate}"
+                                              ContentTemplateSelector="{TemplateBinding CalloutTemplateSelector}"
+                                              ContentStringFormat="{TemplateBinding CalloutStringFormat}"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Left"
+                                              SnapsToDevicePixels="True"
+                                              Margin="24 24 24 8"/>
+
+                            <ContentPresenter Grid.Column="1"
+                                              Grid.Row="1"
+                                              TextElement.Foreground="{TemplateBinding Foreground}"
+                                              TextElement.FontSize="{StaticResource UI.Typography.FontSize.Headline5}"
+                                              TextElement.FontFamily="{TemplateBinding FontFamily}"
+                                              TextElement.FontStretch="{TemplateBinding FontStretch}"
+                                              TextElement.FontStyle="{TemplateBinding FontStyle}"
+                                              TextElement.FontWeight="{TemplateBinding FontWeight}"
+                                              Content="{TemplateBinding Content}"
+                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
+                                              ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Left"
+                                              SnapsToDevicePixels="True"
+                                              Margin="24 0 24 24"/>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
