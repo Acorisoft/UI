@@ -13,6 +13,8 @@ namespace Acorisoft.UI.Buttons
         CTA,
         Opacity,
         Transparent,
-        Link
+        Link,
+        FadeIn,
+        FadeOut
     }
 }

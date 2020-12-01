@@ -10,7 +10,8 @@
 
     <ScrollViewer HorizontalScrollBarVisibility="Auto"
                   VerticalScrollBarVisibility="Auto">
-        <StackPanel Orientation="Horizontal">
+        <WrapPanel Orientation="Horizontal"
+                   Width="1400">
 
             <!-- 单纯的文字按钮 -->
             <HeaderedContentControl Header="ToolBarPanel">
@@ -87,6 +88,28 @@
                     <u:AlertPanel Content="Info content alert Panel" Alert="Info"/>
                 </StackPanel>
             </HeaderedContentControl>
-        </StackPanel>
+            
+            <!-- EmptyState Panel -->
+            <HeaderedContentControl Header="EmptyStatePanel"
+                                    Width="400">
+                <StackPanel Margin="0 16">
+                    <ToggleButton x:Name="StateSwitch"
+                                  Content="StateSwitch"
+                                  IsTabStop="False"
+                                  IsThreeState="False"
+                                  Margin="16"/>
+                    
+                    <u:EmptyStateControl IsEmpty="{Binding ElementName=StateSwitch,Mode=OneWay,Path=IsChecked}"
+                                         Height="100">
+                        <TextBlock Text="This is Normal Content"
+                                   FontSize="26"/>
+                        <u:EmptyStateControl.Alternative>
+                            <TextBlock Text="This is Alternative Content"
+                                       FontSize="26"/>
+                        </u:EmptyStateControl.Alternative>
+                    </u:EmptyStateControl>
+                </StackPanel>
+            </HeaderedContentControl>
+        </WrapPanel>
     </ScrollViewer>
 </UserControl>

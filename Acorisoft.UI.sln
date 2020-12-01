@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30516.212
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acorisoft.UI", "src\Acorisoft.UI\Acorisoft.UI.csproj", "{0DB8C6E5-BF69-4CF7-B84A-D5E602D7C5A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acorisoft.UI.Host", "src\Acorisoft.UI.Host\Acorisoft.UI.Host.csproj", "{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acorisoft.UI.Host", "src\Acorisoft.UI.Host\Acorisoft.UI.Host.csproj", "{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,161 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:b="clr-namespace:Acorisoft.UI.Buttons">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <Style TargetType="{x:Type b:WindowCloseButton}">
+        <Setter Property="MinHeight" Value="32" />
+        <Setter Property="MinWidth" Value="32" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="HoverBackgroundBrush" Value="#e81123" />
+        <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="PressBackgroundBrush" Value="#e81123" />
+        <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type b:WindowCloseButton}">
+                    <Border x:Name="PART_Border" Background="{TemplateBinding Background}">
+                        <Path x:Name="PART_Icon" 
+                              Data="M0.7,0 L5,4.3 L9.3,0 L10,0.7 L5.7,5 L10,9.3 L9.3,10 L5,5.7 L0.7,10 L0,9.3 L4.3,5 L0,0.7 z"
+                              Width="11"
+                              Height="11"
+                              SnapsToDevicePixels="True"
+                              Stretch="Uniform"
+                              Fill="{TemplateBinding Foreground}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" TargetName="PART_Border"/>
+                            <Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" TargetName="PART_Icon"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" TargetName="PART_Border"/>
+                            <Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" TargetName="PART_Icon"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type b:WindowMinButton}">
+        <Setter Property="MinHeight" Value="32" />
+        <Setter Property="MinWidth" Value="32" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="HoverBackgroundBrush" Value="#30FFFFFF" />
+        <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="PressBackgroundBrush" Value="#20FFFFFF" />
+        <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type b:WindowMinButton}">
+                    <Border x:Name="PART_Border" Background="{TemplateBinding Background}">
+                        <Path x:Name="PART_Icon" 
+                              Data="M0,4 L10,4 L10,5 L0,5 z"
+                              Width="11"
+                              Height="11"
+                              SnapsToDevicePixels="True"
+                              Stretch="Uniform"
+                              Fill="{TemplateBinding Foreground}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" TargetName="PART_Border"/>
+                            <Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" TargetName="PART_Icon"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" TargetName="PART_Border"/>
+                            <Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" TargetName="PART_Icon"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="{x:Type b:WindowMaxButton}">
+        <Setter Property="MinHeight" Value="32" />
+        <Setter Property="MinWidth" Value="32" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="HoverBackgroundBrush" Value="#30FFFFFF" />
+        <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="PressBackgroundBrush" Value="#20FFFFFF" />
+        <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type b:WindowMaxButton}">
+                    <Border x:Name="PART_Border" Background="{TemplateBinding Background}">
+                        <Path x:Name="PART_Icon" 
+                              Data="M1,1 L1,9 L9,9 L9,1 z M0,0 L10,0 L10,10 L0,10 z"
+                              Width="11"
+                              SnapsToDevicePixels="True"
+                              Stretch="Uniform"
+                              Height="11"
+                              Fill="{TemplateBinding Foreground}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="WindowState" Value="Maximized">
+                            <Setter Property="Data" Value="M1,3 L1,9 L7,9 L7,3 z M3,1 L3,2 L8,2 L8,7 L9,7 L9,1 z M2,0 L10,0 L10,8 L8,8 L8,10 L0,10 L0,2 L2,2 z" TargetName="PART_Icon"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" TargetName="PART_Border"/>
+                            <Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" TargetName="PART_Icon"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" TargetName="PART_Border"/>
+                            <Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" TargetName="PART_Icon"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type b:WindowGoBackButton}">
+        <Setter Property="MinHeight" Value="32" />
+        <Setter Property="MinWidth" Value="32" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="HoverBackgroundBrush" Value="#30FFFFFF" />
+        <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="PressBackgroundBrush" Value="#20FFFFFF" />
+        <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type b:WindowGoBackButton}">
+                    <Border x:Name="PART_Border" Background="{TemplateBinding Background}">
+                        <Path x:Name="PART_Icon" 
+                              Data="F1 M1024,1024z M0,0z M512,96C741.76,96 928,282.24 928,512 928,741.76 741.76,928 512,928 282.24,928 96,741.76 96,512 96,282.24 282.24,96 512,96z M512,160A352,352,0,1,0,512,864A352,352,0,0,0,512,160z M467.370667,340.864A17.066667,17.066667,0,0,1,491.52,340.864L512.64,361.984A17.066667,17.066667,0,0,1,512.64,386.090667L420.48,478.250667 706.645333,478.250667C716.032,478.250667,723.712,485.888,723.712,495.317333L723.712,525.184A17.066667,17.066667,0,0,1,706.645333,542.250667L418.432,542.250667 512.64,636.544A17.066667,17.066667,0,0,1,512.64,660.650667L491.52,681.770667A17.066667,17.066667,0,0,1,467.370667,681.770667L310.485333,524.885333A17.066667,17.066667,0,0,1,305.536,511.317333A17.066667,17.066667,0,0,1,310.485333,497.749333z"
+                              Width="32"
+                              Height="32"
+                              SnapsToDevicePixels="True"
+                              Stretch="Uniform"
+                              Fill="{TemplateBinding Foreground}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" TargetName="PART_Border"/>
+                            <Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" TargetName="PART_Icon"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" TargetName="PART_Border"/>
+                            <Setter Property="Fill" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" TargetName="PART_Icon"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value=".5" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

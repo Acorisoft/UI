@@ -8,7 +8,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <ScrollViewer HorizontalScrollBarVisibility="Auto"
                   VerticalScrollBarVisibility="Auto">
-        <StackPanel Orientation="Horizontal">
+        <WrapPanel Orientation="Horizontal"
+                   Width="1400">
             
             <!-- 单纯的文字按钮 -->
             <HeaderedContentControl Header="ModeButton">
@@ -19,6 +20,8 @@
                     <u:ModeButton Mode="CTA" Content="CTA"/>
                     <u:ModeButton Mode="Transparent" Content="Transparent"/>
                     <u:ModeButton Mode="Link" Content="Link"/>
+                    <u:ModeButton Mode="FadeOut" Content="FadeOut"/>
+                    <u:ModeButton Mode="FadeIn" Content="FadeIn"/>
                 </StackPanel>
             </HeaderedContentControl>
             
@@ -31,6 +34,8 @@
                     <u:PathButton Mode="CTA" Icon="{StaticResource Setting}"/>
                     <u:PathButton Mode="Transparent" Icon="{StaticResource Setting}"/>
                     <u:PathButton Mode="Link" Icon="{StaticResource Setting}"/>
+                    <u:PathButton Mode="FadeOut" Icon="{StaticResource Setting}"/>
+                    <u:PathButton Mode="FadeIn" Icon="{StaticResource Setting}"/>
                 </StackPanel>
             </HeaderedContentControl>
 
@@ -42,6 +47,8 @@
                     <u:IconButton Mode="CTA" Icon="{StaticResource Setting}" Content="CTA" Dock="Left"/>
                     <u:IconButton Mode="Transparent" Icon="{StaticResource Setting}" Content="Transparent" Dock="Left"/>
                     <u:IconButton Mode="Link" Icon="{StaticResource Setting}" Content="Link" Dock="Left"/>
+                    <u:IconButton Mode="FadeOut" Icon="{StaticResource Setting}" Content="FadeOut" Dock="Left"/>
+                    <u:IconButton Mode="FadeIn" Icon="{StaticResource Setting}" Content="FadeIn" Dock="Left"/>
                 </StackPanel>
             </HeaderedContentControl>
 
@@ -53,6 +60,8 @@
                     <u:IconButton Mode="CTA" Icon="{StaticResource Setting}" Content="CTA" Dock="Right"/>
                     <u:IconButton Mode="Transparent" Icon="{StaticResource Setting}" Content="Transparent" Dock="Right"/>
                     <u:IconButton Mode="Link" Icon="{StaticResource Setting}" Content="Link" Dock="Right"/>
+                    <u:IconButton Mode="FadeOut" Icon="{StaticResource Setting}" Content="FadeOut" Dock="Right"/>
+                    <u:IconButton Mode="FadeIn" Icon="{StaticResource Setting}" Content="FadeIn" Dock="Right"/>
                 </StackPanel>
             </HeaderedContentControl>
 
@@ -64,6 +73,8 @@
                     <u:IconButton Mode="CTA" Icon="{StaticResource Setting}" Content="CTA" Dock="Top"/>
                     <u:IconButton Mode="Transparent" Icon="{StaticResource Setting}" Content="Transparent" Dock="Top"/>
                     <u:IconButton Mode="Link" Icon="{StaticResource Setting}" Content="Link" Dock="Top"/>
+                    <u:IconButton Mode="FadeOut" Icon="{StaticResource Setting}" Content="FadeOut" Dock="Top"/>
+                    <u:IconButton Mode="FadeIn" Icon="{StaticResource Setting}" Content="FadeIn" Dock="Top"/>
                 </StackPanel>
             </HeaderedContentControl>
 
@@ -75,8 +86,55 @@
                     <u:IconButton Mode="CTA" Icon="{StaticResource Setting}" Content="CTA" Dock="Bottom"/>
                     <u:IconButton Mode="Transparent" Icon="{StaticResource Setting}" Content="Transparent" Dock="Bottom"/>
                     <u:IconButton Mode="Link" Icon="{StaticResource Setting}" Content="Link" Dock="Bottom"/>
+                    <u:IconButton Mode="FadeOut" Icon="{StaticResource Setting}" Content="FadeOut" Dock="Bottom"/>
+                    <u:IconButton Mode="FadeIn" Icon="{StaticResource Setting}" Content="FadeIn" Dock="Bottom"/>
                 </StackPanel>
             </HeaderedContentControl>
-        </StackPanel>
+
+            <HeaderedContentControl Header="DropDownButton">
+                <StackPanel>
+                    <u:DropDownButton Content="更多">
+                        <u:DropDownButton.PopupContent>
+                            <Grid Width="320">
+                                <StackPanel>
+                                    <u:ModeButton Mode="Solid" Content="Solid"/>
+                                    <u:ModeButton Mode="Opacity" Content="Opacity"/>
+                                    <u:ModeButton Mode="Outline" Content="Outline"/>
+                                    <u:ModeButton Mode="CTA" Content="CTA"/>
+                                    <u:ModeButton Mode="Transparent" Content="Transparent"/>
+                                    <u:ModeButton Mode="Link" Content="Link"/>
+                                    <u:ModeButton Mode="FadeOut" Content="FadeOut"/>
+                                    <u:ModeButton Mode="FadeIn" Content="FadeIn"/>
+                                </StackPanel>
+                            </Grid>
+                        </u:DropDownButton.PopupContent>
+                    </u:DropDownButton>
+                    <u:DropDownIconButton Icon="{StaticResource Edit}">
+                        <u:DropDownButton.PopupContent>
+                            <Grid Width="320">
+                                <StackPanel>
+                                    <u:ModeButton Mode="Solid" Content="Solid"/>
+                                    <u:ModeButton Mode="Opacity" Content="Opacity"/>
+                                    <u:ModeButton Mode="Outline" Content="Outline"/>
+                                    <u:ModeButton Mode="CTA" Content="CTA"/>
+                                    <u:ModeButton Mode="Transparent" Content="Transparent"/>
+                                    <u:ModeButton Mode="Link" Content="Link"/>
+                                    <u:ModeButton Mode="FadeOut" Content="FadeOut"/>
+                                    <u:ModeButton Mode="FadeIn" Content="FadeIn"/>
+                                </StackPanel>
+                            </Grid>
+                        </u:DropDownButton.PopupContent>
+                    </u:DropDownIconButton>
+                </StackPanel>
+            </HeaderedContentControl>
+            <HeaderedContentControl Header="ToggleStateButton">
+                <StackPanel>
+                    <u:ToggleStateButton TrueState="{StaticResource Insert}" FalseState="{StaticResource Edit}"
+                                         Margin="16">
+                       
+                    </u:ToggleStateButton>
+                </StackPanel>
+            </HeaderedContentControl>
+        </WrapPanel>
     </ScrollViewer>
 </UserControl>
