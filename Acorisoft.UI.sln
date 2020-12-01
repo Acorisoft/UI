@@ -7,15 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acorisoft.UI", "src\Acoriso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acorisoft.UI.Host", "src\Acorisoft.UI.Host\Acorisoft.UI.Host.csproj", "{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Acorisoft.UI.Share", "src\Acorisoft.UI.Share\Acorisoft.UI.Share.shproj", "{917A84F9-4CE0-4BBF-8BEB-7895049B43D1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acorisoft.UI.NetCore", "src\Acorisoft.UI.NetCore\Acorisoft.UI.NetCore.csproj", "{A01D48E1-A03E-4E06-B5A1-46140B1F4F11}"
-EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src\Acorisoft.UI.Share\Acorisoft.UI.Share.projitems*{917a84f9-4ce0-4bbf-8beb-7895049b43d1}*SharedItemsImports = 13
-		src\Acorisoft.UI.Share\Acorisoft.UI.Share.projitems*{a01d48e1-a03e-4e06-b5a1-46140b1f4f11}*SharedItemsImports = 5
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -29,10 +21,6 @@ Global
 		{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF9AEBBA-F7B1-443C-BA1C-0F99452FE3EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A01D48E1-A03E-4E06-B5A1-46140B1F4F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A01D48E1-A03E-4E06-B5A1-46140B1F4F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A01D48E1-A03E-4E06-B5A1-46140B1F4F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A01D48E1-A03E-4E06-B5A1-46140B1F4F11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
