@@ -1,16 +1,19 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:w="clr-namespace:Acorisoft.UI.Windows">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <!--- 按钮 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/ModeButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/PathButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/IconButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/WindowsButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/ToggleStateButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/DropDownButton.xaml"/>
 
         <!-- 面板 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/AlertPanel.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/ToolbarPanel.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/CalloutPanel.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/EmptyStatePanel.xaml"/>
 
         <!-- 颜色 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/CustomColors.xaml"/>
