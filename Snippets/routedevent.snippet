@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>routedevent</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>routedevent</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Name</ID>
+          <ToolTip>Name</ToolTip>
+          <Default>Name</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Type</ID>
+          <ToolTip>Type</ToolTip>
+          <Default>Type</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>class</ID>
+          <ToolTip>class</ToolTip>
+          <Default>class</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[  public static readonly RoutedEvent $Name$Event =
+            EventManager.RegisterRoutedEvent("$Name$", RoutingStrategy.Bubble,typeof($Type$),typeof($class$));
+
+        public event RoutedEventHandler $Name$
+        {
+            add => AddHandler($Name$Event, value);
+            remove => RemoveHandler($Name$Event, value);
+        }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

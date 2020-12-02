@@ -1,15 +1,15 @@
-﻿<Window x:Class="Acorisoft.UI.Host.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Acorisoft.UI.Host"
-        xmlns:ui="https://github.com/acorisoft/ui"
-        xmlns:v="clr-namespace:Acorisoft.UI.Host.Views"
-        mc:Ignorable="d"
-        Title="Acorisoft UI Demo"
-        MinWidth="1366"
-        MinHeight="768">
+﻿<ui:ColorWindow x:Class="Acorisoft.UI.Host.MainWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:local="clr-namespace:Acorisoft.UI.Host"
+                xmlns:ui="https://github.com/Acorisoft/UI"
+                xmlns:v="clr-namespace:Acorisoft.UI.Host.Views"
+                mc:Ignorable="d"
+                Title="Acorisoft UI Demo"
+                MinWidth="1366"
+                MinHeight="768">
     <Window.Resources>
         <Style TargetType="{x:Type HeaderedContentControl}">
             <Setter Property="Focusable" Value="False" />
@@ -57,9 +57,10 @@
                 </ListBoxItem.Tag>
             </ListBoxItem>
         </ListBox>
-
+        
+        
         <ContentControl Grid.Column="1" 
                         DataContext="{Binding ElementName=DemoList,Path=SelectedItem,Mode=OneWay}"
                         Content="{Binding Tag,Mode=OneWay}"/>
     </Grid>
-</Window>
+</ui:ColorWindow>
