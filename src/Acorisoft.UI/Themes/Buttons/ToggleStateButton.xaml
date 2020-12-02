@@ -5,7 +5,7 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <Style TargetType="{x:Type b:ToggleStateButton}">
+    <Style x:Key="UI.Styles.ToggleStateButton" TargetType="{x:Type b:ToggleStateButton}">
         <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="IsThreeState" Value="False" />
@@ -71,4 +71,5 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style TargetType="{x:Type b:ToggleStateButton}" BasedOn="{StaticResource UI.Styles.ToggleStateButton}"/>
 </ResourceDictionary>

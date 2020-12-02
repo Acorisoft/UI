@@ -93,7 +93,7 @@
 
             <HeaderedContentControl Header="DropDownButton">
                 <StackPanel>
-                    <u:DropDownButton Content="更多">
+                    <u:DropDownButton Content="更多" Margin="8">
                         <u:DropDownButton.PopupContent>
                             <Grid Width="320">
                                 <StackPanel>
@@ -109,7 +109,7 @@
                             </Grid>
                         </u:DropDownButton.PopupContent>
                     </u:DropDownButton>
-                    <u:DropDownIconButton Icon="{StaticResource Edit}">
+                    <u:DropDownIconButton Icon="{StaticResource Edit}" Margin="8">
                         <u:DropDownButton.PopupContent>
                             <Grid Width="320">
                                 <StackPanel>
@@ -130,9 +130,9 @@
             <HeaderedContentControl Header="ToggleStateButton">
                 <StackPanel>
                     <u:ToggleStateButton TrueState="{StaticResource Insert}" FalseState="{StaticResource Edit}"
-                                         Margin="16">
-                       
-                    </u:ToggleStateButton>
+                                         Margin="8"/>
+                    <u:LockButton Margin="8"/>
+                    <u:VisibleButton Margin="8"/>
                 </StackPanel>
             </HeaderedContentControl>
         </WrapPanel>

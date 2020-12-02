@@ -2035,7 +2035,7 @@
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.MaterialDesign.Amber}" />
                 <Setter Property="PressBackgroundBrush" Value="{x:Null}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
-                <Setter Property="HorizontalContentAlignment" Value="Left" />
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />

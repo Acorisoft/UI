@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:b="clr-namespace:Acorisoft.UI.Buttons">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Icon.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/ToggleStateButton.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="{x:Type b:LockButton}" BasedOn="{StaticResource UI.Styles.ToggleStateButton}">
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
+        <Setter Property="IsThreeState" Value="False" />
+        <Setter Property="IconWidth" Value="23" />
+        <Setter Property="IconHeight" Value="23" />
+        <Setter Property="Padding" Value="16" />
+        <Setter Property="TrueState" Value="{StaticResource Locked}" />
+        <Setter Property="FalseState" Value="{StaticResource Unlock}" />
+    </Style>
+
+
+
+    <Style TargetType="{x:Type b:VisibleButton}" BasedOn="{StaticResource UI.Styles.ToggleStateButton}">
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
+        <Setter Property="IsThreeState" Value="False" />
+        <Setter Property="IconWidth" Value="23" />
+        <Setter Property="IconHeight" Value="23" />
+        <Setter Property="Padding" Value="16" />
+        <Setter Property="TrueState" Value="{StaticResource Visible}" />
+        <Setter Property="FalseState" Value="{StaticResource Invisible}" />
+    </Style>
+</ResourceDictionary>
