@@ -45,7 +45,8 @@
         <ListBox x:Name="DemoList"
                  Margin="16"
                  SelectedIndex="0"
-                 BorderThickness="0">
+                 BorderThickness="0"
+                 Background="{StaticResource UI.Brushes.Transparent}">
             <ListBoxItem Content="Button Demo">
                 <ListBoxItem.Tag>
                     <v:ButtonDemoCtl/>
