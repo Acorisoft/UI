@@ -67,7 +67,7 @@
                             <ContentControl x:Name="PART_Toolbar"
                                             Grid.Row="0"
                                             Grid.Column="1"
-                                            Margin="32 0"
+                                            Margin="32 0 0 0"
                                             IsTabStop="False"
                                             Content="{TemplateBinding Toolbar}"
                                             ContentTemplate="{TemplateBinding ToolbarTemplate}"
