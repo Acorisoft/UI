@@ -519,8 +519,8 @@
                 </Setter>
             </Trigger>
             <Trigger Property="Mode" Value="FadeIn">
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
+                <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
@@ -535,11 +535,11 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:ModeButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <ContentPresenter x:Name="PART_Content"
-                                                  TextElement.Foreground="{TemplateBinding Background}"
+                                                  TextElement.Foreground="{TemplateBinding Foreground}"
                                                   TextElement.FontFamily="{TemplateBinding FontFamily}"
                                                   TextElement.FontSize="{TemplateBinding FontSize}"
                                                   TextElement.FontStretch="{TemplateBinding FontStretch}"

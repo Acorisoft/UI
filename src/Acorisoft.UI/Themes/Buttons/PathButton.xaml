@@ -503,7 +503,7 @@
                 </Setter>
             </Trigger>
             <Trigger Property="Mode" Value="FadeIn">
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Background" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
