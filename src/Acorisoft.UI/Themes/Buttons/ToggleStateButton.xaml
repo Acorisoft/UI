@@ -45,7 +45,7 @@
                                                                    Storyboard.TargetName="PART_Icon">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                               Value="0.5"/>
-                                        <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                               Value="1"/>
 
                                     </DoubleAnimationUsingKeyFrames>
@@ -59,7 +59,7 @@
                                                                    Storyboard.TargetName="PART_Icon">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                               Value="1"/>
-                                        <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                               Value="0.5"/>
 
                                     </DoubleAnimationUsingKeyFrames>

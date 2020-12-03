@@ -27,14 +27,27 @@ namespace Acorisoft.UI.Controls
         }
 
 
-        public Brush PopupForeground
+        public Thickness ItemsPadding
         {
-            get => (Brush)GetValue(PopupForegroundProperty);
-            set => SetValue(PopupForegroundProperty , value);
+            get => (Thickness)GetValue(ItemsPaddingProperty);
+            set => SetValue(ItemsPaddingProperty , value);
         }
 
-        public static readonly DependencyProperty PopupForegroundProperty = DependencyProperty.Register(
-            "PopupForeground",
+        public static readonly DependencyProperty ItemsPaddingProperty = DependencyProperty.Register(
+            "ItemsPadding",
+            typeof(Thickness),
+            typeof(TransparentComboBox), 
+            new PropertyMetadata(null));
+
+
+        public Brush PanelForeground
+        {
+            get => (Brush)GetValue(PanelForegroundProperty);
+            set => SetValue(PanelForegroundProperty , value);
+        }
+
+        public static readonly DependencyProperty PanelForegroundProperty = DependencyProperty.Register(
+            "PanelForeground",
             typeof(Brush),
             typeof(TransparentComboBox), 
             new PropertyMetadata(null));

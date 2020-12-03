@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Acorisoft.UI.Host.Views
 {
     /// <summary>
-    /// ControlDemoCtl.xaml 的交互逻辑
+    /// CustomDemoCtl.xaml 的交互逻辑
     /// </summary>
-    public partial class ControlDemoCtl : UserControl
+    public partial class CustomDemoCtl : UserControl
     {
-        public ControlDemoCtl()
+        public CustomDemoCtl()
         {
             InitializeComponent();
         }

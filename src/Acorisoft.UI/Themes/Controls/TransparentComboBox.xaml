@@ -4,6 +4,10 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
+    
+    <!-- 焦点样式 -->
+    <!--  -->
+    <!--  -->
     <Style x:Key="FocusVisual">
         <Setter Property="Control.Template">
             <Setter.Value>
@@ -18,6 +22,9 @@
         </Setter>
     </Style>
 
+    <!-- 文本编辑框样式 -->
+    <!--  -->
+    <!--  -->
     <Style x:Key="ComboBoxEditableTextBox" TargetType="{x:Type TextBox}">
         <Setter Property="OverridesDefaultStyle" Value="true"/>
         <Setter Property="AllowDrop" Value="true"/>
@@ -38,6 +45,10 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <!-- 状态切换按钮样式 -->
+    <!--  -->
+    <!--  -->
     <Style x:Key="ComboBoxToggleButton" TargetType="{x:Type ToggleButton}">
         <Setter Property="OverridesDefaultStyle" Value="true"/>
         <Setter Property="IsTabStop" Value="false"/>
@@ -72,7 +83,7 @@
     <!-- 编辑状态 -->
     <!--  -->
     <!--  -->
-    <ControlTemplate x:Key="ComboBoxEditableTemplate" TargetType="{x:Type ComboBox}">
+    <ControlTemplate x:Key="ComboBoxEditableTemplate" TargetType="{x:Type c:TransparentComboBox}">
         <Grid x:Name="templateRoot" SnapsToDevicePixels="true">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -86,9 +97,7 @@
                    PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
 
                 <Border x:Name="dropDownBorder"
-                        Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
-                        BorderThickness="1"
-                        BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+                        Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
                     <ScrollViewer x:Name="DropDownScrollViewer">
                         <Grid x:Name="grid"
                               RenderOptions.ClearTypeHint="Enabled">
@@ -104,15 +113,15 @@
                             </Canvas>
                             <ItemsPresenter x:Name="ItemsPresenter" 
                                             KeyboardNavigation.DirectionalNavigation="Contained"
-                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                            Margin="{TemplateBinding ItemsPadding}"/>
                         </Grid>
                     </ScrollViewer>
                 </Border>
             </Popup>
             <ToggleButton x:Name="toggleButton" 
                           Background="{TemplateBinding Background}"
-                          BorderThickness="{TemplateBinding BorderThickness}"
-                          BorderBrush="{TemplateBinding BorderBrush}" 
+                          Foreground="{TemplateBinding PanelForeground}"
                           Grid.ColumnSpan="2"
                           IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
                           Style="{StaticResource ComboBoxToggleButton}"/>
@@ -120,44 +129,77 @@
                     Background="{StaticResource UI.Brushes.Transparent}"
                     Margin="{TemplateBinding BorderThickness}">
                 <TextBox x:Name="PART_EditableTextBox"
-                         CaretBrush="{TemplateBinding Foreground}"
-                         HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                         CaretBrush="{TemplateBinding PanelForeground}"
+                         Foreground="{TemplateBinding PanelForeground}"
                          IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}" 
                          Margin="{TemplateBinding Padding}" 
                          Style="{StaticResource ComboBoxEditableTextBox}"
+                         HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" 
                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
             </Border>
         </Grid>
         <ControlTemplate.Triggers>
-            <EventTrigger RoutedEvent="MouseEnter">
-                <BeginStoryboard>
-                    <Storyboard>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="templateRoot"
-                                                           Storyboard.TargetProperty="(UIElement.Opacity)">
-                            <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1"/>
-                            <EasingDoubleKeyFrame KeyTime="0:0:0.400" Value=".5"/>
-                        </DoubleAnimationUsingKeyFrames>
-                    </Storyboard>
-                </BeginStoryboard>
-            </EventTrigger>
-            <EventTrigger RoutedEvent="MouseLeave">
-                <BeginStoryboard>
-                    <Storyboard>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="templateRoot"
-                                                       Storyboard.TargetProperty="(UIElement.Opacity)">
-                            <EasingDoubleKeyFrame KeyTime="0:0:0" Value=".5"/>
-                            <EasingDoubleKeyFrame KeyTime="0:0:0.400" Value="1"/>
-                        </DoubleAnimationUsingKeyFrames>
-                    </Storyboard>
-                </BeginStoryboard>
-            </EventTrigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsMouseOver" Value="True"/>
+                    <Condition Property="IsFocused" Value="False" SourceName="PART_EditableTextBox"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                           Storyboard.TargetName="templateRoot">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.400" Value=".5"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </MultiTrigger.EnterActions>
+                <MultiTrigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                           Storyboard.TargetName="templateRoot">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0" Value=".5"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.400" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </MultiTrigger.ExitActions>
+            </MultiTrigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsMouseOver" Value="True" SourceName="toggleButton"/>
+                    <Condition Property="IsFocused" Value="True" SourceName="PART_EditableTextBox"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                           Storyboard.TargetName="toggleButton">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.400" Value=".5"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </MultiTrigger.EnterActions>
+                <MultiTrigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                           Storyboard.TargetName="toggleButton">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0" Value=".5"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.400" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </MultiTrigger.ExitActions>
+            </MultiTrigger>
             <Trigger Property="IsEnabled" Value="false">
                 <Setter Property="Opacity" TargetName="border" Value="0.56"/>
             </Trigger>
             <Trigger Property="IsKeyboardFocusWithin" Value="true">
                 <Setter Property="Foreground" Value="Black"/>
-            </Trigger>
-            <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
             </Trigger>
             <Trigger Property="HasItems" Value="false">
                 <Setter Property="Height" TargetName="dropDownBorder" Value="95"/>
@@ -176,14 +218,14 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <!-- 编辑状态 -->
+    <!-- 通常状态 -->
     <!--  -->
     <!--  -->
-    <ControlTemplate x:Key="ComboBoxTemplate" TargetType="{x:Type ComboBox}">
+    <ControlTemplate x:Key="ComboBoxTemplate" TargetType="{x:Type c:TransparentComboBox}">
         <Grid x:Name="templateRoot" SnapsToDevicePixels="true">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Width="0"/>
+                <ColumnDefinition MinWidth="29" Width="29"/>
             </Grid.ColumnDefinitions>
             <Popup x:Name="PART_Popup"
                    AllowsTransparency="true"
@@ -211,19 +253,20 @@
                             </Canvas>
                             <ItemsPresenter x:Name="ItemsPresenter" 
                                             KeyboardNavigation.DirectionalNavigation="Contained"
-                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                            Margin="{TemplateBinding ItemsPadding}"/>
                         </Grid>
                     </ScrollViewer>
                 </Border>
             </Popup>
-            <ToggleButton x:Name="toggleButton"
-                          Background="{TemplateBinding Background}" 
-                          BorderThickness="{TemplateBinding BorderThickness}" 
-                          BorderBrush="{TemplateBinding BorderBrush}" 
-                          Grid.ColumnSpan="2" 
-                          IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+            <ToggleButton x:Name="toggleButton" 
+                          Background="{TemplateBinding Background}"
+                          Foreground="{TemplateBinding PanelForeground}"
+                          Grid.ColumnSpan="2"
+                          IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
                           Style="{StaticResource ComboBoxToggleButton}"/>
             <ContentPresenter x:Name="contentPresenter" 
+                              TextElement.Foreground="{TemplateBinding PanelForeground}"
                               ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" 
                               Content="{TemplateBinding SelectionBoxItem}" 
                               ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" 
@@ -235,7 +278,29 @@
                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
         </Grid>
         <ControlTemplate.Triggers>
-            <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
+            <Trigger Property="IsMouseOver" Value="True">
+                <Trigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                           Storyboard.TargetName="templateRoot">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.400" Value=".5"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                           Storyboard.TargetName="templateRoot">
+                                <EasingDoubleKeyFrame KeyTime="0:0:0" Value=".5"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.400" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.ExitActions>
             </Trigger>
             <Trigger Property="HasItems" Value="false">
                 <Setter Property="Height" TargetName="dropDownBorder" Value="95"/>
@@ -255,21 +320,23 @@
     </ControlTemplate>
 
 
-    <!-- 编辑状态 -->
+    <!-- 样式 -->
     <!--  -->
     <!--  -->
     <Style TargetType="{x:Type c:TransparentComboBox}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}"/>
-        <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}"/>
-        <Setter Property="PopupForeground" Value="{StaticResource UI.Brushes.Black}" />
+        <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}"/>
+        <Setter Property="PanelForeground" Value="{StaticResource UI.Brushes.White}" />
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Padding" Value="6,3,5,3"/>
         <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
         <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
+        <Setter Property="ItemsPadding" Value="16" />
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="FontSize" Value="16" />
         <Setter Property="Template" Value="{StaticResource ComboBoxTemplate}"/>
         <Style.Triggers>
             <Trigger Property="IsEditable" Value="true">
