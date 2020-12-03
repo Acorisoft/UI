@@ -17,7 +17,9 @@
     <SolidColorBrush x:Key="UI.Brushes.Accent" Color="{StaticResource UI.Colors.Accent}"/>
     <SolidColorBrush x:Key="UI.Brushes.Accent.Dark" Color="{StaticResource UI.Colors.Accent.Dark}"/>
     <SolidColorBrush x:Key="UI.Brushes.Transparent" Color="Transparent"/>
-    
+    <SolidColorBrush x:Key="UI.Brushes.Mask.Dark">#30000000</SolidColorBrush>
+    <SolidColorBrush x:Key="UI.Brushes.Mask.Light">#30FFFFFF</SolidColorBrush>
+
     <!-- 阴影 -->
     <DropShadowEffect x:Key="UI.Effect.Shadow1" BlurRadius="5" ShadowDepth="1" Direction="270" Color="{StaticResource UI.Colors.Shadow}" Opacity=".2" RenderingBias="Performance" o:Freeze="True" />
     <DropShadowEffect x:Key="UI.Effect.Shadow2" BlurRadius="8" ShadowDepth="1.5" Direction="270" Color="{StaticResource UI.Colors.Shadow}" Opacity=".2" RenderingBias="Performance" o:Freeze="True" />

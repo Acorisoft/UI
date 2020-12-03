@@ -15,7 +15,7 @@
         <Setter Property="UseLayoutRounding" Value="True"/>
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Padding" Value="0" />
-        <Setter Property="TitleBarPadding" Value="7" />
+        <Setter Property="TitleBarPadding" Value="7 7 7 0" />
         <Setter Property="WindowStyle" Value="None" />
         <Setter Property="WindowChrome.WindowChrome">
             <Setter.Value>
@@ -72,7 +72,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="WindowState" Value="Maximized">
                             <Setter Property="Padding" 
-                                    Value="7 7 7 0"
+                                    Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=TitleBarPadding}"
                                     TargetName="PART_TitleBar"/>
                         </Trigger>
                     </ControlTemplate.Triggers>

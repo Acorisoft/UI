@@ -52,6 +52,11 @@
                     <v:ButtonDemoCtl/>
                 </ListBoxItem.Tag>
             </ListBoxItem>
+            <!--<ListBoxItem Content="Control Demo">
+                <ListBoxItem.Tag>
+                    <v:ControlsDemoCtl/>
+                </ListBoxItem.Tag>
+            </ListBoxItem>-->
             <ListBoxItem Content="Panel Demo">
                 <ListBoxItem.Tag>
                     <v:PanelDemoCtl/>

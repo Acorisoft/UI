@@ -135,6 +135,19 @@
                     <u:VisibleButton Margin="8"/>
                 </StackPanel>
             </HeaderedContentControl>
+            <HeaderedContentControl Header="ToggleStateButton">
+                <StackPanel Background="{StaticResource UI.Brushes.MaterialDesign.Indigo}">
+                    <u:TransparentComboBox IsEditable="True"
+                                           Foreground="{StaticResource UI.Brushes.White}"
+                                           Margin="16">
+                        <ComboBoxItem Content="Documents"/>
+                        <ComboBoxItem Content="Documents"/>
+                        <ComboBoxItem Content="Documents"/>
+                        <ComboBoxItem Content="Documents"/>
+                        <ComboBoxItem Content="Documents"/>
+                    </u:TransparentComboBox>
+                </StackPanel>
+            </HeaderedContentControl>
         </WrapPanel>
     </ScrollViewer>
 </UserControl>

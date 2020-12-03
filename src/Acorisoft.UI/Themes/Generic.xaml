@@ -10,6 +10,9 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/ToggleStateButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/WindowsButton.xaml"/>
 
+        <!-- 控件 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Controls/TransparentComboBox.xaml"/>
+        
         <!-- 面板 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/AlertPanel.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/ToolbarPanel.xaml"/>
@@ -23,9 +26,12 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/MaterialDesignColors.xaml"/>
 
         <!-- 图标 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Banner.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Icon.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Typography.xaml"/>
 
         <!-- 窗体 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Windows/ColorWindow.xaml"/>
+        
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
