@@ -2,6 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <!--- 按钮 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/GeometryButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/DropDownButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/IconButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/LockButton.xaml"/>

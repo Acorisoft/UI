@@ -7,6 +7,8 @@
     <Style TargetType="{x:Type c:BulletControl}">
         <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}"/>
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
+        <Setter Property="Mode" Value="Fixed" />
+        <Setter Property="BulletPadding" Value="16" />
         <Style.Triggers>
             <Trigger Property="Mode" Value="Auto">
                 <Setter Property="Template">
