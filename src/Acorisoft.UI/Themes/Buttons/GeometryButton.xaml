@@ -6,7 +6,7 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/MaterialDesignColors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     
-    <Style TargetType="{x:Type b:PathButton}">
+    <Style TargetType="{x:Type b:GeometryButton}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Mode" Value="Solid" />
         <Setter Property="IconWidth" Value="24" />
@@ -23,7 +23,7 @@
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type b:PathButton}">
+                <ControlTemplate TargetType="{x:Type b:GeometryButton}">
                     <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
