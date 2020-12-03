@@ -1,39 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Acorisoft.UI.Buttons
 {
-    public class ToggleStateButton : CheckBox
+    public class GeometryButton : Button
     {
-        static ToggleStateButton()
+        static GeometryButton()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(ToggleStateButton) , new FrameworkPropertyMetadata(typeof(ToggleStateButton)));            
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(GeometryButton) , new FrameworkPropertyMetadata(typeof(GeometryButton)));
         }
 
-
-        public Geometry TrueState
+        public Geometry Icon
         {
-            get => (Geometry)GetValue(TrueStateProperty);
-            set => SetValue(TrueStateProperty , value);
-        }
-
-
-        public Geometry FalseState
-        {
-            get => (Geometry)GetValue(FalseStateProperty);
-            set => SetValue(FalseStateProperty , value);
+            get => (Geometry)GetValue(IconProperty);
+            set => SetValue(IconProperty , value);
         }
 
         public double IconWidth
@@ -54,7 +35,6 @@ namespace Acorisoft.UI.Buttons
             set => SetValue(IconPaddingProperty , value);
         }
 
-
         public double IconThickness
         {
             get => (double)GetValue(IconThicknessProperty);
@@ -64,39 +44,31 @@ namespace Acorisoft.UI.Buttons
         public static readonly DependencyProperty IconThicknessProperty = DependencyProperty.Register(
             "IconThickness",
             typeof(double),
-            typeof(ToggleStateButton), 
-            new PropertyMetadata(null));
-
+            typeof(GeometryButton),
+            new PropertyMetadata(1d));
 
         public static readonly DependencyProperty IconPaddingProperty = DependencyProperty.Register(
             "IconPadding",
             typeof(Thickness),
-            typeof(ToggleStateButton),
+            typeof(GeometryButton),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty IconHeightProperty = DependencyProperty.Register(
             "IconHeight",
             typeof(double),
-            typeof(ToggleStateButton),
+            typeof(GeometryButton),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty IconWidthProperty = DependencyProperty.Register(
             "IconWidth",
             typeof(double),
-            typeof(ToggleStateButton),
+            typeof(GeometryButton),
             new PropertyMetadata(null));
 
-        public static readonly DependencyProperty FalseStateProperty = DependencyProperty.Register(
-            "FalseState",
+        public static readonly DependencyProperty IconProperty = DependencyProperty.Register(
+            "Icon",
             typeof(Geometry),
-            typeof(ToggleStateButton), 
-            new PropertyMetadata(null));
-
-
-        public static readonly DependencyProperty TrueStateProperty = DependencyProperty.Register(
-            "TrueState",
-            typeof(Geometry),
-            typeof(ToggleStateButton), 
+            typeof(GeometryButton),
             new PropertyMetadata(null));
 
     }

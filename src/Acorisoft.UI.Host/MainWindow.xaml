@@ -10,6 +10,19 @@
                 Title="Acorisoft UI Demo"
                 MinWidth="1366"
                 MinHeight="768">
+    <ui:ColorWindow.TitleBar>
+        <Grid Height="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <ui:TransparentComboBox SelectedIndex="0"
+                                    Padding="48 0">
+                <ComboBoxItem Content="Documents"/>
+                <ComboBoxItem Content="Map"/>
+            </ui:TransparentComboBox>
+        </Grid>
+    </ui:ColorWindow.TitleBar>
     <Window.Resources>
         <v:ControlDemoCtl x:Key="ControlDemo"/>
         <v:ButtonDemoCtl x:Key="ButtonDemo"/>

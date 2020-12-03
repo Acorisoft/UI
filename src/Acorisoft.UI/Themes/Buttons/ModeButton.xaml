@@ -242,6 +242,7 @@
                 </Setter>
             </Trigger>
             <Trigger Property="Mode" Value="CTA">
+                <Setter Property="IsDefault" Value="True" />
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />

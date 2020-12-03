@@ -33,18 +33,31 @@ namespace Acorisoft.UI.Controls
             set => SetValue(ItemsPaddingProperty , value);
         }
 
-        public static readonly DependencyProperty ItemsPaddingProperty = DependencyProperty.Register(
-            "ItemsPadding",
-            typeof(Thickness),
-            typeof(TransparentComboBox), 
-            new PropertyMetadata(null));
-
-
         public Brush PanelForeground
         {
             get => (Brush)GetValue(PanelForegroundProperty);
             set => SetValue(PanelForegroundProperty , value);
         }
+
+
+        public double IconSize
+        {
+            get => (double)GetValue(IconSizeProperty);
+            set => SetValue(IconSizeProperty , value);
+        }
+
+        public static readonly DependencyProperty IconSizeProperty = DependencyProperty.Register(
+            "IconSize",
+            typeof(double),
+            typeof(TransparentComboBox), 
+            new PropertyMetadata(null));
+
+        public static readonly DependencyProperty ItemsPaddingProperty = DependencyProperty.Register(
+            "ItemsPadding",
+            typeof(Thickness),
+            typeof(TransparentComboBox),
+            new PropertyMetadata(null));
+
 
         public static readonly DependencyProperty PanelForegroundProperty = DependencyProperty.Register(
             "PanelForeground",

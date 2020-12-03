@@ -12,6 +12,7 @@
 
         <!-- 控件 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Controls/TransparentComboBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Controls/BulletControl.xaml"/>
         
         <!-- 面板 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/AlertPanel.xaml"/>
