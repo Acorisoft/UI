@@ -8,17 +8,17 @@
     </ResourceDictionary.MergedDictionaries>
 
 
-    <Style TargetType="{x:Type p:EmptyStateControl}">
+    <Style TargetType="{x:Type p:EmptyStatePanel}">
         <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
         <Setter Property="BorderBrush" Value="{x:Null}" />
         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         <Setter Property="VerticalContentAlignment" Value="Stretch" />
         <Setter Property="BorderThickness" Value="0" />
         <Style.Triggers>
-            <Trigger Property="IsEmpty" Value="False">
+            <Trigger Property="HasItems" Value="True">
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type p:EmptyStateControl}">
+                        <ControlTemplate TargetType="{x:Type p:EmptyStatePanel}">
                             <Grid Background="{TemplateBinding Background}">
                                 <ContentPresenter x:Name="PART_Content"
                                                   Content="{TemplateBinding Content}"
@@ -34,10 +34,10 @@
                     </Setter.Value>
                 </Setter>
             </Trigger>
-            <Trigger Property="IsEmpty" Value="True">
+            <Trigger Property="HasItems" Value="False">
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type p:EmptyStateControl}">
+                        <ControlTemplate TargetType="{x:Type p:EmptyStatePanel}">
                             <Grid Background="{TemplateBinding Background}">
                                 <ContentPresenter x:Name="PART_Alternative"
                                                   Content="{TemplateBinding Alternative}"

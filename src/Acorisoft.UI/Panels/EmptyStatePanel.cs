@@ -15,18 +15,18 @@ using System.Windows.Shapes;
 
 namespace Acorisoft.UI.Panels
 {
-    public class EmptyStateControl : ContentControl
+    public class EmptyStatePanel : ContentControl
     {
-        static EmptyStateControl()
+        static EmptyStatePanel()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(EmptyStateControl) , new FrameworkPropertyMetadata(typeof(EmptyStateControl)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(EmptyStatePanel) , new FrameworkPropertyMetadata(typeof(EmptyStatePanel)));
         }
 
 
-        public bool IsEmpty
+        public bool HasItems
         {
-            get => (bool)GetValue(IsEmptyProperty);
-            set => SetValue(IsEmptyProperty , value);
+            get => (bool)GetValue(HasItemsProperty);
+            set => SetValue(HasItemsProperty , value);
         }
 
         public object Alternative
@@ -57,34 +57,35 @@ namespace Acorisoft.UI.Panels
         public static readonly DependencyProperty AlternativeStringFormatProperty = DependencyProperty.Register(
             "AlternativeStringFormat",
             typeof(string),
-            typeof(EmptyStateControl),
+            typeof(EmptyStatePanel),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty AlternativeTemplateSelectorProperty = DependencyProperty.Register(
             "AlternativeTemplateSelector",
             typeof(DataTemplateSelector),
-            typeof(EmptyStateControl),
+            typeof(EmptyStatePanel),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty AlternativeTemplateProperty = DependencyProperty.Register(
             "AlternativeTemplate",
             typeof(DataTemplate),
-            typeof(EmptyStateControl),
+            typeof(EmptyStatePanel),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty AlternativeProperty = DependencyProperty.Register(
             "Alternative",
             typeof(object),
-            typeof(EmptyStateControl),
+            typeof(EmptyStatePanel),
             new PropertyMetadata(null));
-        public static readonly DependencyProperty IsEmptyProperty = DependencyProperty.Register(
-            "IsEmpty",
+        public static readonly DependencyProperty HasItemsProperty = DependencyProperty.Register(
+            "HasItems",
             typeof(bool),
-            typeof(EmptyStateControl), 
-            new PropertyMetadata(true,OnIsEmptyChanged));
+            typeof(EmptyStatePanel), 
+            new PropertyMetadata(true,OnHasItemsChanged));
 
-        private static void OnIsEmptyChanged(DependencyObject d , DependencyPropertyChangedEventArgs e)
+        private static void OnHasItemsChanged(DependencyObject d , DependencyPropertyChangedEventArgs e)
         {
+            d.SetCurrentValue(HasItemsProperty , BooleanBoxes.Box((bool)e.NewValue));
         }
     }
 }

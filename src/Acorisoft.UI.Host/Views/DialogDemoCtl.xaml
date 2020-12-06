@@ -1,0 +1,134 @@
+﻿<UserControl x:Class="Acorisoft.UI.Host.Views.DialogDemoCtl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Acorisoft.UI.Host.Views"
+             xmlns:u="https://github.com/Acorisoft/UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <DrawingImage x:Key="undraw_Throw_away_re_x60k__1_DrawingImage">
+            <DrawingImage.Drawing>
+                <DrawingGroup ClipGeometry="M0,0 V515.08657 H920.30414 V0 H0 Z">
+                    <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                        <GeometryDrawing Brush="#FFE6E6E6" Geometry="F1 M920.30414,515.08657z M0,0z M333.52692,705.58229L192.92692,705.58229C192.92692,705.58229 190.07692,663.78229 206.93892,663.30729 223.80092,662.83229 221.90092,681.83229 243.03892,655.70729 264.17692,629.58229 289.82592,631.00729 293.15092,646.44529 296.47592,661.88329 286.73892,674.23229 304.55092,670.43229 322.36292,666.63229 348.01392,676.60726 333.52692,705.58229z" />
+                    </DrawingGroup>
+                    <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                        <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M920.30414,515.08657z M0,0z M260.85394,705.5923L260.37894,705.5733C261.48594,678.0533 267.24894,660.3733 271.88994,650.3833 276.92794,639.5393 281.78294,635.1493 281.83194,635.1063L282.14794,635.4613C282.09994,635.5043 277.30194,639.8503 272.30394,650.6213 267.68893,660.56526 261.95694,678.1753 260.85394,705.5923z" />
+                    </DrawingGroup>
+                    <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                        <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M920.30414,515.08657z M0,0z M311.73993,705.6483L311.28393,705.5153A73.682,73.682,0,0,1,329.83493,674.6523L330.15393,675.0043A73.183,73.183,0,0,0,311.73993,705.6483z" />
+                    </DrawingGroup>
+                    <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                        <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M920.30414,515.08657z M0,0z M215.07292,705.61531L214.60192,705.55031A51.73206,51.73206,0,0,0,209.94892,675.31231A41.63309,41.63309,0,0,0,202.60892,664.59625L202.93792,664.25325A42.15523,42.15523,0,0,1,210.37892,675.10125A52.20594,52.20594,0,0,1,215.07292,705.61531z" />
+                    </DrawingGroup>
+                    <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                        <GeometryDrawing Brush="#FF2F2E41" Geometry="F1 M920.30414,515.08657z M0,0z M352.60792,706.21727L177.76292,706.21727 177.72292,705.62527C177.62292,704.15227,175.39192,669.39727,186.65292,656.99627A12.33392,12.33392,0,0,1,195.66592,652.67127C203.00592,652.46227 207.61892,655.21227 211.33992,657.41827 218.35292,661.57827 222.98492,664.32727 239.82992,643.50827 258.07692,620.95527 277.76592,616.10227 289.08392,618.80027 296.39692,620.54427 301.43692,625.47127 302.91192,632.32027 304.31192,638.80527 303.86392,644.89827 303.50592,649.79527 303.12292,655.03427 302.82092,659.17127 304.97292,661.04727 306.77292,662.61227 310.35392,662.75427 316.25392,661.49527 328.25392,658.93527 345.00192,661.12527 353.40692,671.98627 357.92892,677.82927 361.49192,688.44927 352.78392,705.86627z M178.95592,704.94627L351.82092,704.94627C358.30992,691.78127 358.51292,680.65927 352.40192,672.76427 344.69092,662.80127 328.51392,660.17927 316.51892,662.73827 310.10792,664.10627 306.28892,663.88027 304.13792,662.00627 301.50692,659.71427 301.82992,655.29627 302.23792,649.70627 302.58992,644.89127 303.02692,638.89827 301.66892,632.59127 300.30092,626.24027 295.60592,621.66527 288.78792,620.04027 277.83092,617.42627 258.68792,622.21727 240.81692,644.31027 223.28292,665.98227 217.99992,662.85027 210.69092,658.51027 206.92392,656.27627 202.64792,653.74327 195.70092,653.94027A11.10885,11.10885,0,0,0,187.59292,657.84927C177.47492,668.99527,178.70892,700.24727,178.95692,704.94627z" />
+                    </DrawingGroup>
+                    <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                        <GeometryDrawing Brush="#FF3F3D56" Geometry="F1 M920.30414,515.08657z M0,0z M923.90791,706.92328L751.69191,706.92328 751.65891,705.95828 743.43591,470.77828 932.16291,470.77828z M753.62391,704.92328L921.97591,704.92328 930.09291,472.77828 745.50591,472.77828z" />
+                    </DrawingGroup>
+                    <DrawingGroup Opacity="1">
+                        <GeometryDrawing Brush="#FF3F3D56">
+                            <GeometryDrawing.Geometry>
+                                <RectangleGeometry RadiusX="0" RadiusY="0" Rect="639.826,321.8966,13.099,162.097" />
+                            </GeometryDrawing.Geometry>
+                        </GeometryDrawing>
+                        <GeometryDrawing Brush="#FF3F3D56">
+                            <GeometryDrawing.Geometry>
+                                <RectangleGeometry RadiusX="0" RadiusY="0" Rect="691.402,321.8966,13.099,162.097" />
+                            </GeometryDrawing.Geometry>
+                        </GeometryDrawing>
+                        <GeometryDrawing Brush="#FF3F3D56">
+                            <GeometryDrawing.Geometry>
+                                <RectangleGeometry RadiusX="0" RadiusY="0" Rect="742.978,321.8966,13.099,162.097" />
+                            </GeometryDrawing.Geometry>
+                        </GeometryDrawing>
+                    </DrawingGroup>
+                    <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                        <GeometryDrawing Brush="#FF3F3D56" Geometry="F1 M920.30414,515.08657z M0,0z M1041.59738,539.83884L1040.75168,539.30466 826.83762,404.12156 845.39328,374.75974 846.23899,375.29392 1060.15207,510.47654z M829.59738,403.49949L1040.97438,537.07908 1057.39238,511.09959 846.01638,377.51853z" />
+                    </DrawingGroup>
+                    <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                        <GeometryDrawing Brush="#FF3F3D56" Geometry="F1 M920.30414,515.08657z M0,0z M989.9499,393.22629A38.459,38.459,0,0,0,931.3299,431.29629L941.5299,437.74229A30.344,30.344,0,1,1,970.5099,456.06329L980.7099,462.50929A38.459,38.459,0,0,0,989.9589,393.22629z" />
+                    </DrawingGroup>
+                    <GeometryDrawing Brush="#FF3F3D56">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,513.0866,909,2" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                    <DrawingGroup Opacity="1">
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFFEB8B8" Geometry="F1 M920.30414,515.08657z M0,0z M536.88489,691.89628L522.32089,691.89628 515.38889,635.72228 536.88889,635.72228z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FF2F2E41" Geometry="F1 M920.30414,515.08657z M0,0z M494.23393,705.41828L540.00493,705.41828 540.00493,687.73428 511.67293,687.73428A17.439,17.439,0,0,0,494.23393,705.17328L494.23393,705.17328z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFFEB8B8" Geometry="F1 M920.30414,515.08657z M0,0z M531.766,604.85129L541.812,615.39629 587.264,581.66929 572.438,566.10629z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FF2F2E41" Geometry="F1 M920.30414,515.08657z M0,0z M552.16123,620.2275L532.61215,599.71513 519.80894,611.91713 551.39094,645.05533 551.56832,644.88633A17.4414,17.4414,0,0,0,552.16124,620.22759z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFFEB8B8" Geometry="F1 M920.30414,515.08657z M0,0z M430.39593,450.95329A11.94591,11.94591,0,0,1,436.11093,433.55329L493.28993,287.82629 515.57793,301.17129 452.05993,440.97129A12.01,12.01,0,0,1,430.39593,450.95329z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFFEB8B8" Geometry="F1 M920.30414,515.08657z M0,0z M647.42792,461.3983A11.94507,11.94507,0,0,1,636.70092,446.5483L552.34692,314.6793 576.23792,304.4793 652.07392,438.0023A12.01,12.01,0,0,1,647.42792,461.4023z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FF2F2E41" Geometry="F1 M920.30414,515.08657z M0,0z M493.8529,436.36129L508.7839,658.27429 544.4659,655.12629 551.81185,491.40429 571.75185,561.71829 614.77985,564.86629 597.74885,425.86629z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FF2F2E41" Geometry="F1 M920.30414,515.08657z M0,0z M578.04889,551.2243L571.74889,561.7193 527.67589,592.1533 559.15989,608.9453C559.15989,608.9453,620.02889,575.3623,614.78189,564.8673z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFCCCCCC" Geometry="F1 M920.30414,515.08657z M0,0z M462.60693,346.57728L475.02793,311.57728A62.4941,62.4941,0,0,1,507.35993,275.90928L507.35993,275.90928A89.42706,89.42706,0,0,1,559.84393,273.03628L564.36393,274.15828A87.36364,87.36364,0,0,1,597.49193,290.15828C605.14593,296.19228,612.03193,303.83228,612.64493,312.05028A0.24435,0.24435,0,0,0,612.65993,312.10128C614.77993,321.39328,615.82893,369.66828,615.82893,369.66828L597.12893,369.66828 600.08693,434.73528 599.84793,434.26428C599.84793,434.26428,491.99193,454.67528,491.99193,444.18028L491.99193,377.01228 489.78093,352.69228z" />
+                        </DrawingGroup>
+                        <GeometryDrawing Brush="#FFFEB8B8">
+                            <GeometryDrawing.Geometry>
+                                <EllipseGeometry RadiusX="29.889" RadiusY="29.889" Center="423.432,41.5926" />
+                            </GeometryDrawing.Geometry>
+                        </GeometryDrawing>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FF2F2E41" Geometry="F1 M920.30414,515.08657z M0,0z M567.757,220.64529L590.965,221.57529C593.885,221.56629 597.073,221.46329 599.297,219.57529 602.647,216.72629 602.086,211.35029 600.292,207.33429 595.292,196.15229 584.139,192.14629 571.892,192.47529 559.645,192.80429 546.812,196.95529 540.217,207.27529 533.622,217.59529 531.84,230.62729 534.324,242.61929A38.534,38.534,0,0,1,565.832,220.64929z" />
+                        </DrawingGroup>
+                    </DrawingGroup>
+                    <DrawingGroup Opacity="1">
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FF3F51B5" Geometry="F1 M920.30414,515.08657z M0,0z M705.57123,513.00138L621.56966,454.12849A3.60743,3.60743,0,0,1,620.68766,449.11368L686.619,355.0409A3.60743,3.60743,0,0,1,691.63381,354.1589L775.63537,413.03179A3.60742,3.60742,0,0,1,776.51737,418.0466L710.58774,512.11693A3.60742,3.60742,0,0,1,705.57123,513.00138z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M920.30414,515.08657z M0,0z M724.46214,449.12032L675.17145,414.57471A5.30063,5.30063,0,1,1,681.25586,405.89331L730.54655,440.43892A5.30063,5.30063,0,0,1,724.46214,449.12032z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M920.30414,515.08657z M0,0z M713.14975,465.26118L663.85906,430.71557A5.30063,5.30063,0,1,1,669.94346,422.03417L719.23415,456.57978A5.30063,5.30063,0,0,1,713.14975,465.26118z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M920.30414,515.08657z M0,0z M701.71568,481.57565L652.425,447.03A5.30063,5.30063,0,1,1,658.5094,438.34859L707.80009,472.8942A5.30063,5.30063,0,0,1,701.71569,481.57561z" />
+                        </DrawingGroup>
+                        <DrawingGroup Transform="1,0,0,1,-139.84793,-192.45672">
+                            <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M920.30414,515.08657z M0,0z M724.32359,417.19028L705.23188,403.80976A5.30063,5.30063,0,1,1,711.31628,395.12836L730.408,408.50887A5.30063,5.30063,0,0,1,724.32359,417.19028z" />
+                        </DrawingGroup>
+                    </DrawingGroup>
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+    </UserControl.Resources>
+    <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                  VerticalScrollBarVisibility="Auto">
+        <WrapPanel Orientation="Horizontal"
+                   Width="1400">
+
+            <HeaderedContentControl Header="BannerMessageDialogControl"
+                                    Width="400">
+                <u:BannerMessageDialogControl Banner="{StaticResource undraw_Throw_away_re_x60k__1_DrawingImage}"
+                                              Content=" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                              Title="Welcomo to pro"
+                                              DefaultButtonContent="Go to">
+                    
+                </u:BannerMessageDialogControl>
+            </HeaderedContentControl>
+        </WrapPanel>
+    </ScrollViewer>
+</UserControl>
