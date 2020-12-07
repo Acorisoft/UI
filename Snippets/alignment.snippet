@@ -31,27 +31,27 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[        public VerticalAlignment $Name$HorizontalAlignment
+      <Code Language="csharp" Delimiter="$"><![CDATA[        public HorizontalAlignment Horizontal$Name$Alignment
         {
-            get => (VerticalAlignment)GetValue($Name$HorizontalAlignmentProperty);
-            set => SetValue($Name$HorizontalAlignmentProperty , value);
+            get => (HorizontalAlignment)GetValue(Horizontal$Name$AlignmentProperty);
+            set => SetValue(Horizontal$Name$AlignmentProperty , value);
         }
 
 
-        public HorizontalAlignment $Name$VerticalAlignment
+        public VerticalAlignment Vertical$Name$Alignment
         {
-            get => (HorizontalAlignment)GetValue($Name$VerticalAlignmentProperty);
-            set => SetValue($Name$VerticalAlignmentProperty , value);
+            get => (VerticalAlignment)GetValue(Vertical$Name$AlignmentProperty);
+            set => SetValue(Vertical$Name$AlignmentProperty , value);
         }
 
-        public static readonly DependencyProperty $Name$VerticalAlignmentProperty = DependencyProperty.Register(
-            "$Name$HorizontalAlignment",
+        public static readonly DependencyProperty Horizontal$Name$AlignmentProperty = DependencyProperty.Register(
+            "Horizontal$Name$Alignment",
             typeof(HorizontalAlignment),
             typeof($Type$), 
             new PropertyMetadata(null));
 
-        public static readonly DependencyProperty $Name$HorizontalAlignmentProperty = DependencyProperty.Register(
-            "$Name$VerticalAlignment",
+        public static readonly DependencyProperty Vertical$Name$AlignmentProperty = DependencyProperty.Register(
+            "Vertical$Name$Alignment",
             typeof(VerticalAlignment),
             typeof($Type$), 
             new PropertyMetadata(null));]]></Code>
