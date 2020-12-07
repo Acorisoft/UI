@@ -8,7 +8,6 @@
     
     <Style TargetType="{x:Type b:GeometryButton}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-        <Setter Property="Mode" Value="Solid" />
         <Setter Property="IconWidth" Value="24" />
         <Setter Property="IconHeight" Value="24" />
         <Setter Property="IconThickness" Value="1" />
@@ -25,20 +24,19 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type b:GeometryButton}">
                     <Border x:Name="PART_Bd"
-                                    Background="{TemplateBinding Background}"
-                                    CornerRadius="{TemplateBinding CornerRadius}"
-                                    Padding="{TemplateBinding Padding}">
+                            Background="{TemplateBinding Background}"
+                            Padding="{TemplateBinding Padding}">
                         <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
-                                      Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
-                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                      SnapsToDevicePixels="True"/>
+                              Data="{TemplateBinding Icon}"
+                              Stretch="Uniform"
+                              Fill="{TemplateBinding Foreground}"
+                              StrokeThickness="{TemplateBinding IconThickness}"
+                              Width="{TemplateBinding IconWidth}"
+                              Height="{TemplateBinding IconHeight}"
+                              Margin="{TemplateBinding IconPadding}"
+                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                              SnapsToDevicePixels="True"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

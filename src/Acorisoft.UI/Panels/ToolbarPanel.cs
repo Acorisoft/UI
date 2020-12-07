@@ -153,8 +153,12 @@ namespace Acorisoft.UI.Panels
             "EnableToolbarAutoHidden",
             typeof(bool),
             typeof(ToolbarPanel),
-            new PropertyMetadata(null));
+            new PropertyMetadata(BooleanBoxes.FalseBox,OnEnableToolbarAutoHiddenValueChanged));
 
+        private static void OnEnableToolbarAutoHiddenValueChanged(DependencyObject d , DependencyPropertyChangedEventArgs e)
+        {
+            d.SetCurrentValue(EnableToolbarAutoHiddenProperty , BooleanBoxes.Box((bool)e.NewValue));
+        }
 
         public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register(
             "CornerRadius",

@@ -99,15 +99,15 @@
                                   IsThreeState="False"
                                   Margin="16"/>
                     
-                    <u:EmptyStateControl IsEmpty="{Binding ElementName=StateSwitch,Mode=OneWay,Path=IsChecked}"
+                    <u:EmptyStatePanel HasItems="{Binding ElementName=StateSwitch,Mode=OneWay,Path=IsChecked}"
                                          Height="100">
                         <TextBlock Text="This is Normal Content"
                                    FontSize="26"/>
-                        <u:EmptyStateControl.Alternative>
+                        <u:EmptyStatePanel.Alternative>
                             <TextBlock Text="This is Alternative Content"
                                        FontSize="26"/>
-                        </u:EmptyStateControl.Alternative>
-                    </u:EmptyStateControl>
+                        </u:EmptyStatePanel.Alternative>
+                    </u:EmptyStatePanel>
                 </StackPanel>
             </HeaderedContentControl>
         </WrapPanel>

@@ -2,9 +2,11 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <!--- 按钮 -->
-        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/GeometryButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/CloseButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/DropDownButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/IconButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/ImageButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/GeometryButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/LockButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/ModeButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/PathButton.xaml"/>
@@ -12,9 +14,10 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Buttons/WindowsButton.xaml"/>
 
         <!-- 控件 -->
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Controls/BannerMessageDialogControl.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Controls/TransparentComboBox.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Controls/BulletControl.xaml"/>
-        
+
         <!-- 面板 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/AlertPanel.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Panels/ToolbarPanel.xaml"/>
@@ -34,6 +37,7 @@
 
         <!-- 窗体 -->
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Windows/ColorWindow.xaml"/>
-        
+
     </ResourceDictionary.MergedDictionaries>
+    
 </ResourceDictionary>
