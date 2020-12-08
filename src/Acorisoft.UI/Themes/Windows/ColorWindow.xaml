@@ -15,7 +15,7 @@
         <Setter Property="UseLayoutRounding" Value="True"/>
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Padding" Value="0" />
-        <Setter Property="TitleBarPadding" Value="7" />
+        <Setter Property="TitleBarPadding" Value="7 7 7 0" />
         <Setter Property="WindowStyle" Value="None" />
         <Setter Property="WindowChrome.WindowChrome">
             <Setter.Value>
@@ -56,7 +56,8 @@
                                 <!-- 系统按钮 -->
                                 <StackPanel Grid.Column="1"
                                             Orientation="Horizontal"
-                                            WindowChrome.IsHitTestVisibleInChrome="True">
+                                            WindowChrome.IsHitTestVisibleInChrome="True"
+                                            VerticalAlignment="Top">
                                     <b:WindowMinButton Height="48" Width="48" Command="{x:Static SystemCommands.MinimizeWindowCommand}"/>
                                     <b:WindowMaxButton Height="48" Width="48" Command="{x:Static SystemCommands.MaximizeWindowCommand}" WindowState="{TemplateBinding WindowState}"/>
                                     <b:WindowCloseButton Height="48" Width="48" Command="{x:Static SystemCommands.CloseWindowCommand}"/>
@@ -72,7 +73,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="WindowState" Value="Maximized">
                             <Setter Property="Padding" 
-                                    Value="7 7 7 0"
+                                    Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=TitleBarPadding}"
                                     TargetName="PART_TitleBar"/>
                         </Trigger>
                     </ControlTemplate.Triggers>

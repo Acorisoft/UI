@@ -4,58 +4,53 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/MaterialDesignColors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/BootstrapColors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <Style x:Key="Style.FocusVisual.PathButton">
+    <Style x:Key="Style.FocusVisual.ImageButton">
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
                     <Rectangle Margin="-3" 
                                StrokeDashArray="2 2 2"
                                StrokeThickness="2"
-                               Stroke="{StaticResource UI.Brushes.Accent}"
+                               Stroke="{StaticResource UI.Brushes.Danger}"
                                SnapsToDevicePixels="true"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type b:PathButton}">
-        <Setter Property="FocusVisualStyle" Value="{StaticResource Style.FocusVisual.PathButton}" />
+    <Style TargetType="{x:Type b:ImageButton}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource Style.FocusVisual.ImageButton}" />
         <Setter Property="Mode" Value="Solid" />
-        <Setter Property="IconWidth" Value="24" />
-        <Setter Property="IconHeight" Value="24" />
-        <Setter Property="IconThickness" Value="2" />
+        <Setter Property="Width" Value="48" />
+        <Setter Property="Height" Value="48" />
         <Setter Property="Margin" Value="4" />
         <Style.Triggers>
             <Trigger Property="Mode" Value="Solid">
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Background" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Danger.BorderBrush}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Danger}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type b:PathButton}">
+                        <ControlTemplate TargetType="{x:Type b:ImageButton}">
                             <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
-                                <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
+                                <Image x:Name="PART_Image"
+                                       Source="{TemplateBinding Image}"
                                       Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
+                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="True"/>
@@ -66,17 +61,11 @@
                                     <Setter Property="Background" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" 
                                             TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsPressed" Value="True">
                                     <Setter Property="Background" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" 
                                             TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsEnabled" Value="False">
                                     <Setter Property="Opacity" 
@@ -89,42 +78,34 @@
                 </Setter>
             </Trigger>
             <Trigger Property="Mode" Value="Opacity">
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Background" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Danger.BorderBrush}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Danger}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type b:PathButton}">
+                        <ControlTemplate TargetType="{x:Type b:ImageButton}">
                             <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}"
                                     Opacity=".5">
-                                <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
+                                <Image x:Name="PART_Image"
+                                      Source="{TemplateBinding Image}"
                                       Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
+                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="True"/>
                             </Border>
                             <ControlTemplate.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Cursor" Value="Hand" />
-                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -170,37 +151,32 @@
                 </Setter>
             </Trigger>
             <Trigger Property="Mode" Value="Outline">
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Background" Value="{StaticResource UI.Brushes.Danger}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Danger}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Danger.BorderBrush}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="BorderThickness" Value="2" />
-                <Setter Property="BorderBrush" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="BorderBrush" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type b:PathButton}">
+                        <ControlTemplate TargetType="{x:Type b:ImageButton}">
                             <Border x:Name="PART_Bd"
                                     Background="{StaticResource UI.Brushes.Transparenct}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
-                                <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
+                                <Image x:Name="PART_Image"
+                                      Source="{TemplateBinding Image}"
                                       Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
+                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="True"/>
@@ -214,9 +190,6 @@
                                     <Setter Property="BorderBrush" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" 
                                             TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsPressed" Value="True">
                                     <Setter Property="Background" 
@@ -225,9 +198,6 @@
                                     <Setter Property="BorderBrush" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" 
                                             TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsEnabled" Value="False">
                                     <Setter Property="Opacity" 
@@ -241,33 +211,28 @@
             </Trigger>
             <Trigger Property="Mode" Value="CTA">
                 <Setter Property="IsDefault" Value="True" />
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Background" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Danger.BorderBrush}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Danger}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type b:PathButton}">
+                        <ControlTemplate TargetType="{x:Type b:ImageButton}">
                             <Border x:Name="PART_Bd"
                                     Background="{TemplateBinding Background}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
-                                <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
+                                <Image x:Name="PART_Image"
+                                      Source="{TemplateBinding Image}"
                                       Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
+                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="True"/>
@@ -321,33 +286,28 @@
                 </Setter>
             </Trigger>
             <Trigger Property="Mode" Value="Transparency">
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Background" Value="{StaticResource UI.Brushes.Danger}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Danger}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Danger.BorderBrush}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type b:PathButton}">
+                        <ControlTemplate TargetType="{x:Type b:ImageButton}">
                             <Border x:Name="PART_Bd"
                                     Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
-                                <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
+                                <Image x:Name="PART_Image"
+                                      Source="{TemplateBinding Image}"
                                       Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
+                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="True"/>
@@ -358,17 +318,11 @@
                                     <Setter Property="Background" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverBackgroundBrush}" 
                                             TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsPressed" Value="True">
                                     <Setter Property="Background" 
                                             Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressBackgroundBrush}" 
                                             TargetName="PART_Bd"/>
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsEnabled" Value="False">
                                     <Setter Property="Opacity" 
@@ -382,11 +336,11 @@
             </Trigger>
             <Trigger Property="Mode" Value="Link">
                 <Setter Property="Background" Value="{x:Null}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="HoverBackgroundBrush" Value="{x:Null}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.MaterialDesign.Amber}" />
                 <Setter Property="PressBackgroundBrush" Value="{x:Null}" />
-                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
+                <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.Danger.BorderBrush}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
@@ -394,19 +348,15 @@
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type b:PathButton}">
+                        <ControlTemplate TargetType="{x:Type b:ImageButton}">
                             <Border x:Name="PART_Bd"
                                     Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
-                                <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
+                                <Image x:Name="PART_Image"
+                                      Source="{TemplateBinding Image}"
                                       Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
+                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="True"/>
@@ -414,14 +364,8 @@
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Cursor" Value="Hand" />
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=HoverForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Fill" 
-                                            Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=PressForegroundBrush}" 
-                                            TargetName="PART_Icon"/>
                                 </Trigger>
                                 <Trigger Property="IsEnabled" Value="False">
                                     <Setter Property="Opacity" 
@@ -434,33 +378,28 @@
                 </Setter>
             </Trigger>
             <Trigger Property="Mode" Value="FadeOut">
-                <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Background" Value="{StaticResource UI.Brushes.Danger}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Danger}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Danger.BorderBrush}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type b:PathButton}">
+                        <ControlTemplate TargetType="{x:Type b:ImageButton}">
                             <Border x:Name="PART_Bd"
                                     Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
-                                <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
+                                <Image x:Name="PART_Image"
+                                      Source="{TemplateBinding Image}"
                                       Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
+                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="True"
@@ -474,7 +413,7 @@
                                     <BeginStoryboard>
                                         <Storyboard>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
-                                                                           Storyboard.TargetName="PART_Icon">
+                                                                           Storyboard.TargetName="PART_Image">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0.400"
@@ -491,7 +430,7 @@
                                     <BeginStoryboard>
                                         <Storyboard>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
-                                                                           Storyboard.TargetName="PART_Icon">
+                                                                           Storyboard.TargetName="PART_Image">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0.400"
@@ -511,32 +450,27 @@
             </Trigger>
             <Trigger Property="Mode" Value="FadeIn">
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
-                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
+                <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Danger}" />
+                <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Danger}" />
                 <Setter Property="HoverForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
-                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Accent.Dark}" />
+                <Setter Property="PressBackgroundBrush" Value="{StaticResource  UI.Brushes.Danger.BorderBrush}" />
                 <Setter Property="PressForegroundBrush" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
                 <Setter Property="MinWidth" Value="48" />
                 <Setter Property="MinHeight" Value="32" />
-                <Setter Property="Padding" Value="16" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type b:PathButton}">
+                        <ControlTemplate TargetType="{x:Type b:ImageButton}">
                             <Border x:Name="PART_Bd"
                                     Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
-                                <Path x:Name="PART_Icon"
-                                      Data="{TemplateBinding Icon}"
+                                <Image x:Name="PART_Image"
+                                      Source="{TemplateBinding Image}"
                                       Stretch="Uniform"
-                                      Fill="{TemplateBinding Foreground}"
-                                      StrokeThickness="{TemplateBinding IconThickness}"
-                                      Width="{TemplateBinding IconWidth}"
-                                      Height="{TemplateBinding IconHeight}"
-                                      Margin="{TemplateBinding IconPadding}"
+                                      Margin="{TemplateBinding Padding}"
                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="True"
@@ -550,7 +484,7 @@
                                     <BeginStoryboard>
                                         <Storyboard>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
-                                                                           Storyboard.TargetName="PART_Icon">
+                                                                           Storyboard.TargetName="PART_Image">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0.400"
@@ -567,7 +501,7 @@
                                     <BeginStoryboard>
                                         <Storyboard>
                                             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
-                                                                           Storyboard.TargetName="PART_Icon">
+                                                                           Storyboard.TargetName="PART_Image">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0.400"

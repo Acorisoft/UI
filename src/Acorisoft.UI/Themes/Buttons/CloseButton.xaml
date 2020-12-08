@@ -3,52 +3,50 @@
                     xmlns:b="clr-namespace:Acorisoft.UI.Buttons">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/MaterialDesignColors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <Style x:Key="UI.Styles.ToggleStateButton" TargetType="{x:Type b:ToggleStateButton}">
+    <Style TargetType="{x:Type b:CloseButton}">
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Margin" Value="4" />
         <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
-        <Setter Property="IsThreeState" Value="False" />
-        <Setter Property="IconWidth" Value="16" />
-        <Setter Property="IconHeight" Value="16" />
+        <Setter Property="MinWidth" Value="48" />
+        <Setter Property="MinHeight" Value="32" />
         <Setter Property="Padding" Value="16" />
-        <Setter Property="IconThickness" Value="0" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type b:ToggleStateButton}">
-                    <Border Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}">
+                <ControlTemplate TargetType="{x:Type b:CloseButton}">
+                    <Border x:Name="PART_Bd"
+                            Background="{TemplateBinding Background}"
+                            Padding="{TemplateBinding Padding}">
                         <Path x:Name="PART_Icon"
-                              Stretch="Uniform"
-                              Width="{TemplateBinding IconWidth}"
-                              Height="{TemplateBinding IconHeight}"
-                              Fill="{TemplateBinding Foreground}"
-                              Stroke="{TemplateBinding Foreground}"
-                              StrokeThickness="{TemplateBinding IconThickness}"
-                              VerticalAlignment="Center"
-                              HorizontalAlignment="Center"
+                              Data="M0.7,0 L5,4.3 L9.3,0 L10,0.7 L5.7,5 L10,9.3 L9.3,10 L5,5.7 L0.7,10 L0,9.3 L4.3,5 L0,0.7 z"
+                              Width="11"
+                              Height="11"
                               SnapsToDevicePixels="True"
-                              Opacity=".5"
-                              Margin="{TemplateBinding Padding}"/>
+                              Stretch="Uniform"
+                              Fill="{TemplateBinding Foreground}"
+                              Opacity=".5"/>
                     </Border>
                     <ControlTemplate.Triggers>
-                        <Trigger Property="IsChecked" Value="True">
-                            <Setter Property="Data" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=TrueState}" TargetName="PART_Icon"/>
-                        </Trigger>
-                        <Trigger Property="IsChecked" Value="False">
-                            <Setter Property="Data" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=FalseState}" TargetName="PART_Icon"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor" Value="Hand" />
                         </Trigger>
                         <EventTrigger RoutedEvent="MouseEnter">
                             <BeginStoryboard>
                                 <Storyboard>
                                     <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
-                                                                   Storyboard.TargetName="PART_Icon">
+                                                                           Storyboard.TargetName="PART_Icon">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0"
-                                                              Value="0.5"/>
+                                                                      Value="0.5"/>
                                         <EasingDoubleKeyFrame KeyTime="0:0:0.400"
-                                                              Value="1"/>
-
+                                                                      Value="1">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase/>
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
                                     </DoubleAnimationUsingKeyFrames>
                                 </Storyboard>
                             </BeginStoryboard>
@@ -57,12 +55,15 @@
                             <BeginStoryboard>
                                 <Storyboard>
                                     <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
-                                                                   Storyboard.TargetName="PART_Icon">
+                                                                           Storyboard.TargetName="PART_Icon">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0"
-                                                              Value="1"/>
+                                                                      Value="1"/>
                                         <EasingDoubleKeyFrame KeyTime="0:0:0.400"
-                                                              Value="0.5"/>
-
+                                                                      Value="0.5">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase/>
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
                                     </DoubleAnimationUsingKeyFrames>
                                 </Storyboard>
                             </BeginStoryboard>
@@ -72,5 +73,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style TargetType="{x:Type b:ToggleStateButton}" BasedOn="{StaticResource UI.Styles.ToggleStateButton}"/>
 </ResourceDictionary>

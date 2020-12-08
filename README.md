@@ -53,7 +53,7 @@ Desire_来源网站或者应用_给定一个友好命名_
 
 ## 控件库
 
-### 按钮
+### [按钮](Button.md)
 
 ![按钮（Button）](Thumbnails/Buttons.png)
 ![按钮（Button）](Thumbnails/Buttons.gif)
@@ -62,20 +62,23 @@ Desire_来源网站或者应用_给定一个友好命名_
 
 |类型         |  属性          | 属性类型    | 备注                 |
 |:----------:|:--------------:| :--------:|:---------------------|
-| ModeButton | Mode           | ButtonMode| 设置按钮模式，共有6种模式|
-| PathButton | Icon           | Geometry  | 设置图标              |
-| PathButton | IconWidth      | double    | 设置图标的宽度         |
-| PathButton | IconHeight     | double    | 设置图标的高度         |
-| PathButton | IconPadding    | Thickness | 设置图标的内边距       |
-| PathButton | IconThickness  | double    | 设置图标的边缘大小      |
-| IconButton | Dock           | Dock      | 设置图标的停靠位置      |
+| ModeButton | Mode           | ButtonMode | 设置按钮模式，共有6种模式|
+| PathButton | Icon           | Geometry   | 设置图标              |
+| PathButton | IconWidth      | double     | 设置图标的宽度         |
+| PathButton | IconHeight     | double     | 设置图标的高度         |
+| PathButton | IconPadding    | Thickness  | 设置图标的内边距       |
+| PathButton | IconThickness  | double     | 设置图标的边缘大小      |
+| IconButton | Dock           | Dock       | 设置图标的停靠位置      |
+| ImageButton| Image          | ImageSource| 设置图片               |
 
 #### Roadmap
-
-* <del>ModeButton</del> 用于提供普通文本按钮样式支持
-* <del>PathButton</del> 用于提供路径按钮样式支持
-* <del>IconButton</del> 用于提供文本图标按钮样式支持
-* FloatingButton 用于提供圆形浮空按钮样式支持
+* 完成的
+    * ModeButton 用于提供普通文本按钮样式支持
+    * PathButton 用于提供路径按钮样式支持
+    * IconButton 用于提供文本图标按钮样式支持
+    * ImageButton
+* 未完成的
+    * FloatingButton 用于提供圆形浮空按钮样式支持
 
 #### 为什么要加入按钮
 

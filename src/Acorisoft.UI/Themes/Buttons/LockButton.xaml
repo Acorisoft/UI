@@ -8,7 +8,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type b:LockButton}" BasedOn="{StaticResource UI.Styles.ToggleStateButton}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="IsThreeState" Value="False" />
         <Setter Property="IconWidth" Value="23" />
@@ -21,7 +21,7 @@
 
 
     <Style TargetType="{x:Type b:VisibleButton}" BasedOn="{StaticResource UI.Styles.ToggleStateButton}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="IsThreeState" Value="False" />
         <Setter Property="IconWidth" Value="23" />

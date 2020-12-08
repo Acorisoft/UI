@@ -424,7 +424,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -526,7 +526,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -628,7 +628,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -730,7 +730,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -871,6 +871,9 @@
                                 </Grid>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -878,7 +881,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -895,7 +898,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -975,6 +978,9 @@
                                 </Grid>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -982,7 +988,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -999,7 +1005,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1079,6 +1085,9 @@
                                 </Grid>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -1086,7 +1095,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1103,7 +1112,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1183,6 +1192,9 @@
                                 </Grid>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -1190,7 +1202,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1207,7 +1219,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1234,6 +1246,7 @@
                     <Condition Property="Mode" Value="CTA"/>
                     <Condition Property="Dock" Value="Left"/>
                 </MultiTrigger.Conditions>
+                <Setter Property="IsDefault" Value="True" />
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
@@ -1298,7 +1311,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".7">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1315,7 +1328,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".7"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1340,6 +1353,7 @@
                     <Condition Property="Mode" Value="CTA"/>
                     <Condition Property="Dock" Value="Right"/>
                 </MultiTrigger.Conditions>
+                <Setter Property="IsDefault" Value="True" />
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
@@ -1404,7 +1418,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".7">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1421,7 +1435,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".7"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1446,6 +1460,7 @@
                     <Condition Property="Mode" Value="CTA"/>
                     <Condition Property="Dock" Value="Top"/>
                 </MultiTrigger.Conditions>
+                <Setter Property="IsDefault" Value="True" />
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
@@ -1510,7 +1525,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".7">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1527,7 +1542,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".7"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1552,6 +1567,7 @@
                     <Condition Property="Mode" Value="CTA"/>
                     <Condition Property="Dock" Value="Bottom"/>
                 </MultiTrigger.Conditions>
+                <Setter Property="IsDefault" Value="True" />
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.White}" />
                 <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent.Dark}" />
@@ -1616,7 +1632,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".7">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1633,7 +1649,7 @@
                                             <DoubleAnimationUsingKeyFrames>
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".7"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -1654,10 +1670,10 @@
                 </Setter>
             </MultiTrigger>
             
-            <!-- Transparent -->
+            <!-- Transparency -->
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="Mode" Value="Transparent"/>
+                    <Condition Property="Mode" Value="Transparency"/>
                     <Condition Property="Dock" Value="Left"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
@@ -1676,7 +1692,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1748,7 +1764,7 @@
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="Mode" Value="Transparent"/>
+                    <Condition Property="Mode" Value="Transparency"/>
                     <Condition Property="Dock" Value="Right"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
@@ -1767,7 +1783,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1840,7 +1856,7 @@
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="Mode" Value="Transparent"/>
+                    <Condition Property="Mode" Value="Transparency"/>
                     <Condition Property="Dock" Value="Top"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
@@ -1859,7 +1875,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1932,7 +1948,7 @@
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="Mode" Value="Transparent"/>
+                    <Condition Property="Mode" Value="Transparency"/>
                     <Condition Property="Dock" Value="Bottom"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
@@ -1951,7 +1967,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2045,7 +2061,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2131,7 +2147,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2217,7 +2233,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2303,7 +2319,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2391,7 +2407,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2438,7 +2454,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2449,7 +2465,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2466,7 +2482,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="0.5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2477,7 +2493,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="0.5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2513,7 +2529,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2560,7 +2576,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2571,7 +2587,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2588,7 +2604,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="0.5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2599,7 +2615,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="0.5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2635,7 +2651,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2682,7 +2698,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2693,7 +2709,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2710,7 +2726,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="0.5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2721,7 +2737,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="0.5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2757,7 +2773,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2804,7 +2820,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2815,7 +2831,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="0.5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2832,7 +2848,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="0.5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2843,7 +2859,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="0.5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2881,7 +2897,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2931,7 +2947,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2942,7 +2958,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2959,7 +2975,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -2970,7 +2986,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3006,7 +3022,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -3056,7 +3072,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3067,7 +3083,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3084,7 +3100,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3095,7 +3111,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3131,7 +3147,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -3181,7 +3197,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3192,7 +3208,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3209,7 +3225,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3220,7 +3236,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3256,7 +3272,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -3306,7 +3322,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3317,7 +3333,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value="1"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value=".5">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3334,7 +3350,7 @@
                                                                            Storyboard.TargetName="PART_Icon">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>
@@ -3345,7 +3361,7 @@
                                                                            Storyboard.TargetName="PART_Content">
                                                 <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                                       Value=".5"/>
-                                                <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                                       Value="1">
                                                     <EasingDoubleKeyFrame.EasingFunction>
                                                         <CubicEase/>

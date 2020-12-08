@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>textelement</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>textelement</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>name</ToolTip>
+          <Default>name</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[ public FontFamily $name$FontFamily
+        {
+            get => (FontFamily)GetValue($name$FontFamilyProperty);
+            set => SetValue($name$FontFamilyProperty , value);
+        }
+
+
+        public FontStyle $name$FontStyle
+        {
+            get => (FontStyle)GetValue($name$FontStyleProperty);
+            set => SetValue($name$FontStyleProperty , value);
+        }
+
+
+        public FontWeight $name$FontWeight
+        {
+            get => (FontWeight)GetValue($name$FontWeightProperty);
+            set => SetValue($name$FontWeightProperty , value);
+        }
+
+        public FontStretch $name$FontStretch
+        {
+            get => (FontStretch)GetValue($name$FontStretchProperty);
+            set => SetValue($name$FontStretchProperty , value);
+        }
+
+
+        public double $name$FontSize
+        {
+            get => (double)GetValue($name$FontSizeProperty);
+            set => SetValue($name$FontSizeProperty , value);
+        }
+
+
+        public Brush $name$Foreground
+        {
+            get => (Brush)GetValue($name$ForegroundProperty);
+            set => SetValue($name$ForegroundProperty , value);
+        }
+
+        public static readonly DependencyProperty $name$ForegroundProperty = DependencyProperty.Register(
+            "$name$Foreground",
+            typeof(Brush),
+            typeof(RibbonSection), 
+            new PropertyMetadata(null));
+
+
+        public static readonly DependencyProperty $name$FontSizeProperty = DependencyProperty.Register(
+            "$name$FontSize",
+            typeof(double),
+            typeof(RibbonSection), 
+            new PropertyMetadata(null));
+
+
+        public static readonly DependencyProperty $name$FontStretchProperty = DependencyProperty.Register(
+            "$name$FontStretch",
+            typeof(FontStretch),
+            typeof(RibbonSection), 
+            new PropertyMetadata(null));
+
+        public static readonly DependencyProperty $name$FontWeightProperty = DependencyProperty.Register(
+            "$name$FontWeight",
+            typeof(FontWeight),
+            typeof(RibbonSection), 
+            new PropertyMetadata(null));
+
+
+        public static readonly DependencyProperty $name$FontStyleProperty = DependencyProperty.Register(
+            "TitleFontStyle",
+            typeof($name$FontStyle),
+            typeof(RibbonSection), 
+            new PropertyMetadata(null));
+
+
+        public static readonly DependencyProperty $name$FontFamilyProperty = DependencyProperty.Register(
+            "$name$FontFamily",
+            typeof(FontFamily),
+            typeof(RibbonSection), 
+            new PropertyMetadata(null));]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

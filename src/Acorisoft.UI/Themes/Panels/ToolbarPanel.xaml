@@ -8,7 +8,7 @@
 
 
     <Style TargetType="{x:Type p:ToolbarPanel}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="Padding" Value="24" />
         <Setter Property="CornerRadius" Value="8" />
@@ -67,7 +67,7 @@
                             <ContentControl x:Name="PART_Toolbar"
                                             Grid.Row="0"
                                             Grid.Column="1"
-                                            Margin="32 0"
+                                            Margin="32 0 0 0"
                                             IsTabStop="False"
                                             Content="{TemplateBinding Toolbar}"
                                             ContentTemplate="{TemplateBinding ToolbarTemplate}"

@@ -12,7 +12,7 @@ namespace Acorisoft.UI.Buttons
         Outline,
         CTA,
         Opacity,
-        Transparent,
+        Transparency,
         Link,
         FadeIn,
         FadeOut

@@ -11,6 +11,10 @@
                 MinWidth="1366"
                 MinHeight="768">
     <Window.Resources>
+        <v:ControlDemoCtl x:Key="ControlDemo"/>
+        <v:ButtonDemoCtl x:Key="ButtonDemo"/>
+        <v:PanelDemoCtl x:Key="PanelDemo"/>
+        <v:DialogDemoCtl x:Key="DialogDemo"/>
         <Style TargetType="{x:Type HeaderedContentControl}">
             <Setter Property="Focusable" Value="False" />
             <Setter Property="HeaderTemplate">
@@ -46,17 +50,15 @@
                  Margin="16"
                  SelectedIndex="0"
                  BorderThickness="0"
-                 Background="{StaticResource UI.Brushes.Transparent}">
-            <ListBoxItem Content="Button Demo">
-                <ListBoxItem.Tag>
-                    <v:ButtonDemoCtl/>
-                </ListBoxItem.Tag>
-            </ListBoxItem>
-            <ListBoxItem Content="Panel Demo">
-                <ListBoxItem.Tag>
-                    <v:PanelDemoCtl/>
-                </ListBoxItem.Tag>
-            </ListBoxItem>
+                 Background="{StaticResource UI.Brushes.Transparenct}">
+            <ListBoxItem Content="Button Demo"
+                         Tag="{StaticResource ButtonDemo}"/>
+            <ListBoxItem Content="Control Demo"
+                         Tag="{StaticResource ControlDemo}"/>
+            <ListBoxItem Content="Dialog Demo"
+                         Tag="{StaticResource DialogDemo}"/>
+            <ListBoxItem Content="Panel Demo"
+                         Tag="{StaticResource PanelDemo}"/>
         </ListBox>
         
         

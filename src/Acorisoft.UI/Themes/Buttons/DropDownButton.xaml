@@ -7,7 +7,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type b:DropDownButton}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -60,12 +60,12 @@
                                                                    Storyboard.TargetName="PART_Content">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                               Value="0.5"/>
-                                        <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                               Value="1"/>
                                     </DoubleAnimationUsingKeyFrames>
                                     <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Popup"
                                                                    Storyboard.TargetProperty="(Popup.IsOpen)">
-                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.300">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.400">
                                             <DiscreteObjectKeyFrame.Value>
                                                 <s:Boolean>True</s:Boolean>
                                             </DiscreteObjectKeyFrame.Value>
@@ -81,13 +81,13 @@
                                                                    Storyboard.TargetName="PART_Content">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                               Value="1"/>
-                                        <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                               Value="0.5"/>
 
                                     </DoubleAnimationUsingKeyFrames>
                                     <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Popup"
                                                                    Storyboard.TargetProperty="(Popup.IsOpen)">
-                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.300">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.400">
                                             <DiscreteObjectKeyFrame.Value>
                                                 <s:Boolean>False</s:Boolean>
                                             </DiscreteObjectKeyFrame.Value>
@@ -102,7 +102,7 @@
         </Setter>
     </Style>
     <Style TargetType="{x:Type b:DropDownIconButton}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -152,12 +152,12 @@
                                                                    Storyboard.TargetName="PART_Icon">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                               Value="0.5"/>
-                                        <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                               Value="1"/>
                                     </DoubleAnimationUsingKeyFrames>
                                     <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Popup"
                                                                    Storyboard.TargetProperty="(Popup.IsOpen)">
-                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.300">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.400">
                                             <DiscreteObjectKeyFrame.Value>
                                                 <s:Boolean>True</s:Boolean>
                                             </DiscreteObjectKeyFrame.Value>
@@ -173,13 +173,13 @@
                                                                    Storyboard.TargetName="PART_Icon">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0"
                                                               Value="1"/>
-                                        <EasingDoubleKeyFrame KeyTime="0:0:0.300"
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0.400"
                                                               Value="0.5"/>
 
                                     </DoubleAnimationUsingKeyFrames>
                                     <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Popup"
                                                                    Storyboard.TargetProperty="(Popup.IsOpen)">
-                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.300">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.400">
                                             <DiscreteObjectKeyFrame.Value>
                                                 <s:Boolean>False</s:Boolean>
                                             </DiscreteObjectKeyFrame.Value>
