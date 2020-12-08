@@ -75,52 +75,40 @@
 
 ### Link
 
-设置为 `Transparency` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时显示背景，以下是能够修改外观的可用属性：
+设置为 `Link` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时修改文本颜色
 
 
-![Transparency](Thumbnails\Transparency_Button.gif)
+![Link](Thumbnails\Link_Button.gif)
 
 |       属性名              |            属性效果           |
 |:------------------------:|:----------------------------:|
-| Background               | 修改默认按钮轮廓颜色           |
 | Foreground               | 修改默认按钮前景颜色           |
-| HoverBackground          | 修改鼠标停留在按钮上时的背景颜色|
 | HoverForeground          | 修改鼠标停留在按钮上时的前景颜色|
-| PressBackground          | 修改鼠标按下时的背景颜色       |
 | PressForeground          | 修改鼠标按下时的前景颜色       |
 
 
 ### FadeIn
 
-设置为 `Transparency` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时显示背景，以下是能够修改外观的可用属性：
+设置为 `FadeIn` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时透明度降低
 
 
-![Transparency](Thumbnails\Transparency_Button.gif)
+![FadeIn](Thumbnails\FadeOut_Button.gif)
+
 
 |       属性名              |            属性效果           |
 |:------------------------:|:----------------------------:|
-| Background               | 修改默认按钮轮廓颜色           |
 | Foreground               | 修改默认按钮前景颜色           |
-| HoverBackground          | 修改鼠标停留在按钮上时的背景颜色|
-| HoverForeground          | 修改鼠标停留在按钮上时的前景颜色|
-| PressBackground          | 修改鼠标按下时的背景颜色       |
-| PressForeground          | 修改鼠标按下时的前景颜色       |
 
 ### FadeOut
 
-设置为 `Transparency` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时显示背景，以下是能够修改外观的可用属性：
+设置为 `FadeOut` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时显示背景，以下是能够修改外观的可用属性：
 
 
-![Transparency](Thumbnails\Transparency_Button.gif)
+![FadeOut](Thumbnails\FadeOut_Button.gif)
 
 |       属性名              |            属性效果           |
 |:------------------------:|:----------------------------:|
-| Background               | 修改默认按钮轮廓颜色           |
 | Foreground               | 修改默认按钮前景颜色           |
-| HoverBackground          | 修改鼠标停留在按钮上时的背景颜色|
-| HoverForeground          | 修改鼠标停留在按钮上时的前景颜色|
-| PressBackground          | 修改鼠标按下时的背景颜色       |
-| PressForeground          | 修改鼠标按下时的前景颜色       |
 
 
 ## 按钮控件一览表
@@ -128,5 +116,3 @@
 ### ModeButton
 
 模式按钮是`Acorisoft.UI` 按钮家族的基类类型，虽然是基类控件，但是他并不是抽象的，他是可以直接在Xaml中声明使用。
-
-![ModeButton](Thumbnails\ModeButton.gif)
