@@ -8,7 +8,7 @@
 
 
     <Style TargetType="{x:Type p:ToolbarPanel}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="Padding" Value="24" />
         <Setter Property="CornerRadius" Value="8" />

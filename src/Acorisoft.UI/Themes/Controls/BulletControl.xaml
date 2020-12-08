@@ -5,9 +5,15 @@
         <ResourceDictionary Source="pack://application:,,,/Acorisoft.UI;component/Themes/Colors/Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     <Style TargetType="{x:Type c:BulletControl}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}"/>
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}"/>
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="Mode" Value="Fixed" />
+        <Setter Property="BulletSize" Value="128" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="HorizontalBulletAlignment" Value="Left" />
+        <Setter Property="VerticalBulletAlignment" Value="Center" />
         <Setter Property="BulletPadding" Value="16" />
         <Style.Triggers>
             <Trigger Property="Mode" Value="Auto">
@@ -25,8 +31,13 @@
                                                   ContentTemplate="{TemplateBinding BulletTemplate}"
                                                   ContentTemplateSelector="{TemplateBinding BulletTemplateSelector}"
                                                   ContentStringFormat="{TemplateBinding BulletStringFormat}"
-                                                  HorizontalAlignment="{TemplateBinding BulletVerticalAlignment}"
-                                                  VerticalAlignment="{TemplateBinding BulletHorizontalAlignment}"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalBulletAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalBulletAlignment}"                                                 
+                                                  TextElement.FontFamily="{TemplateBinding FontFamily}"
+                                                  TextElement.FontSize="{TemplateBinding FontSize}"
+                                                  TextElement.FontStretch="{TemplateBinding FontStretch}"
+                                                  TextElement.FontStyle="{TemplateBinding FontStyle}"
+                                                  TextElement.Foreground="{TemplateBinding Foreground}"
                                                   Margin="{TemplateBinding BulletPadding}"/>
                                 <ContentPresenter x:Name="PART_Content"
                                                   Grid.Column="1"
@@ -35,7 +46,12 @@
                                                   ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
                                                   ContentStringFormat="{TemplateBinding ContentStringFormat}"
                                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"                
+                                                  TextElement.FontFamily="{TemplateBinding FontFamily}"
+                                                  TextElement.FontSize="{TemplateBinding FontSize}"
+                                                  TextElement.FontStretch="{TemplateBinding FontStretch}"
+                                                  TextElement.FontStyle="{TemplateBinding FontStyle}"
+                                                  TextElement.Foreground="{TemplateBinding Foreground}"
                                                   Margin="{TemplateBinding Padding}"/>
                             </Grid>
                         </ControlTemplate>
@@ -57,8 +73,13 @@
                                                   ContentTemplate="{TemplateBinding BulletTemplate}"
                                                   ContentTemplateSelector="{TemplateBinding BulletTemplateSelector}"
                                                   ContentStringFormat="{TemplateBinding BulletStringFormat}"
-                                                  HorizontalAlignment="{TemplateBinding BulletVerticalAlignment}"
-                                                  VerticalAlignment="{TemplateBinding BulletHorizontalAlignment}"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalBulletAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalBulletAlignment}"              
+                                                  TextElement.FontFamily="{TemplateBinding FontFamily}"
+                                                  TextElement.FontSize="{TemplateBinding FontSize}"
+                                                  TextElement.FontStretch="{TemplateBinding FontStretch}"
+                                                  TextElement.FontStyle="{TemplateBinding FontStyle}"
+                                                  TextElement.Foreground="{TemplateBinding Foreground}"
                                                   Margin="{TemplateBinding BulletPadding}"/>
                                 <ContentPresenter x:Name="PART_Content"
                                                   Grid.Column="1"
@@ -67,7 +88,12 @@
                                                   ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"
                                                   ContentStringFormat="{TemplateBinding ContentStringFormat}"
                                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"             
+                                                  TextElement.FontFamily="{TemplateBinding FontFamily}"
+                                                  TextElement.FontSize="{TemplateBinding FontSize}"
+                                                  TextElement.FontStretch="{TemplateBinding FontStretch}"
+                                                  TextElement.FontStyle="{TemplateBinding FontStyle}"
+                                                  TextElement.Foreground="{TemplateBinding Foreground}"
                                                   Margin="{TemplateBinding Padding}"/>
                             </Grid>
                         </ControlTemplate>

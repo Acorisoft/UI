@@ -37,7 +37,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBox}">
                     <ScrollViewer x:Name="PART_ContentHost" 
-                                  Background="Transparent" 
+                                  Background="Transparency" 
                                   Focusable="false" 
                                   HorizontalScrollBarVisibility="Hidden"
                                   VerticalScrollBarVisibility="Hidden"/>
@@ -59,7 +59,7 @@
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
                     <Border x:Name="templateRoot"
                             SnapsToDevicePixels="true"
-                            Background="{StaticResource UI.Brushes.Transparent}">
+                            Background="{StaticResource UI.Brushes.Transparenct}">
                         <Border x:Name="splitBorder"
                                 HorizontalAlignment="Right" 
                                 Margin="0" 
@@ -85,7 +85,7 @@
     <!--  -->
     <Style TargetType="{x:Type c:TransparentComboBox}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}"/>
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}"/>
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}"/>
         <Setter Property="IconSize" Value="29" />
         <Setter Property="PanelForeground" Value="{StaticResource UI.Brushes.White}" />
@@ -251,7 +251,7 @@
                                               IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
                                               Style="{StaticResource ComboBoxToggleButton}"/>
                                 <Border x:Name="border" 
-                                        Background="{StaticResource UI.Brushes.Transparent}"
+                                        Background="{StaticResource UI.Brushes.Transparenct}"
                                         Margin="{TemplateBinding BorderThickness}">
                                     <TextBox x:Name="PART_EditableTextBox"
                                              CaretBrush="{TemplateBinding PanelForeground}"

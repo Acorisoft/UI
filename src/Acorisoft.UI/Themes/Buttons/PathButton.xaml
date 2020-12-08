@@ -122,6 +122,9 @@
                                       SnapsToDevicePixels="True"/>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -185,7 +188,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:PathButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
@@ -317,7 +320,7 @@
                     </Setter.Value>
                 </Setter>
             </Trigger>
-            <Trigger Property="Mode" Value="Transparent">
+            <Trigger Property="Mode" Value="Transparency">
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Accent}" />
                 <Setter Property="HoverBackgroundBrush" Value="{StaticResource UI.Brushes.Accent}" />
@@ -334,7 +337,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:PathButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Path x:Name="PART_Icon"
@@ -393,7 +396,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:PathButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Path x:Name="PART_Icon"
@@ -447,7 +450,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:PathButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Path x:Name="PART_Icon"
@@ -523,7 +526,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:PathButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Path x:Name="PART_Icon"

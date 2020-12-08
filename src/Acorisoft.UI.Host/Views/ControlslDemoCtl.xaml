@@ -36,6 +36,15 @@
                     </Border>
                 </StackPanel>
             </HeaderedContentControl>
+            <HeaderedContentControl Header="BulletControl">
+                <StackPanel>
+                    <u:BulletControl Content="Hello" BulletSize="64">
+                        <u:BulletControl.Bullet>
+                            <TextBlock Text="项目名称" Foreground="{StaticResource UI.Brushes.White}"/>
+                        </u:BulletControl.Bullet>
+                    </u:BulletControl>
+                </StackPanel>
+            </HeaderedContentControl>
         </WrapPanel>
     </ScrollViewer>
 </UserControl>

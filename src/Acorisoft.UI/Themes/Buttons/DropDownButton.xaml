@@ -7,7 +7,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type b:DropDownButton}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -102,7 +102,7 @@
         </Setter>
     </Style>
     <Style TargetType="{x:Type b:DropDownIconButton}">
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />

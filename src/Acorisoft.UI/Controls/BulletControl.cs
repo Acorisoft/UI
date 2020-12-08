@@ -58,40 +58,41 @@ namespace Acorisoft.UI.Controls
             set => SetValue(BulletStringFormatProperty , value);
         }
 
-        public VerticalAlignment BulletHorizontalAlignment
-        {
-            get => (VerticalAlignment)GetValue(BulletHorizontalAlignmentProperty);
-            set => SetValue(BulletHorizontalAlignmentProperty , value);
-        }
-
-
-        public HorizontalAlignment BulletVerticalAlignment
-        {
-            get => (HorizontalAlignment)GetValue(BulletVerticalAlignmentProperty);
-            set => SetValue(BulletVerticalAlignmentProperty , value);
-        }
-
         public Thickness BulletPadding
         {
             get => (Thickness)GetValue(BulletPaddingProperty);
             set => SetValue(BulletPaddingProperty , value);
         }
 
+
+        public HorizontalAlignment HorizontalBulletAlignment
+        {
+            get => (HorizontalAlignment)GetValue(HorizontalBulletAlignmentProperty);
+            set => SetValue(HorizontalBulletAlignmentProperty , value);
+        }
+
+
+        public VerticalAlignment VerticalBulletAlignment
+        {
+            get => (VerticalAlignment)GetValue(VerticalBulletAlignmentProperty);
+            set => SetValue(VerticalBulletAlignmentProperty , value);
+        }
+
+        public static readonly DependencyProperty HorizontalBulletAlignmentProperty = DependencyProperty.Register(
+            "HorizontalBulletAlignment",
+            typeof(HorizontalAlignment),
+            typeof(BulletControl),
+            new PropertyMetadata(null));
+
+        public static readonly DependencyProperty VerticalBulletAlignmentProperty = DependencyProperty.Register(
+            "VerticalBulletAlignment",
+            typeof(VerticalAlignment),
+            typeof(BulletControl),
+            new PropertyMetadata(null));
+
         public static readonly DependencyProperty BulletPaddingProperty = DependencyProperty.Register(
             "BulletPadding",
             typeof(Thickness),
-            typeof(BulletControl), 
-            new PropertyMetadata(null));
-
-        public static readonly DependencyProperty BulletVerticalAlignmentProperty = DependencyProperty.Register(
-            "BulletVerticalAlignment",
-            typeof(HorizontalAlignment),
-            typeof(BulletControl), 
-            new PropertyMetadata(null));
-
-        public static readonly DependencyProperty BulletHorizontalAlignmentProperty = DependencyProperty.Register(
-            "BulletHorizontalAlignment",
-            typeof(VerticalAlignment),
             typeof(BulletControl), 
             new PropertyMetadata(null));
 

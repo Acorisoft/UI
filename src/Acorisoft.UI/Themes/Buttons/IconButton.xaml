@@ -424,7 +424,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -526,7 +526,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -628,7 +628,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -730,7 +730,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="{TemplateBinding BorderThickness}"
@@ -871,6 +871,9 @@
                                 </Grid>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -975,6 +978,9 @@
                                 </Grid>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -1079,6 +1085,9 @@
                                 </Grid>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -1183,6 +1192,9 @@
                                 </Grid>
                             </Border>
                             <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Cursor" Value="Hand" />
+                                </Trigger>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard Storyboard.TargetProperty="(UIElement.Opacity)"
@@ -1658,10 +1670,10 @@
                 </Setter>
             </MultiTrigger>
             
-            <!-- Transparent -->
+            <!-- Transparency -->
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="Mode" Value="Transparent"/>
+                    <Condition Property="Mode" Value="Transparency"/>
                     <Condition Property="Dock" Value="Left"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
@@ -1680,7 +1692,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1752,7 +1764,7 @@
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="Mode" Value="Transparent"/>
+                    <Condition Property="Mode" Value="Transparency"/>
                     <Condition Property="Dock" Value="Right"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
@@ -1771,7 +1783,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1844,7 +1856,7 @@
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="Mode" Value="Transparent"/>
+                    <Condition Property="Mode" Value="Transparency"/>
                     <Condition Property="Dock" Value="Top"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
@@ -1863,7 +1875,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -1936,7 +1948,7 @@
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="Mode" Value="Transparent"/>
+                    <Condition Property="Mode" Value="Transparency"/>
                     <Condition Property="Dock" Value="Bottom"/>
                 </MultiTrigger.Conditions>
                 <Setter Property="Background" Value="{StaticResource UI.Brushes.Accent}" />
@@ -1955,7 +1967,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2049,7 +2061,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2135,7 +2147,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2221,7 +2233,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2307,7 +2319,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2395,7 +2407,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2517,7 +2529,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2639,7 +2651,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2761,7 +2773,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -2885,7 +2897,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -3010,7 +3022,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -3135,7 +3147,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>
@@ -3260,7 +3272,7 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type b:IconButton}">
                             <Border x:Name="PART_Bd"
-                                    Background="{StaticResource UI.Brushes.Transparent}"
+                                    Background="{StaticResource UI.Brushes.Transparenct}"
                                     CornerRadius="{TemplateBinding CornerRadius}"
                                     Padding="{TemplateBinding Padding}">
                                 <Grid>

@@ -16,7 +16,7 @@
     <SolidColorBrush x:Key="UI.Brushes.Paper" Color="{StaticResource UI.Colors.Paper}"/>
     <SolidColorBrush x:Key="UI.Brushes.Accent" Color="{StaticResource UI.Colors.Accent}"/>
     <SolidColorBrush x:Key="UI.Brushes.Accent.Dark" Color="{StaticResource UI.Colors.Accent.Dark}"/>
-    <SolidColorBrush x:Key="UI.Brushes.Transparent" Color="Transparent"/>
+    <SolidColorBrush x:Key="UI.Brushes.Transparenct" Color="Transparent"/>
     <SolidColorBrush x:Key="UI.Brushes.Mask.Dark">#30000000</SolidColorBrush>
     <SolidColorBrush x:Key="UI.Brushes.Mask.Light">#30FFFFFF</SolidColorBrush>
 

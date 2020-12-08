@@ -12,7 +12,7 @@
         <Setter Property="IconHeight" Value="24" />
         <Setter Property="IconThickness" Value="1" />
         <Setter Property="Margin" Value="4" />
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />

@@ -50,7 +50,7 @@
                  Margin="16"
                  SelectedIndex="0"
                  BorderThickness="0"
-                 Background="{StaticResource UI.Brushes.Transparent}">
+                 Background="{StaticResource UI.Brushes.Transparenct}">
             <ListBoxItem Content="Button Demo"
                          Tag="{StaticResource ButtonDemo}"/>
             <ListBoxItem Content="Control Demo"

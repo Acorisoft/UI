@@ -9,7 +9,7 @@
     <Style TargetType="{x:Type b:CloseButton}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Margin" Value="4" />
-        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
+        <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparenct}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="MinWidth" Value="48" />
         <Setter Property="MinHeight" Value="32" />

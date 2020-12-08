@@ -29,7 +29,7 @@
                     <u:ModeButton Mode="Opacity" Content="Opacity"/>
                     <u:ModeButton Mode="Outline" Content="Outline"/>
                     <u:ModeButton Mode="CTA" Content="CTA"/>
-                    <u:ModeButton Mode="Transparent" Content="Transparent"/>
+                    <u:ModeButton Mode="Transparency" Content="Transparency"/>
                     <u:ModeButton Mode="Link" Content="Link"/>
                     <u:ModeButton Mode="FadeOut" Content="FadeOut"/>
                     <u:ModeButton Mode="FadeIn" Content="FadeIn"/>
@@ -43,7 +43,7 @@
                     <u:PathButton Mode="Opacity" Icon="{StaticResource Setting}"/>
                     <u:PathButton Mode="Outline" Icon="{StaticResource Setting}"/>
                     <u:PathButton Mode="CTA" Icon="{StaticResource Setting}"/>
-                    <u:PathButton Mode="Transparent" Icon="{StaticResource Setting}"/>
+                    <u:PathButton Mode="Transparency" Icon="{StaticResource Setting}"/>
                     <u:PathButton Mode="Link" Icon="{StaticResource Setting}"/>
                     <u:PathButton Mode="FadeOut" Icon="{StaticResource Setting}"/>
                     <u:PathButton Mode="FadeIn" Icon="{StaticResource Setting}"/>
@@ -56,7 +56,7 @@
                     <u:IconButton Mode="Outline" Icon="{StaticResource Setting}" Content="Outline" Dock="Left"/>
                     <u:IconButton Mode="Opacity" Icon="{StaticResource Setting}" Content="Opacity" Dock="Left"/>
                     <u:IconButton Mode="CTA" Icon="{StaticResource Setting}" Content="CTA" Dock="Left"/>
-                    <u:IconButton Mode="Transparent" Icon="{StaticResource Setting}" Content="Transparent" Dock="Left"/>
+                    <u:IconButton Mode="Transparency" Icon="{StaticResource Setting}" Content="Transparency" Dock="Left"/>
                     <u:IconButton Mode="Link" Icon="{StaticResource Setting}" Content="Link" Dock="Left"/>
                     <u:IconButton Mode="FadeOut" Icon="{StaticResource Setting}" Content="FadeOut" Dock="Left"/>
                     <u:IconButton Mode="FadeIn" Icon="{StaticResource Setting}" Content="FadeIn" Dock="Left"/>
@@ -69,7 +69,7 @@
                     <u:IconButton Mode="Outline" Icon="{StaticResource Setting}" Content="Outline" Dock="Right"/>
                     <u:IconButton Mode="Opacity" Icon="{StaticResource Setting}" Content="Opacity" Dock="Right"/>
                     <u:IconButton Mode="CTA" Icon="{StaticResource Setting}" Content="CTA" Dock="Right"/>
-                    <u:IconButton Mode="Transparent" Icon="{StaticResource Setting}" Content="Transparent" Dock="Right"/>
+                    <u:IconButton Mode="Transparency" Icon="{StaticResource Setting}" Content="Transparency" Dock="Right"/>
                     <u:IconButton Mode="Link" Icon="{StaticResource Setting}" Content="Link" Dock="Right"/>
                     <u:IconButton Mode="FadeOut" Icon="{StaticResource Setting}" Content="FadeOut" Dock="Right"/>
                     <u:IconButton Mode="FadeIn" Icon="{StaticResource Setting}" Content="FadeIn" Dock="Right"/>
@@ -82,7 +82,7 @@
                     <u:IconButton Mode="Outline" Icon="{StaticResource Setting}" Content="Outline" Dock="Top"/>
                     <u:IconButton Mode="Opacity" Icon="{StaticResource Setting}" Content="Opacity" Dock="Top"/>
                     <u:IconButton Mode="CTA" Icon="{StaticResource Setting}" Content="CTA" Dock="Top"/>
-                    <u:IconButton Mode="Transparent" Icon="{StaticResource Setting}" Content="Transparent" Dock="Top"/>
+                    <u:IconButton Mode="Transparency" Icon="{StaticResource Setting}" Content="Transparency" Dock="Top"/>
                     <u:IconButton Mode="Link" Icon="{StaticResource Setting}" Content="Link" Dock="Top"/>
                     <u:IconButton Mode="FadeOut" Icon="{StaticResource Setting}" Content="FadeOut" Dock="Top"/>
                     <u:IconButton Mode="FadeIn" Icon="{StaticResource Setting}" Content="FadeIn" Dock="Top"/>
@@ -95,7 +95,7 @@
                     <u:IconButton Mode="Outline" Icon="{StaticResource Setting}" Content="Outline" Dock="Bottom"/>
                     <u:IconButton Mode="Opacity" Icon="{StaticResource Setting}" Content="Opacity" Dock="Bottom"/>
                     <u:IconButton Mode="CTA" Icon="{StaticResource Setting}" Content="CTA" Dock="Bottom"/>
-                    <u:IconButton Mode="Transparent" Icon="{StaticResource Setting}" Content="Transparent" Dock="Bottom"/>
+                    <u:IconButton Mode="Transparency" Icon="{StaticResource Setting}" Content="Transparency" Dock="Bottom"/>
                     <u:IconButton Mode="Link" Icon="{StaticResource Setting}" Content="Link" Dock="Bottom"/>
                     <u:IconButton Mode="FadeOut" Icon="{StaticResource Setting}" Content="FadeOut" Dock="Bottom"/>
                     <u:IconButton Mode="FadeIn" Icon="{StaticResource Setting}" Content="FadeIn" Dock="Bottom"/>
@@ -107,7 +107,7 @@
                     <u:ImageButton Mode="Outline" Image="{StaticResource ___DrawingImage}" Content="Outline" />
                     <u:ImageButton Mode="Opacity" Image="{StaticResource ___DrawingImage}" Content="Opacity" />
                     <u:ImageButton Mode="CTA" Image="{StaticResource ___DrawingImage}" Content="CTA" />
-                    <u:ImageButton Mode="Transparent" Image="{StaticResource ___DrawingImage}" Content="Transparent" />
+                    <u:ImageButton Mode="Transparency" Image="{StaticResource ___DrawingImage}" Content="Transparency" />
                     <u:ImageButton Mode="Link" Image="{StaticResource ___DrawingImage}" Content="Link" />
                     <u:ImageButton Mode="FadeOut" Image="{StaticResource ___DrawingImage}" Content="FadeOut" />
                     <u:ImageButton Mode="FadeIn" Image="{StaticResource ___DrawingImage}" Content="FadeIn" />
@@ -124,7 +124,7 @@
                                     <u:ModeButton Mode="Opacity" Content="Opacity"/>
                                     <u:ModeButton Mode="Outline" Content="Outline"/>
                                     <u:ModeButton Mode="CTA" Content="CTA"/>
-                                    <u:ModeButton Mode="Transparent" Content="Transparent"/>
+                                    <u:ModeButton Mode="Transparency" Content="Transparency"/>
                                     <u:ModeButton Mode="Link" Content="Link"/>
                                     <u:ModeButton Mode="FadeOut" Content="FadeOut"/>
                                     <u:ModeButton Mode="FadeIn" Content="FadeIn"/>
@@ -140,7 +140,7 @@
                                     <u:ModeButton Mode="Opacity" Content="Opacity"/>
                                     <u:ModeButton Mode="Outline" Content="Outline"/>
                                     <u:ModeButton Mode="CTA" Content="CTA"/>
-                                    <u:ModeButton Mode="Transparent" Content="Transparent"/>
+                                    <u:ModeButton Mode="Transparency" Content="Transparency"/>
                                     <u:ModeButton Mode="Link" Content="Link"/>
                                     <u:ModeButton Mode="FadeOut" Content="FadeOut"/>
                                     <u:ModeButton Mode="FadeIn" Content="FadeIn"/>
