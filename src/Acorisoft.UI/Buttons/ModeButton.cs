@@ -17,7 +17,7 @@ namespace Acorisoft.UI.Buttons
 {
     public class ModeButton : Button
     {
-        private static readonly object DefualtCornerRadius = new CornerRadius(8);
+        private static readonly object DefaultCornerRadius = new CornerRadius(8);
 
         static ModeButton()
         {
@@ -84,7 +84,7 @@ namespace Acorisoft.UI.Buttons
             "CornerRadius",
             typeof(CornerRadius),
             typeof(ModeButton),
-            new PropertyMetadata(DefualtCornerRadius));
+            new PropertyMetadata(DefaultCornerRadius));
 
         public static readonly DependencyProperty HoverForegroundBrushProperty = DependencyProperty.Register(
             "HoverForegroundBrush",

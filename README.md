@@ -1,12 +1,19 @@
-# `Acorisoft.UI`
 [English](Readme-en.md) [Chinese](README.md)
+
+![.NET5](https://img.shields.io/badge/.NET-5-%23512bd4) ![VS2019](https://img.shields.io/badge/IDE-VS2019-blue)  ![Lang](https://img.shields.io/badge/C%23-9.0-blue)
+
+![Acorisoft](AcorisoftTeam.png)
+
+# `Acorisoft.UI`
 
 `Acorisoft.UI` 类库旨在为开发者带来丰富的布局、组件，让您在开发的时候能够更方便、更快捷、更高效的创建界面，而非忍受大量重复的造轮子。这个项目的初衷不是为开发者带来丰富的样式，而是为用户提供独立不受第三方样式影响的组件和布局，您可以放心的混用不同第三方的界面库，例如`MaterialDesignInXamlToolKits`或者`MahApps`以及`HandyControl`。我们只是为这些类库提供一些拓展的组件和布局。
 
-## `Acorisoft.UI` 的设计思路
+### 加入讨论
 
-我们不会提供大量的样式选择而是转而使用大量可定义细节的控件来实现丰富的样式。
-
+| | 西江月群 | 定风波群 | 广寒秋群 |
+|-|:-:|:-:|:-:|
+| 群号码 | [![qq-group](https://img.shields.io/badge/qq-714704041-red.svg)](//shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1) | [![qq-group](https://img.shields.io/badge/qq-858784803-red.svg)](//shang.qq.com/wpa/qunwpa?idkey=5c18622a0f6ee07a6f33afa8cdb85b1f72ea50e878271dfcec919c76b55afee7) | 微信群 |
+| 二维码 | ![qq-group](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/qq_group_1.png) | ![qq-group](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/qq_group_2.png) | ![wechat-group](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/wechat_group.png) |
 
 
 ## 协作(Contribute)
@@ -17,10 +24,17 @@
 
 * VisualStudio 2019 16.8.2
 * .NET 5 SDK 5.0.100
-* 
 
+## 文档
 
+我们在开发的同时也会将我们开发中运用到的一些知识整理成独立的文档。
 
+* [从零开始创建自定义控件【一】](CustomControl_Lesson_1.md)
+* [从零开始创建自定义控件【二】](CustomControl_Lesson_2.md)
+
+## 赞助我们
+
+![Sponsor](Sponsor_Wechat.jpg)
 ## 加入项目的开发
 
 本项目的开发异常简单，只需要将自己喜欢的布局复用，创建对应的Panel或者Layout即可。
