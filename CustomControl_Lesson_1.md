@@ -1,3 +1,4 @@
+
 # 从零开始创建自定义控件【一】
 
 这个课程是面向的是Wpf新手，那些想要学习如何自定义控件的同学。
@@ -39,7 +40,7 @@ using System.Windows;
 
 ```
 
-我们再来看一下`Acorisoft.UI··` 中的AssemblyInfo.cs内容
+我们再来看一下`Acorisoft.UI` 中的AssemblyInfo.cs内容
 
 ``` C#
 using System.Windows;
@@ -53,11 +54,11 @@ using System.Windows.Markup;
 
 ```
 
-可以看到`Acorisoft.UI`的内容比自定义多出了一点。
+可以看到`Acorisoft.UI`的内容比自定义多出了一点。那么我们来解释一下这些内容的含义：  
 
 `ThemeInfo` 用来指示样式外观的，这个特性暂且不解释，详细请看[深入WPF--Style](https://www.cnblogs.com/Zhouyongh/archive/2011/08/01/2123610.html)
 
-`XmlnsDefinition` 用于将一个CLR命名空间映射到一个XML命名空间。
+`XmlnsDefinition` 用于将一个CLR命名空间映射到一个XML命名空间。内容不是很多，如果想看更详细的知识请参阅[剖析 AssemblyInfo.cs - 了解常用的特性 Attribute](https://www.cnblogs.com/liqingwen/p/5944391.html)
 
 
 ### CustomControl1.cs
@@ -166,3 +167,6 @@ namespace $Namespace$
 ## 引用
 * [深入WPF--Style](https://www.cnblogs.com/Zhouyongh/archive/2011/08/01/2123610.html)
 * [WPF 依赖项属性的AddOwner与OverrideMetadata区别](https://huchengv5.github.io/post/WPF-%E4%BE%9D%E8%B5%96%E9%A1%B9%E5%B1%9E%E6%80%A7%E7%9A%84AddOwner%E4%B8%8EOverrideMetadata%E5%8C%BA%E5%88%AB.html)
+* [剖析 AssemblyInfo.cs - 了解常用的特性 Attribute](https://www.cnblogs.com/liqingwen/p/5944391.html)
+
+[下一篇](CustomControl_Lesson_2.md)
