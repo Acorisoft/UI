@@ -25,7 +25,7 @@
 
 设置为`Opacity`透明度模式之后，按钮显示背景外观，当鼠标停留在上方时修改控件透明度，该值为1.0，默认透明度为0.5。这个模式下修改`Background`属性能够修改按钮在鼠标停留时的外观行为。
 
-![Solid](Thumbnails\Opacity_Button.gif)
+![Opacity](Thumbnails\Opacity_Button.gif)
 
 |       属性名              |            属性效果           |
 |:------------------------:|:----------------------------:|
@@ -36,7 +36,7 @@
 
 设置为`Outline`轮廓模式之后，按钮显示边框外观，当鼠标停留在上方时添加背景颜色，以下是能够修改外观的可用属性：
 
-![Solid](Thumbnails\Outline_Button.gif)
+![Outline](Thumbnails\Outline_Button.gif)
 
 |       属性名              |            属性效果           |
 |:------------------------:|:----------------------------:|
@@ -50,7 +50,7 @@
 ### CTA
 设置为 `CTA` 模式之后，按钮显示背景外观，当鼠标停留在上方时修改控件透明度，该值为。5，默认透明度为1.0。这个模式下修改`Background`属性能够修改按钮在鼠标停留时的外观行为。
 
-![Solid](Thumbnails\CTA_Button.gif)
+![CTA](Thumbnails\CTA_Button.gif)
 
 |       属性名              |            属性效果           |
 |:------------------------:|:----------------------------:|
@@ -62,7 +62,7 @@
 设置为 `Transparency` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时显示背景，以下是能够修改外观的可用属性：
 
 
-![Solid](Thumbnails\Transparency_Button.gif)
+![Transparency](Thumbnails\Transparency_Button.gif)
 
 |       属性名              |            属性效果           |
 |:------------------------:|:----------------------------:|
@@ -72,6 +72,56 @@
 | HoverForeground          | 修改鼠标停留在按钮上时的前景颜色|
 | PressBackground          | 修改鼠标按下时的背景颜色       |
 | PressForeground          | 修改鼠标按下时的前景颜色       |
+
+### Link
+
+设置为 `Transparency` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时显示背景，以下是能够修改外观的可用属性：
+
+
+![Transparency](Thumbnails\Transparency_Button.gif)
+
+|       属性名              |            属性效果           |
+|:------------------------:|:----------------------------:|
+| Background               | 修改默认按钮轮廓颜色           |
+| Foreground               | 修改默认按钮前景颜色           |
+| HoverBackground          | 修改鼠标停留在按钮上时的背景颜色|
+| HoverForeground          | 修改鼠标停留在按钮上时的前景颜色|
+| PressBackground          | 修改鼠标按下时的背景颜色       |
+| PressForeground          | 修改鼠标按下时的前景颜色       |
+
+
+### FadeIn
+
+设置为 `Transparency` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时显示背景，以下是能够修改外观的可用属性：
+
+
+![Transparency](Thumbnails\Transparency_Button.gif)
+
+|       属性名              |            属性效果           |
+|:------------------------:|:----------------------------:|
+| Background               | 修改默认按钮轮廓颜色           |
+| Foreground               | 修改默认按钮前景颜色           |
+| HoverBackground          | 修改鼠标停留在按钮上时的背景颜色|
+| HoverForeground          | 修改鼠标停留在按钮上时的前景颜色|
+| PressBackground          | 修改鼠标按下时的背景颜色       |
+| PressForeground          | 修改鼠标按下时的前景颜色       |
+
+### FadeOut
+
+设置为 `Transparency` 透明模式之后，按钮仅显示文字外观，当鼠标停留在上方时显示背景，以下是能够修改外观的可用属性：
+
+
+![Transparency](Thumbnails\Transparency_Button.gif)
+
+|       属性名              |            属性效果           |
+|:------------------------:|:----------------------------:|
+| Background               | 修改默认按钮轮廓颜色           |
+| Foreground               | 修改默认按钮前景颜色           |
+| HoverBackground          | 修改鼠标停留在按钮上时的背景颜色|
+| HoverForeground          | 修改鼠标停留在按钮上时的前景颜色|
+| PressBackground          | 修改鼠标按下时的背景颜色       |
+| PressForeground          | 修改鼠标按下时的前景颜色       |
+
 
 ## 按钮控件一览表
 
