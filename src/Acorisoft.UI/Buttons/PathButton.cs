@@ -31,18 +31,6 @@ namespace Acorisoft.UI.Buttons
             set => SetValue(IconProperty , value);
         }
 
-        public double IconWidth
-        {
-            get => (double)GetValue(IconWidthProperty);
-            set => SetValue(IconWidthProperty , value);
-        }
-
-        public double IconHeight
-        {
-            get => (double)GetValue(IconHeightProperty);
-            set => SetValue(IconHeightProperty , value);
-        }
-
         public Thickness IconPadding
         {
             get => (Thickness)GetValue(IconPaddingProperty);
@@ -64,18 +52,6 @@ namespace Acorisoft.UI.Buttons
         public static readonly DependencyProperty IconPaddingProperty = DependencyProperty.Register(
             "IconPadding",
             typeof(Thickness),
-            typeof(PathButton), 
-            new PropertyMetadata(null));
-
-        public static readonly DependencyProperty IconHeightProperty = DependencyProperty.Register(
-            "IconHeight",
-            typeof(double),
-            typeof(PathButton), 
-            new PropertyMetadata(null));
-
-        public static readonly DependencyProperty IconWidthProperty = DependencyProperty.Register(
-            "IconWidth",
-            typeof(double),
             typeof(PathButton), 
             new PropertyMetadata(null));
 
