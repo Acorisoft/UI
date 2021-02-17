@@ -119,6 +119,12 @@ namespace Acorisoft.UI.Panels
             set => SetValue(OrientationProperty, value);
         }
 
+        /// <summary>
+        /// 获取或设置当前应用的最小项目尺寸。
+        /// </summary>
+        /// <remarks>
+        /// 均分面板推荐在有ScrollViewer的场景以及子元素项目数量较少的时候使用。如果
+        /// </remarks>
         public Size MinItemSize
         {
             get => (Size)GetValue(MinItemSizeProperty);
@@ -129,7 +135,7 @@ namespace Acorisoft.UI.Panels
             "MinItemSize",
             typeof(Size),
             typeof(UniformPanel),
-            new PropertyMetadata(DefaultSize, OnMinItemSizeChanged));
+            new PropertyMetadata(Boxes.Box<Size>(), OnMinItemSizeChanged));
 
 
         public static readonly DependencyProperty OrientationProperty = DependencyProperty.Register(
