@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>singleton</Title>
+            <Shortcut>singleton</Shortcut>
+            <Description>单例模式的代码段</Description>
+            <Author>Microsoft Corporation</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>className</ID>
+                    <ToolTip>类型名称</ToolTip>
+                    <Default>My</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp">
+                <![CDATA[
+                public class $className$
+                {
+                    private $className$()
+                    {
+                    }
+                    
+                    private static $className$ _instance;
+                    
+                    /// <summary>
+                    /// 获取当前类型<see cref="$className$"/> 的实例。
+                    /// </summary>
+                    public static $className$ Current{
+                        get{
+                            if(_instance == null)
+                                _instance = new $className$();
+                            return _instance;
+                        }
+                    }
+                }
+                ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

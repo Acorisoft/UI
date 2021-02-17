@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>RoutedUICommand Snippet</Title>
+            <Shortcut>command</Shortcut>
+            <Description>RoutedUICommand</Description>
+            <Author>Acorisoft Corporation</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>prop</ID>
+                    <ToolTip>字段名</ToolTip>
+                    <Default>My</Default>
+                </Literal>
+                <Literal>
+                    <ID>text</ID>
+                    <ToolTip>属性名</ToolTip>
+                    <Default>Command.DocumentEdit.</Default>
+                </Literal>
+                <Literal>
+                    <ID>type</ID>
+                    <ToolTip>类型名称</ToolTip>
+                    <Default>string</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp">
+                <![CDATA[
+                public static RoutedUICommand $prop$ { get; set; } = new RoutedUICommand("$text$$prop$", "$text$$prop$", typeof($type$));
+                ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

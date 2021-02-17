@@ -25,8 +25,8 @@
         </Literal>
         <Literal Editable="true">
           <ID>Type</ID>
-          <ToolTip>Type</ToolTip>
-          <Default>Type</Default>
+          <ToolTip>Event Handler Type</ToolTip>
+          <Default>RoutedEventHandler</Default>
           <Function>
           </Function>
         </Literal>
@@ -38,8 +38,11 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[  public static readonly RoutedEvent $Name$Event =
-            EventManager.RegisterRoutedEvent("$Name$", RoutingStrategy.Bubble,typeof($Type$),typeof($class$));
+      <Code Language="csharp" Delimiter="$"><![CDATA[  public static readonly RoutedEvent $Name$Event = EventManager.RegisterRoutedEvent(
+	              "$Name$",
+	              RoutingStrategy.Bubble,
+	              typeof($Type$),
+	              typeof($class$));
 
         public event RoutedEventHandler $Name$
         {

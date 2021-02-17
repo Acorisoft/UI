@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>content</Title>
+      <Author>acorisoft</Author>
+      <Description>a code snippet for contentdependency property</Description>
+      <HelpUrl></HelpUrl>
+      <SnippetTypes />
+      <Keywords />
+      <Shortcut>content</Shortcut>
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Content</ID>
+          <Type></Type>
+          <ToolTip></ToolTip>
+          <Default>Content</Default>
+          <Function></Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ownerclass</ID>
+          <Type></Type>
+          <ToolTip></ToolTip>
+          <Default>NewLiteral1</Default>
+          <Function></Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Kind="method decl" Delimiter="$"><![CDATA[        public object $Content$ {
+            get { return ( object ) GetValue($Content$Property); }
+            set { SetValue($Content$Property, value); }
+        }
+
+        public static readonly DependencyProperty $Content$Property
+            = DependencyProperty.Register("$Content$", typeof(object), typeof($ownerclass$),
+                new PropertyMetadata(null));
+
+        public DataTemplate $Content$Template {
+            get { return ( DataTemplate ) GetValue($Content$TemplateProperty); }
+            set { SetValue($Content$TemplateProperty, value); }
+        }
+
+        public static readonly DependencyProperty $Content$TemplateProperty
+            = DependencyProperty.Register("$Content$Template", typeof(DataTemplate), typeof($ownerclass$),
+                new PropertyMetadata(null));
+
+        public DataTemplateSelector $Content$TemplateSelector {
+            get { return ( DataTemplateSelector ) GetValue($Content$TemplateSelectorProperty); }
+            set { SetValue($Content$TemplateSelectorProperty, value); }
+        }
+
+        public static readonly DependencyProperty $Content$TemplateSelectorProperty
+            = DependencyProperty.Register("$Content$TemplateSelector", typeof(DataTemplateSelector), typeof($ownerclass$),
+                new PropertyMetadata(null));
+
+        public string $Content$StringFormat {
+            get { return ( string ) GetValue($Content$StringFormatProperty); }
+            set { SetValue($Content$StringFormatProperty, value); }
+        }
+
+        public static readonly DependencyProperty $Content$StringFormatProperty
+            = DependencyProperty.Register("$Content$StringFormat", typeof(string), typeof($ownerclass$),
+                new PropertyMetadata(null));]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

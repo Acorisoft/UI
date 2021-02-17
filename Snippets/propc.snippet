@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>propc</Title>
+      <Author>Acoris</Author>
+      <Description>Full Property Changed Notify for Caliburn.Micro</Description>
+      <HelpUrl></HelpUrl>
+      <SnippetTypes />
+      <Keywords />
+      <Shortcut>propc</Shortcut>
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <Type></Type>
+          <ToolTip></ToolTip>
+          <Default>int</Default>
+          <Function></Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>prop</ID>
+          <Type></Type>
+          <ToolTip></ToolTip>
+          <Default>prop</Default>
+          <Function></Function>
+        </Literal>
+      </Declarations>
+      <Code Language="VB" Kind="" Delimiter="$"><![CDATA[private $type$ $prop$Property;
+
+public $type$ $prop$ {
+	get => $prop$Property;
+	set {
+		 Set(ref $prop$Property, value);	
+	}
+    }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

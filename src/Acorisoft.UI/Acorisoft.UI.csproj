@@ -18,8 +18,4 @@
 	<ItemGroup>
 		<None Include="icon_64x64.png" Pack="true" PackagePath="" />
 	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Layout\" />
-	</ItemGroup>
 </Project>
