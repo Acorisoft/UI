@@ -12,4 +12,8 @@
     <ProjectReference Include="..\Acorisoft.UI\Acorisoft.UI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+
 </Project>

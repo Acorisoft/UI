@@ -1,20 +1,15 @@
-﻿<ui:ColorWindow x:Class="Acorisoft.UI.Host.MainWindow"
+﻿<Window x:Class="Acorisoft.UI.Host.MainWindow"
                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                 xmlns:local="clr-namespace:Acorisoft.UI.Host"
                 xmlns:ui="https://github.com/Acorisoft/UI"
-                xmlns:v="clr-namespace:Acorisoft.UI.Host.Views"
                 mc:Ignorable="d"
                 Title="Acorisoft UI Demo"
                 MinWidth="1366"
                 MinHeight="768">
     <Window.Resources>
-        <v:ControlDemoCtl x:Key="ControlDemo"/>
-        <v:ButtonDemoCtl x:Key="ButtonDemo"/>
-        <v:PanelDemoCtl x:Key="PanelDemo"/>
-        <v:DialogDemoCtl x:Key="DialogDemo"/>
         <Style TargetType="{x:Type HeaderedContentControl}">
             <Setter Property="Focusable" Value="False" />
             <Setter Property="HeaderTemplate">
@@ -33,7 +28,6 @@
                     </DataTemplate>
                 </Setter.Value>
             </Setter>
-            <Setter Property="Background" Value="{StaticResource UI.Brushes.White}" />
             <Setter Property="Margin" Value="16" />
         </Style>
         <Style TargetType="{x:Type ListBoxItem}">
@@ -49,16 +43,16 @@
         <ListBox x:Name="DemoList"
                  Margin="16"
                  SelectedIndex="0"
-                 BorderThickness="0"
-                 Background="{StaticResource UI.Brushes.Transparent}">
-            <ListBoxItem Content="Button Demo"
-                         Tag="{StaticResource ButtonDemo}"/>
-            <ListBoxItem Content="Control Demo"
-                         Tag="{StaticResource ControlDemo}"/>
-            <ListBoxItem Content="Dialog Demo"
-                         Tag="{StaticResource DialogDemo}"/>
-            <ListBoxItem Content="Panel Demo"
-                         Tag="{StaticResource PanelDemo}"/>
+                 BorderThickness="0">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ui:UniformPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBoxItem Content="Button Demo"/>
+            <ListBoxItem Content="Control Demo"/>
+            <ListBoxItem Content="Dialog Demo"/>
+            <ListBoxItem Content="Panel Demo"/>
         </ListBox>
         
         
@@ -66,4 +60,4 @@
                         DataContext="{Binding ElementName=DemoList,Path=SelectedItem,Mode=OneWay}"
                         Content="{Binding Tag,Mode=OneWay}"/>
     </Grid>
-</ui:ColorWindow>
+</Window>
