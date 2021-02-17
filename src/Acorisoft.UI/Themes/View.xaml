@@ -1,0 +1,90 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:Acorisoft.UI.Views"
+                    xmlns:p="clr-namespace:Acorisoft.UI.Panels">
+    <Style TargetType="{x:Type v:MasterDetailView}">
+        <Setter Property="MasterWidth" Value="256" />
+        <Style.Triggers>
+            <Trigger Property="Direction" Value="Left">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type v:MasterDetailView}">
+                            <p:DuelPanel Direction="Left" FixPartLegnth="{TemplateBinding MasterWidth}">
+                                <ContentPresenter Content="{TemplateBinding Master}"
+                                                  ContentTemplate="{TemplateBinding MasterTemplate}"
+                                                  ContentTemplateSelector="{TemplateBinding MasterTemplateSelector}"
+                                                  ContentStringFormat="{TemplateBinding MasterStringFormat}"
+                                                  HorizontalAlignment="Stretch"
+                                                  VerticalAlignment="Stretch"
+                                                  SnapsToDevicePixels="True"/>
+                                <ContentPresenter x:Name="PART_Detail"
+                                                  Content="{TemplateBinding Detail}"
+                                                  ContentTemplate="{TemplateBinding DetailTemplate}"
+                                                  ContentTemplateSelector="{TemplateBinding DetailTemplateSelector}"
+                                                  ContentStringFormat="{TemplateBinding DetailStringFormat}"
+                                                  HorizontalAlignment="Stretch"
+                                                  VerticalAlignment="Stretch"
+                                                  SnapsToDevicePixels="True"/>
+                            </p:DuelPanel>
+                            <ControlTemplate.Triggers>
+                                <EventTrigger RoutedEvent="DetailChanged">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                                           Storyboard.TargetName="PART_Detail">
+                                                <EasingDoubleKeyFrame KeyTime="0:00:00"
+                                                                      Value=".3"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:00:00.300"
+                                                                      Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="Direction" Value="Right">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type v:MasterDetailView}">
+                            <p:DuelPanel Direction="Right" FixPartLegnth="{TemplateBinding MasterWidth}">
+                                <ContentPresenter Content="{TemplateBinding Master}"
+                                                  ContentTemplate="{TemplateBinding MasterTemplate}"
+                                                  ContentTemplateSelector="{TemplateBinding MasterTemplateSelector}"
+                                                  ContentStringFormat="{TemplateBinding MasterStringFormat}"
+                                                  HorizontalAlignment="Stretch"
+                                                  VerticalAlignment="Stretch"
+                                                  SnapsToDevicePixels="True"/>
+                                <ContentPresenter x:Name="PART_Detail"
+                                                  Content="{TemplateBinding Detail}"
+                                                  ContentTemplate="{TemplateBinding DetailTemplate}"
+                                                  ContentTemplateSelector="{TemplateBinding DetailTemplateSelector}"
+                                                  ContentStringFormat="{TemplateBinding DetailStringFormat}"
+                                                  HorizontalAlignment="Stretch"
+                                                  VerticalAlignment="Stretch"
+                                                  SnapsToDevicePixels="True"/>
+                            </p:DuelPanel>
+                            <ControlTemplate.Triggers>
+                                <EventTrigger RoutedEvent="DetailChanged">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                                           Storyboard.TargetName="PART_Detail">
+                                                <EasingDoubleKeyFrame KeyTime="0:00:00"
+                                                                      Value=".3"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:00:00.300"
+                                                                      Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

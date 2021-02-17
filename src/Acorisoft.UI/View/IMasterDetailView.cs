@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Acorisoft.UI.Layout
+namespace Acorisoft.UI.Views
 {
     /// <summary>
-    /// <see cref="IMasterDetailLayout"/> 表示主从视图布局面板。
+    /// <see cref="IMasterDetailView"/> 表示主从视图布局面板。
     /// </summary>
-    public interface IMasterDetailLayout
+    public interface IMasterDetailView
     {
         /// <summary>
         /// 获取或设置主视图的宽度。

@@ -15,18 +15,18 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Markup;
 
-namespace Acorisoft.UI.Layout
+namespace Acorisoft.UI.Views
 {
     /// <summary>
-    /// <see cref="MasterDetailLayout"/> 表示一个主从视图布局控件。
+    /// <see cref="MasterDetailView"/> 表示一个主从视图布局控件。
     /// </summary>
-    [DefaultProperty("Master")]
-    [ContentProperty("Master")]
-    public class MasterDetailLayout : Control, IMasterDetailLayout
+    [DefaultProperty("Detail")]
+    [ContentProperty("Detail")]
+    public class MasterDetailView : Control, IMasterDetailView
     {
-        static MasterDetailLayout()
+        static MasterDetailView()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(MasterDetailLayout), new FrameworkPropertyMetadata(typeof(MasterDetailLayout)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(MasterDetailView), new FrameworkPropertyMetadata(typeof(MasterDetailView)));
         }
 
 
@@ -95,80 +95,87 @@ namespace Acorisoft.UI.Layout
         public static readonly DependencyProperty MasterWidthProperty = DependencyProperty.Register(
             "MasterWidth",
             typeof(double),
-            typeof(MasterDetailLayout), 
+            typeof(MasterDetailView), 
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty DirectionProperty = DependencyProperty.Register(
             "Direction",
             typeof(HorizontalDirection),
-            typeof(MasterDetailLayout), 
+            typeof(MasterDetailView), 
             new PropertyMetadata(null));
 
 
         public static readonly DependencyProperty DetailStringFormatProperty = DependencyProperty.Register(
             "DetailStringFormat",
             typeof(string),
-            typeof(MasterDetailLayout),
+            typeof(MasterDetailView),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty DetailTemplateSelectorProperty = DependencyProperty.Register(
             "DetailTemplateSelector",
             typeof(DataTemplateSelector),
-            typeof(MasterDetailLayout),
+            typeof(MasterDetailView),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty DetailTemplateProperty = DependencyProperty.Register(
             "DetailTemplate",
             typeof(DataTemplate),
-            typeof(MasterDetailLayout),
+            typeof(MasterDetailView),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty DetailProperty = DependencyProperty.Register(
             "Detail",
             typeof(object),
-            typeof(MasterDetailLayout),
-            new PropertyMetadata(null));
+            typeof(MasterDetailView),
+            new PropertyMetadata(null,OnDetailChanged));
+
+        private static void OnDetailChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var mdView = (MasterDetailView)d;
+            mdView.RaiseEvent(new RoutedEventArgs { RoutedEvent = DetailChangedEvent });
+        }
+
         public static readonly DependencyProperty MasterStringFormatProperty = DependencyProperty.Register(
             "MasterStringFormat",
             typeof(string),
-            typeof(MasterDetailLayout),
+            typeof(MasterDetailView),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty MasterTemplateSelectorProperty = DependencyProperty.Register(
             "MasterTemplateSelector",
             typeof(DataTemplateSelector),
-            typeof(MasterDetailLayout),
+            typeof(MasterDetailView),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty MasterTemplateProperty = DependencyProperty.Register(
             "MasterTemplate",
             typeof(DataTemplate),
-            typeof(MasterDetailLayout),
+            typeof(MasterDetailView),
             new PropertyMetadata(null));
 
         public static readonly DependencyProperty MasterProperty = DependencyProperty.Register(
             "Master",
             typeof(object),
-            typeof(MasterDetailLayout),
+            typeof(MasterDetailView),
             new PropertyMetadata(null));
 
         public static readonly RoutedEvent MasterChangedEvent = EventManager.RegisterRoutedEvent(
             "MasterChanged",
             RoutingStrategy.Bubble,
             typeof(RoutedEventHandler),
-            typeof(MasterDetailLayout));
+            typeof(MasterDetailView));
 
         public static readonly RoutedEvent DetailChangedEvent = EventManager.RegisterRoutedEvent(
             "DetailChanged",
             RoutingStrategy.Bubble,
             typeof(RoutedEventHandler), 
-            typeof(MasterDetailLayout));
+            typeof(MasterDetailView));
 
         public static readonly RoutedEvent DirectionChangedEvent = EventManager.RegisterRoutedEvent(
             "DirectionChanged",
             RoutingStrategy.Bubble,
             typeof(RoutedEventHandler),
-            typeof(MasterDetailLayout));
+            typeof(MasterDetailView));
 
         public event RoutedEventHandler DirectionChanged
         {

@@ -34,30 +34,25 @@
             <Setter Property="FontSize" Value="16" />
         </Style>
     </Window.Resources>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="256"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-        <ListBox x:Name="DemoList"
+    <ui:MasterDetailView>
+        <ui:MasterDetailView.Master>
+            <ListBox x:Name="DemoList"
                  Margin="16"
                  SelectedIndex="0"
                  BorderThickness="0">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <ui:UniformPanel Orientation="Vertical"/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-            <ListBoxItem Content="Button Demo"/>
-            <ListBoxItem Content="Control Demo"/>
-            <ListBoxItem Content="Dialog Demo"/>
-            <ListBoxItem Content="Panel Demo"/>
-        </ListBox>
-        
-        
-        <ContentControl Grid.Column="1" 
-                        DataContext="{Binding ElementName=DemoList,Path=SelectedItem,Mode=OneWay}"
-                        Content="{Binding Tag,Mode=OneWay}"/>
-    </Grid>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <ui:UniformPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBoxItem Content="Button Demo"/>
+                <ListBoxItem Content="Control Demo"/>
+                <ListBoxItem Content="Dialog Demo"/>
+                <ListBoxItem Content="Panel Demo"/>
+            </ListBox>
+        </ui:MasterDetailView.Master>
+
+        <Border Background="CornflowerBlue" 
+                DataContext="{Binding ElementName=DemoList,Path=SelectedItem,Mode=OneWay}"/>
+    </ui:MasterDetailView>
 </Window>
