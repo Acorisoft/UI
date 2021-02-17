@@ -7,7 +7,7 @@
 
 
 
-    <Style TargetType="{x:Type p:ToolbarPanel}">
+    <Style TargetType="{x:Type p:ToolBarPanel}">
         <Setter Property="Background" Value="{StaticResource UI.Brushes.Transparent}" />
         <Setter Property="Foreground" Value="{StaticResource UI.Brushes.Black}" />
         <Setter Property="Padding" Value="24" />
@@ -19,7 +19,7 @@
         <Setter Property="IsTabStop" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type p:ToolbarPanel}">
+                <ControlTemplate TargetType="{x:Type p:ToolBarPanel}">
                     <Border x:Name="PART_BD" 
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
